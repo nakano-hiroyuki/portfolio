@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオサイト</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#projects">プロジェクト</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>自己紹介</h2>
+      <p>こんにちは！ご覧いただき誠にありがとうございます！中野裕之と申します。
+        私はPython,HTML,CSS,SQLを学んでいるプログラマー志望です。IT系の企業に3年間勤めており、主にデザイン作成のグラフィックデザイナーとして業務を行ってきました。
+        チラシ、パンフレット、Lineスタンプ、ロゴマーク、名刺などのデザインを手掛けましたが、特にチラシのオシャレなレイアウト作成が得意です。パーソナルジムの案内チラシ案件ではクライアント様に高く評価していただき、自信になりました。
+        そんな中PCスキルの幅を広げていこうと思い、Progateでプログラミングの基礎を学びLv.217になりました。現在、デザイン作成可能なエンジニアとしてIT企業への就職を目指してポートフォリオの作成に取り組んでいます。</p>
+      <p>・デザイン、AI開発、Webエンジニアに興味がある36歳</p>
+      <p>・美容師専門学校を卒業</p>
+      <p>・趣味は筋トレ、サッカー、美味しいもの食べる、散歩、音楽</p>
+      <p>・King Nueが好き</p>
+      <p>・デザインの業務に携わりながら、2024年11月頃から本格的にプログラミング独学開始</p>  
+      <h3>はじめに</h3>
+      <P>この記事は、私がWebエンジニアへの転職を目指す過程において作成したポートフォリオの紹介記事です。ポートフォリオの概要や工夫点、アプリ開発などを行う上で苦労した点などをこちらに書かせていただいております。また、独学でどのように学習してきたのかもこちらに書かせていただいたので、ご参考程度に見ていただけると嬉しく思います。以下は私のプロジェクトです。</P>
+    </section>
+    <section id="projects">
+      <h2>Project</h2>
+      <div class="project" id="project1" onclick="openModal('project1-modal')">Pythonのアプリ</div>
+<div id="project1-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('project1-modal')">&times;</span>
+    <h3>Pythonのアプリ</h3>
+  </div>
+</div>
+      <ul>
+        <li>Python-数当てゲーム</li>
+            <img src="Python 数当てゲーム.png" alt="数当てゲーム画像"  width="330" height="200">
+            <img src="Python 数当てゲーム2.png" alt="数当てゲーム画像"  width="260" height="300">
+            <video width="330" height="300" controls>
+            <source src="gameAPP.mp4" type="video/mp4">
+            </video> 
+        <li>Python-メモアプリ(tkinter)</li>
+            <img src="Python メモアプリ.png" alt="メモアプリ画像"  width="280" height="300">
+            <img src="Python メモアプリ2.png" alt="メモアプリ画像"  width="280" height="300">
+            <video width="280" height="300" controls>
+            <source src="メモAPP.mp4" type="video/mp4">
+            </video>
+        <li>Python-電卓アプリ(tkinter)</li>
+            <img src="Python 電卓アプリ.png" alt="電卓アプリ画像"  width="280" height="300">
+            <img src="Python 電卓アプリ2.png" alt="電卓アプリ画像"  width="280" height="300">
+            <video width="280" height="300" controls>
+            <source src="電卓APP.mp4" type="video/mp4">
+            </video>
+        <li>Python-ストップウォッチアプリ(tkinter)</li>
+            <img src="Python ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像"  width="300" height="200">
+            <img src="Python ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像"  width="300" height="200">
+            <video width="300" height="200" controls>
+            <source src="ストップウォッチAPP.mp4" type="video/mp4">
+            </video>
+        <li>Python-ToDoリストアプリ(tkinter)</li>
+            <img src="Python ToDoリストアプリ.png" alt="ToDoリストアプリ画像"  width="280" height="300">
+            <img src="Python ToDoリストアプリ2.png" alt="ToDoリストアプリ画像"  width="280" height="300">
+            <video width="280" height="300" controls>
+            <source src="ToDoリストAPP.mp4" type="video/mp4">
+            </video>
+      </ul>    
+      <h3>ホームページ(HTML,CSS,Javascript)</h3>
+
+      <ul>
+        <li>HTML,CSS,Javascriptのポートフォリオホームページ作成</li>
+      </ul>
+
+      <h3>デザイン(Inkscape)</h3>
+<div class="image-container">
+    <div class="project">
+        <li>秋田柴犬雑種Lineスタンプ</li>
+        <img src="ダイチ Lineスタンプ.png" alt="ダイチLineスタンプ画像" width="200" height="200" >
+    </div>
+    <div class="project">
+        <li>ポメラニアンLineスタンプ</li>
+        <img src="ベル Lineスタンプ.png" alt="ベル ダイチLineスタンプ画像" width="200" height="200">
+    </div>
+    <div class="project">
+        <li>ダックスフンドLineスタンプ</li>
+        <img src="マロン Lineスタンプ.png" alt="マロンLineスタンプ画像" width="200" height="200">
+    </div>
+    <div class="project">
+        <li>ポメラニアンLineスタンプ</li>
+        <img src="ヒマワリ Lineスタンプ.png" alt="ヒマワリLineスタンプ画像" width="200" height="200">
+    </div>
+    <div class="project">
+        <li>ピンシャーLineスタンプ</li>
+        <img src="クウコ Lineスタンプ.png" alt="クウコLineスタンプ画像" width="200" height="200">
+    </div>
+</div>  
+<div class="image-container">
+    <div class="project">    
+        <li>研修医交流会チラシ</li>
+        <img src="医学生交流会チラシ表.png" alt="医学生チラシ画像" width="200" height="282">
+    </div>    
+    <div class="project">
+        <li>研修医交流会チラシ裏面</li>     
+        <img src="医学生交流会チラシ.png" alt="医学生チラシ画像" width="200" height="282">
+    </div>
+    <div class="project">    
+        <li>給湯機チラシ</li>
+        <img src="給湯機チラシ.png" alt="給湯機チラシ画像" width="200" height="282">
+    </div>
+    <div class="project">    
+        <li>ジムチラシ</li>
+        <img src="ジムチラシ表面.png" alt="ジムチラシ画像" width="200" height="282">
+    </div>
+    <div class="project">
+        <li>ジムチラシ裏面</li>    
+        <img src="ジムチラシ裏面.png" alt="ジムチラシ画像" width="200" height="282">
+    </div>
+</div>
+<div class="image-container">    
+    <div class="project">    
+        <li>サンキューレター</li>
+        <img src="サンキューレター.png" alt="サンキューレター画像" width="200" height="282">
+    </div>
+    <div class="project">   
+        <li>グローバルヘルスチラシ</li>
+        <img src="グローバルヘルスチラシ.png" alt="グローバルヘルスチラシ画像" width="200" height="282">    
+    </div>
+    <div class="project">
+        <li>ピアノ教室チラシ</li>
+        <img src="音楽教室パンフレット.png" alt="音楽教室パンフレット画像" width="200" height="282">     
+    </div>
+    <div class="project">
+        <li>人工芝チラシ</li>
+        <img src="人工芝チラシ.png" alt="人工芝チラシ画像" width="200" height="282">  
+    </div>
+    <div class="project">
+        <li>医院クリニック建築チラシ</li>
+        <img src="医院クリニック建築チラシ.png" alt="医院クリニックチラシ画像" width="200" height="282">
+    </div>
+</div>          
+    </section>
+    <h2>プログラミングの独学での学習の道筋</h2>
+    <h3>なぜ独学での学習をえらんだのか</h3>
+        <p>単純にお金がかかるからという理由もありますが、なぜスクールに通わずに独学での学習をえらんだのかについて、下記2点の理由があります。</p>
+        <h4>①自分がエンジニアとして向いているのか知りたかったから</h4>
+        <p>プログラミングを勉強しようと思ったのはPCデザインの仕事が楽しく、次のスキルを身に着けていきたかったからです。そんなときに、自分が所属している社会人サッカーチームの同い年の代表がAI開発をしていると知り、興味を持ったことがきっかけです。しかし、実際のところは諦めずに本当に仕事をやりきれるのか、技術は好きになれるのか、勉強を理解できるのかといった不安がありました。実際にエンジニアとして働きだしたら次々と大きな壁に直面すると思いますし、それを自分で乗り越えて行くことが必要になってくると思います。その部分を試すために、スクールや専門学校に通わずに、自分で課題解決せざるを得ない環境にしました。</p>
+        <h4>②自走力を磨くことが大切だと思ったから。</h4>
+        <p>上記の理由と繋がっていますが、エンジニアとして働いていくためには自走力を身につけることが重要だと感じました。独学で学習を進める事により、課題を自己解決できる自走力を身につけられるのではないかと思いました。実際、自分の学習状況や開発の進捗管理をしてくれる人はいなかったため、独学を続けていくためには高い自己管理能力が必要でした。学習を開始する前は、自分の自走力や積極性はまだまだ生半可である自認するほどでしたが、現在ポートフォリオ作成を一段落作り終えてみて、やり切る力が以前よりもついたなと自分の成長に自信が持てるようになりました。
+        <p>実際に独学は辛い面もありましたが、もちろん楽しい面も多くありました。単純に面白さや探究心などが生まれものづくりがより好きになり、1年間長い間学習をコツコツと続けられました。ものづくりが好きになった部分が大きいです。</p>  
+        </p>
+    <h3>学習期間</h3>
+        <P>・2024年11月頃～プログラミング学習開始(progateでの学習を開始)</P>
+        <P>・2025年3月頃～Pythonでのアプリ開発開始</P>
+        <p>・2025年5月頃～HTML,CSS,Javascriptでのポートフォリオサイト作成開始</p>
+        <P>UW助信での勤務のうち、午前中はクラウドワークスでデザイン作成を行い、午後の時間でプログラミングでの開発を行いました。Pythonでの簡単なアプリ開発のあと、HTML,CSS,Javascriptでのポートフォリオサイトの作成を始めました。学習期間は約1年程度を想定していました。</P>
+    <h3>学習時に工夫したこと</h3>
+    <h4>①実務を想定した開発</h4>
+        <li>なるべく公式のドキュメントを読む</li>
+        <p>新しい技術に触れるときや、実装の仕方がわからなくなったときは、まずは公式ドキュメントに目を通しました。難しい言い回しや技術用語が列挙しており少々読みづらいですが、事前知識として先にわからない用語を調べ、それから公式ドキュメントに戻るようにして、読み慣れるように努力しました。</p>
+        <li>エラー時は、エラー文を読んで仮説を立ててから修正する</li>
+        <p>エラーメッセージがでたときは、目を通して理解するようにしました。読んでも理解できないときは翻訳して内容を大まかに理解したあと、エラーの特定に移行するようにしました。その時に頭の中で、こうしたからこのようなエラーがでたのではないか、と自分の中で仮説を立てていました。そうすることで、エラー原因を特定できたときの理解度が上がり、「なんとなく直したらうまく動いた」という状況を回避できます。</p>
+        <li>AIをうまく活用する</li>
+        <p>わからない場合や、エラーが発生したときなどは、コードをそのままChatGPTやCopilotにかけて、参考にしました。エラーの原因やコードの間違いなどを効率よく特定することができました。</p> 
+    <h4>②目標を設定し、スケジュールを立てて開発する</h4> 
+        <p>1週間の作業内容をざっくりと考えてから学習・開発を進めました。また、目標達成度がどのくらいであるか、自分なりに振り返り、明日進めるタスクを割り出してから寝るように心掛けました。特に独学での学習なので、スケジュール計画と進捗管理を意識して学習・開発を進めました。</p>
+    <h4>③YoutubeでLiveや解説動画で学ぶ</h4>
+        <p>Youtubeでプログラミングの実践や解説している動画で視覚的に勉強することで、イメージを作りやすくしました。隙間時間でも学習することができるし、見流すだけでいいので手軽に続けることができました。プログラミングの全体像をざっくり掴むことができたので迷いすぎずに勉強を進めることができたと思います。</p>
+    <h2>今後の課題点</h2>
+        <li>Python,HTML,CSSのコード基本の理解を突き詰めていくこと</li>
+        <p>コードの書き方に関してはProgateで学習しましたが、アプリ開発を通じてまだまだわかっていないことだらけだなと感じました。基本的にネットから拾ったサンプルコードやAIに生成してもらったコードを元に、カスタムして必要な機能を追加していく形で作成しましたが、ゼロから自分でコードを書いていくことはできず、自分でコードを組み立てて考えることもできないので、今後も開発を続けてしっかりと技術の向上をしていきたいと思います。</p>
+        <li>ネットのサンプルコードやAIを使わず、自分でコードを組み立てて書いていけるようになる</li>
+        <p>今回の開発では、ポートフォリオの完成を優先的に行ってきたため、ゼロからコードを書いて理解を深めたり追求したりといったことにあまり時間を割けませんでした。今後は一つ一つの技術追求を深めていき、より実践的な実装に向けて学習していきたいと思います。</p>
+        <li>インフラ面の基礎理解(学習)</li>
+        <p>Youtubeなどで学習しましたが、わからないことが多かったです。コードを書くことだけでなく、土台となる全般的な知識をもっと学習し基礎固めをしていくことで、より質の高いアプリ開発ができるエンジニアを目指します。</p>
+        <li>フィードバックで頂いた機能の追加</li>
+        <p>職場の周りの人たちに開発したアプリを見せ、感想や改善点を出してもらいました。以下に、改善点の一部を抜粋します。</p>
+        <p>・色が見えづらいので修正すべき。</p>
+        <P>・電卓アプリ、メモアプリ等、オシャレな見た目のほうがいい。</P>
+        <p>・電卓アプリでは、平均値やMAX、MINなどもできるとおもしろい。</p>
+        <li>質問力</li>
+        <p>質問する力が大事、とよく言われますが、自分で調べて解決する力はついてきたと思いますが、エンジニアの方に質問し教えてもらって学んでいく力もとても大事だと思います。今後実務に入ったときに、適切なタイミング、質問方法に慣れていきながら学べるように意識していくことが課題です。</p>
+        <li>より難易度の高いプロジェクトへの挑戦</li>
+        <p>ネットワーク、セキュリティ、Web技術、テストコードなど、全般的な知識をもっと学習していき、優れたアプリの開発を目指していきたいと思います。</p>  
+    <h2>お世話になったり参考にさせていただいたサービス、記事など</h2>
+        <p>技術別に、メインで使用した学習教ぜ材やサイト、記事などを紹介させていただきます。</p>
+    <h3>■Python,HTML,CSS,Javascript,SQL,</h3>
+        <li>progate(Lv.217)</li>
+        <li>Python Vtuber サプー(Youtube)</li>
+        <li>よすけ＠Pythonのソバ</li>
+        <li>プログラミング学習 マナブ(youtube)</li>
+        <li>Python初心者入門</li>
+        <li>Alcia Solid Project(Youtube)</li>
+        <li>Vtuberサプーが教える!Python 初心者のコード/プロのコード</li>
+    <h3>■ポートフォリオ作成時に参考にさせていただいた記事やサイト</h3>
+        <li>【独学ポートフォリオ録】エンジニア転職までの半年間【Laravel・Docker・AWS】</li>
+        <li>【独学】完全未経験から独学でポートフォリオだてまきを開発しました【Laravel/Docker/AWS/CircleCI】</li>
+        <li>侍エンジニア HTMLでホームページを作成する</li>
+        <li>【Laravel/Vue/AWS/CircleCI】実務未経験がポートフォリオとして独学WEBアプリ開発</li>
+        <li>ポートフォリオとして、絵本読み聞かせ記録のWebアプリを作成しました。【Laravel/Docker/AWS/CircleCI】</li>
+    <h3>■その他</h3>
+        <li>リーダブルコードーより良いコードを書くためのシンプルで実践的なテクニック</li>
+        <li>初心者向けGitHub入門 Python Vtuber サプー</li>
+        <li>はじめてのGit Python Vtuber サプー</li>
+        <li>VSCode入門 Python Vtuber サプー</li>
+        <li>【入門】GitHubとは？基本的な知識やメリット、活用事例をわかりやすく解説 カゴヤのサーバー研究室</li>   
+    <h2>おわりに</h2>
+        <p>ここまでの勉強期間を振り返ってみて、辛いな、難しいなと思うような大きい壁にぶつかってきたなと思います。しかし、デザインとプログラミングのプロジェクト通じてそれを上回る楽しさやワクワク感を感じながら学習を続けることができました。自分でちょっとやってみよう、解決してみようと何でも積極的にトライしてきたからこそものづくりの楽しさを大きく感じることができたんじゃないかなと思います。なので、たとえこの道が遠回りになっていたとしても独学を選択してきて良かったなと思っています。これから転職活動していく予定ですがエンジニアとしてスタートした後も、学び続ける姿勢を忘れず、日々貪欲に学習していきます。そしてユーザーのニーズに適切に応えて、価値を提供できるエンジニアに必ずなってみせます。稚拙な文章にもかかわらず、この記事を読んで下さり、本当にありがとうございました。</p>            
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form id="contact-form">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name">
+        <label for="message">メッセージ:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 My Portfolio</p>
+    <p>A futuer society that technology will create</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

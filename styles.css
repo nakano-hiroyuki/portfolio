@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: url('header背景.jpg');
+  color: #fff;
+  padding: 10em 0;
+}
+header h1 {
+  text-align: center;
+  font-family: "Yu Mincho";
+  color: #fff(59, 5, 255);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1em;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  padding: 1em;
+}
+.image-container {
+  display: flex;
+  justify-content: space-between; /* 等間隔で配置 */ 
+  flex-wrap: nowrap; /* 強制的に横並び */
+  margin: 0;
+  padding: 0;
+  align-items: flex-start; /* 垂直方向で上寄せに変更 */
+}
+.image-container img {
+  height: auto; /* アスペクト比を保持 */
+  margin: 0;
+  padding: 0;
+}
+.project {
+    margin-bottom: 20px;
+}
+
+.project li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; /* 説明文と画像の間隔を調整 */
+}
+.project img {
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+  font-size: 60px;
+  font-family: "Yu Mincho";
+}
+section {
+  margin-bottom: 2em;
+}
+footer {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Yu Mincho";
+  background: url('footer1背景.jpg');
+  color: #fff;
+  padding: 5em 0;
+}
+  /* モーダルのスタイル */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.modal .close {
+  cursor: pointer;
+  color: red;
+  float: right;
+}
+body {
+  background-image: url('背景.jpg'); /* 画像のファイル名 */
+  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
+  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
+  background-position: center; /* 中央に配置 */
+  background-attachment: fixed;
+}
