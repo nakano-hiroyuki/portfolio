@@ -376,9 +376,7 @@
 /* --- 既存の .about-desc の上書き --- */
 /* 自己紹介文の余白・フォントサイズ・色（大きめ余白・小さめ文字） */
 /* 余白を小さく調整 */
-.about-desc {
-  /* 上記で新デザインに上書き */
-}
+
 @media (max-width: 1200px) {
   .about-desc {
     padding-left: 40px;
