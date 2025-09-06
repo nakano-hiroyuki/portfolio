@@ -16,9 +16,8 @@
   font-size: 23px;
   display: flex;
   justify-content: center; /* 水平方向に中央揃え */
-  align-items: center; /* 垂直方向に中央揃え */
   gap: 100px; /* テキストと画像の間隔 */
-  height: 100vh; /* 必要に応じて高さを設定 */
+  margin-bottom: 150px;  /* 下に空白 */
 }
 
 .number-game-desc {
@@ -244,6 +243,23 @@
   box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
   padding: 32px 24px 24px 24px;
 }
+
+@media (max-width: 768px) {
+  #contact-form {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 200px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
+  padding: 32px 24px 24px 24px;  
+  }
+}
+
 #contact-form label {
   align-self: flex-start;
   margin-bottom: 4px;
@@ -437,8 +453,6 @@
   overflow: hidden;
 }
 
-
-
 .carousel-image {
   display: none;
   position: absolute;
@@ -619,11 +633,14 @@ main {
 }
 
 /* Pythonアプリ紹介部分のカルーセルと動画だけ左寄せ */
-.python-apps .image-container {
-  justify-content: flex-start;
+.image-container {
   padding-left: 150px !important;
   margin-left: 0 !important;
   width: calc(100% - 150px);
+}
+
+.apps {
+  margin-bottom: 300px;
 }
 
 .project {
@@ -667,6 +684,31 @@ h2 {
   text-align: center;
   font-size: 60px;
   font-family: "Yu Mincho";
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+      font-size: 22px !important;
+      font-family: "Yu Mincho" !important;
+    }
+    h3 {
+      font-size: 18px !important;
+    }
+    h4 {
+      font-size: 14px !important;
+    }
+    p {
+      font-size: 8px !important;
+    }
+    li {
+      font-size: 8px !important;
+    }
+    label {
+      font-size: 8px !important;
+    }
+    button {
+      font-size: 8px !important;
+    }    
 }
 
 h3 {
@@ -760,3 +802,4 @@ body {
   margin: 20px auto 0 auto;
   vertical-align: middle;
 }
+
