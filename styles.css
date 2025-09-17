@@ -16,8 +16,43 @@
   font-size: 23px;
   display: flex;
   justify-content: center; /* 水平方向に中央揃え */
-  gap: 100px; /* テキストと画像の間隔 */
+  gap: 80px; /* テキストと画像の間隔 */
   margin-bottom: 150px;  /* 下に空白 */
+  width: 100%;
+  height: auto;
+  white-space: nowrap; /* 改行を防ぐ */
+  padding: 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    font-size: 15px;
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    gap: 20px; /* テキストと画像の間隔 */
+    margin-bottom: 20px;  /* 下に空白 */
+    white-space: nowrap; /* 改行を防ぐ */
+    padding: 0px !important;
+
+  }
+
+  .content-wrapper img {
+    width: 80%;
+    height: auto;
+    padding: 0px !important;  
+  }
+
+  .content-wrapper li {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0px !important;
+  }
+
+  .content-wrapper p {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0px !important;  
+  }
 }
 
 .number-game-desc {
@@ -801,5 +836,36 @@ body {
   display: block;
   margin: 20px auto 0 auto;
   vertical-align: middle;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; /* 縦並びにする */
+  align-items: flex-start; /* 左寄せにする（必要なら） */
+  gap: 6px; /* pタグとulの間隔を調整 */
+}
+
+@media screen and (max-width: 768px) {
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-content p {
+    writing-mode: horizontal-tb !important; /* 念のため横書きに強制 */
+    margin-left: 8px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-content {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
