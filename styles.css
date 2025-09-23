@@ -638,7 +638,7 @@ body {
 
 header {
   color: #fff;
-  padding: 300px;
+  padding: 280px;
   background-size: cover;
   position: relative; /* ヘッダー内の要素をスライドショーの上に配置 */
   z-index: 1; /* スライドショーの上に表示する */
