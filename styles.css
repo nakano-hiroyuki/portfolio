@@ -1,3 +1,23 @@
+#projects {
+  padding-bottom: 5px; /* projectsセクション内の下に余白 */
+  width: 100%;
+  margin: 0;
+}
+
+.bg-img {
+  background-image: url('PC5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  width: 100vw; /* ← 横幅を画面いっぱいに */
+  margin: 0;     /* ← 余白をなくす */
+  padding-bottom: 250px;
+  padding-top: 120px;
+  min-height: 100vh;
+}
 
 /* ToDoリストアプリ「基本機能」説明文カード用スタイル */
 .card-section {
@@ -17,7 +37,6 @@
   display: flex;
   justify-content: center; /* 水平方向に中央揃え */
   gap: 80px; /* テキストと画像の間隔 */
-  margin-bottom: 150px;  /* 下に空白 */
   width: 100%;
   height: auto;
   white-space: nowrap; /* 改行を防ぐ */
@@ -26,10 +45,10 @@
 
 @media screen and (max-width: 768px) {
   .content-wrapper {
-    font-size: 15px;
+    font-size: 15px !important;
     display: flex;
-    justify-content: center; /* 水平方向に中央揃え */
-    gap: 20px; /* テキストと画像の間隔 */
+    flex-wrap: wrap;
+    justify-content: center !important; /* 水平方向に中央揃え */
     margin-bottom: 20px;  /* 下に空白 */
     white-space: nowrap; /* 改行を防ぐ */
     padding: 0px !important;
@@ -39,7 +58,8 @@
   .content-wrapper img {
     width: 80%;
     height: auto;
-    padding: 0px !important;  
+    padding: 0px !important;
+    justify-content: center !important; /* 横方向の中央揃え */  
   }
 
   .content-wrapper li {
@@ -176,6 +196,7 @@
   justify-content: center;
   min-height: 60vh;
   background: none;
+  padding-bottom: 80px;
 }
 #contact h2 {
   font-size: 2.2em;
@@ -327,13 +348,14 @@
 #contact-form button:hover {
   background: #222f3e;
 }
+
 /* --- 自己紹介カードデザイン --- */
 .about-title {
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 16px;
+  font-size: 4em;
   letter-spacing: 0.08em;
-  color: #2d4059;
+  padding-top: 20px;
+  color: #444343;
 }
 
 .about-card {
@@ -616,7 +638,7 @@ body {
 
 header {
   color: #fff;
-  padding: 20em 0;
+  padding: 300px;
   background-size: cover;
   position: relative; /* ヘッダー内の要素をスライドショーの上に配置 */
   z-index: 1; /* スライドショーの上に表示する */
@@ -648,11 +670,6 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
 }
-
-main {
-  padding: 1em;
-}
-
 
 .image-container {
   display: flex;
@@ -697,10 +714,6 @@ main {
 img, video {
     max-width: 100%;
     height: auto;
-}
-
-.project {
-    margin-bottom: 20px;
 }
 
 .project li {
@@ -820,7 +833,11 @@ body {
   background-attachment: fixed;
   background-color:rgba(255,255,255,0.2);
   background-blend-mode:lighten;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -841,7 +858,6 @@ body {
 .text-content {
   display: flex;
   flex-direction: column; /* 縦並びにする */
-  align-items: flex-start; /* 左寄せにする（必要なら） */
   gap: 6px; /* pタグとulの間隔を調整 */
 }
 
@@ -849,9 +865,7 @@ body {
   .text-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding-left: 24px;
+    gap: 4px;
   }
 }
 
@@ -866,6 +880,7 @@ body {
   .image-content {
     padding: 0px;
     margin: 0px;
+    justify-content: center !important; /* 水平方向に中央揃え */
   }
 }
 
