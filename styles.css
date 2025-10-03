@@ -112,6 +112,7 @@
   align-items: center;
   gap: 8px;
   animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 100px;
 }
 
 .ending-icon-wrapper {
@@ -692,7 +693,7 @@ nav ul li a {
 }
 
 .apps {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 .project {
@@ -883,4 +884,3 @@ body {
     justify-content: center !important; /* 水平方向に中央揃え */
   }
 }
-
