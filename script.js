@@ -79,8 +79,8 @@ function fadeToNextImage() {
 // 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
 setTimeout(() => {
   fadeToNextImage();
-  setInterval(fadeToNextImage, 6000);
-}, 6000);
+  setInterval(fadeToNextImage, 4000);
+}, 4000);
 
 function openModal(imageSrc) {
     const modal = document.getElementById('modal');
