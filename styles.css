@@ -639,7 +639,11 @@ body {
 
 header {
   color: #fff;
-  padding: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 高さ方向の中央揃え */
+  align-items: center;     /* 横方向の中央揃え */
+  height: 100vh; 
   background-size: cover;
   position: relative; /* ヘッダー内の要素をスライドショーの上に配置 */
   z-index: 1; /* スライドショーの上に表示する */
