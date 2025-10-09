@@ -12,7 +12,7 @@
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
-  width: 100vw; /* ← 横幅を画面いっぱいに */
+  width: 100%; /* ← 横幅を画面いっぱいに */
   margin: 0;     /* ← 余白をなくす */
   padding-bottom: 250px;
   padding-top: 120px;
@@ -35,49 +35,17 @@
 .content-wrapper {
   font-size: 23px;
   display: flex;
+  white-space: nowrap;
   justify-content: center; /* 水平方向に中央揃え */
   gap: 80px; /* テキストと画像の間隔 */
   width: 100%;
   height: auto;
-  white-space: nowrap; /* 改行を防ぐ */
   padding: 0px !important;
-}
-
-@media screen and (max-width: 768px) {
-  .content-wrapper {
-    font-size: 15px !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center !important; /* 水平方向に中央揃え */
-    margin-bottom: 20px;  /* 下に空白 */
-    white-space: nowrap; /* 改行を防ぐ */
-    padding: 0px !important;
-
-  }
-
-  .content-wrapper img {
-    width: 100%;
-    height: auto;
-    padding: 0px !important;
-    justify-content: center !important; /* 横方向の中央揃え */  
-  }
-
-  .content-wrapper li {
-    width: 100% !important;
-    height: auto !important;
-    padding: 0px !important;
-  }
-
-  .content-wrapper p {
-    width: 100% !important;
-    height: auto !important;
-    padding: 0px !important;  
-  }
 }
 
 .number-game-desc {
   margin: 0;
-  padding: 18px 0;
+  padding: 5%;
   width: 100%;
 }
 /* --- カード型リスト --- */
@@ -160,25 +128,8 @@
 .ending-br {
   display: none;
 }
-@media (max-width: 900px) {
-  .stylish-ending-card {
-    padding: 24px 8px;
-    max-width: 98vw;
-  }
-  .ending-message {
-    font-size: 0.98em;
-    padding: 10px 8px;
-  }
-}
-@media (max-width: 600px) {
-  .ending-title {
-    font-size: 1.3em;
-  }
-  .ending-message {
-    font-size: 0.92em;
-    padding: 8px 4px;
-  }
-}
+
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -273,19 +224,7 @@
   background: linear-gradient(90deg, #222f3e 60%, #30475e 100%);
   box-shadow: 0 4px 16px 0 rgba(60,60,80,0.13);
 }
-@media (max-width: 600px) {
-  #contact-form {
-    padding: 18px 4vw 14px 4vw;
-    max-width: 98vw;
-    border-radius: 14px;
-  }
-  #contact-form input,
-  #contact-form textarea,
-  #contact-form button {
-    max-width: 100%;
-    font-size: 1em;
-  }
-}
+
 /* お問い合わせフォーム中央寄せ */
 #contact-form {
   display: flex;
@@ -299,22 +238,6 @@
   border-radius: 16px;
   box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
   padding: 32px 24px 24px 24px;
-}
-
-@media (max-width: 768px) {
-  #contact-form {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin: 0 auto;
-  max-width: 200px;
-  background: rgba(255,255,255,0.92);
-  border-radius: 16px;
-  box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
-  padding: 32px 24px 24px 24px;  
-  }
 }
 
 #contact-form label {
@@ -424,7 +347,7 @@
   color: #444;
   line-height: 2.0;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 520px;
 }
 
@@ -443,26 +366,16 @@
     max-width: 100%;
   }
   .about-desc {
-    padding: 10px 8px;
     font-size: 0.95em;
-  }
-}
-/* --- 既存の .about-desc の上書き --- */
-/* 自己紹介文の余白・フォントサイズ・色（大きめ余白・小さめ文字） */
-/* 余白を小さく調整 */
-
-@media (max-width: 1200px) {
-  .about-desc {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (max-width: 900px) {
-  .about-desc {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .study-reason-block {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
+
 /* 独学理由冒頭文のフォントサイズ・色調整 */
 .study-reason-desc {
   font-size: 0.7em;
@@ -470,23 +383,17 @@
 }
 /* 独学理由ブロックの余白調整 */
 .study-reason-block {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 5%;
+  padding-right: 5%;
   box-sizing: border-box;
   width: 100%;
 }
-@media (max-width: 900px) {
-  .study-reason-block {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
+
 /* 数当てゲーム紹介文のスタイル */
 .number-game-desc {
   font-size: 0.7em;
-  padding-left: 160px;
-  padding-right: 160px;
-  margin: 0 0 100px 0;
+  padding-left: 5%;
+  padding-right: 5%;
   line-height: 1.7;
   color: #444;
   letter-spacing: 0.01em;
@@ -707,8 +614,8 @@ nav ul li a {
 .image-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between; /* 均等に配置 */
   align-items: flex-start;
-  justify-content: flex-start; /* 中央寄せ解除 */
   gap: 40px;
   margin-bottom: 30px;
   width: 100%;
@@ -719,11 +626,11 @@ nav ul li a {
 
 /* Pythonアプリ紹介部分のカルーセルと動画だけ左寄せ */
 .image-container {
-  padding-left: 150px !important;
+  padding-left: 5%;
   margin-left: 0 !important;
   width: calc(100% - 150px);
 }
-
+ 
 .apps {
   margin-bottom: 100px;
 }
@@ -765,31 +672,6 @@ h2 {
   text-align: center;
   font-size: 60px;
   font-family: "Yu Mincho";
-}
-
-@media screen and (max-width: 767px) {
-    h2 {
-      font-size: 22px !important;
-      font-family: "Yu Mincho" !important;
-    }
-    h3 {
-      font-size: 18px !important;
-    }
-    h4 {
-      font-size: 14px !important;
-    }
-    p {
-      font-size: 8px !important;
-    }
-    li {
-      font-size: 8px !important;
-    }
-    label {
-      font-size: 8px !important;
-    }
-    button {
-      font-size: 8px !important;
-    }    
 }
 
 h3 {
@@ -871,15 +753,6 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    .container {
-        flex-direction: column;
-    }
-}
-
 .carousel-video {
   width: 500px !important;
   height: 350px !important;
@@ -894,25 +767,149 @@ body {
   gap: 6px; /* pタグとulの間隔を調整 */
 }
 
+@media (max-width: 1200px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center; /* 中央揃えにすると見栄えが良くなる */
+  }
+}
+
+@media (max-width: 900px) {
+  .stylish-ending-card {
+    padding: 24px 8px;
+    max-width: 98vw;
+  }
+  .ending-message {
+    font-size: 0.98em;
+    padding: 10px 8px;
+  }
+  .image-container {
+    flex-direction: column;
+    align-items: center; /* 中央揃えにすると見栄えが良くなる */
+  }
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center; /* 中央揃えにすると見栄えが良くなる */
+    font-size: 30px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important; /* 水平方向に中央揃え */
+    margin-bottom: 20px;  /* 下に空白 */
+    white-space: nowrap; /* 改行を防ぐ */
+    padding: 0px !important;
+
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center; /* 中央揃えにすると見栄えが良くなる */
+    font-size: 23px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important; /* 水平方向に中央揃え */
+    margin-bottom: 20px;  /* 下に空白 */
+    white-space: nowrap; /* 改行を防ぐ */
+    padding: 0px !important;
+  }
+
+  .content-wrapper img {
+    width: 100%;
+    height: auto;
+    padding: 0px !important;
+    justify-content: center !important; /* 横方向の中央揃え */  
+  }
+
+  .content-wrapper li {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0px !important;
+  }
+
+  .content-wrapper p {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0px !important;  
+  }
+  .container {
+    flex-direction: column;
+  }
   .text-content {
     display: flex;
     flex-direction: column;
     gap: 4px;
   }
-}
-
-@media screen and (max-width: 768px) {
   .text-content p {
     writing-mode: horizontal-tb !important; /* 念のため横書きに強制 */
     margin-left: 8px !important;
   }
-}
-
-@media screen and (max-width: 768px) {
   .image-content {
     padding: 0px;
     margin: 0px;
     justify-content: center !important; /* 水平方向に中央揃え */
+  }
+  .image-container {
+    flex-direction: column;
+    align-items: center; /* 中央揃えにすると見栄えが良くなる */
+  }
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 22px !important;
+    font-family: "Yu Mincho" !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  h4 {
+    font-size: 14px !important;
+  }
+  p {
+    font-size: 8px ;
+  }
+  li {
+    font-size: 8px !important;
+  }
+  label {
+    font-size: 8px !important;
+  }
+  button {
+    font-size: 8px !important;
+  } 
+  #contact-form {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 200px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
+  padding: 32px 24px 24px 24px;  
+  }   
+}
+
+@media (max-width: 600px) {
+  #contact-form {
+    padding: 18px 4vw 14px 4vw;
+    max-width: 98vw;
+    border-radius: 14px;
+  }
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form button {
+    max-width: 100%;
+    font-size: 1em;
+  }
+  .ending-title {
+    font-size: 1.3em;
+  }
+  .ending-message {
+    font-size: 0.92em;
+    padding: 8px 4px;
   }
 }
