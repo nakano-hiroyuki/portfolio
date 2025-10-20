@@ -551,6 +551,8 @@ body {
 header {
   color: #fff;
   display: flex;
+  font-family: "Yu Mincho";
+  font-weight: bold;
   flex-direction: column;
   justify-content: center; /* 高さ方向の中央揃え */
   align-items: center;     /* 横方向の中央揃え */
@@ -560,7 +562,7 @@ header {
   z-index: 1; /* スライドショーの上に表示する */
 }
 
-h1, nav {
+h1, nav, a {
   position: relative; /* 必要に応じて適用 */
   color: #fff; /* スライドショー背景での視認性向上 */
 }
@@ -613,6 +615,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-family: "Yu Mincho";
 }
 
 .image-container {
