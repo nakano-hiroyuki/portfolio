@@ -291,10 +291,11 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background: #fff;
+  background-image: url('夜空.jpg');
+  background-size: cover;
   border-radius: 24px;
   box-shadow: 0 6px 32px 0 rgba(60,60,80,0.13), 0 1.5px 6px 0 rgba(60,60,80,0.10);
-  padding: 40px 48px;
+  padding: 40px 40px;
   margin: 0 auto 36px auto;
   max-width: 950px;
   min-width: 320px;
@@ -317,21 +318,21 @@
   border-radius: 50%;
   box-shadow: 0 4px 24px 0 rgba(60,60,80,0.18);
   border: 6px solid #f6f6f6;
-  background: #f6f6f6;
   transition: transform 0.3s;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .about-img:hover {
   transform: scale(1.04) rotate(-2deg);
 }
 
 .about-profile {
-  background: linear-gradient(120deg, #f6f6f6 80%, #e3e9f7 100%);
-  border-radius: 18px;
   box-shadow: 0 2px 12px 0 rgba(60,60,80,0.08);
-  padding: 32px 32px 24px 32px;
+  padding: 32px 32px 32px 32px;
   min-width: 0;
   max-width: 520px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
 .about-name {
   text-align: center;
   font-size: 1.3em;
@@ -339,20 +340,6 @@
   color: #30475e;
   margin-bottom: 18px;
   letter-spacing: 0.04em;
-}
-/* 自己紹介文のフォントサイズを0.7emに調整 */
-/* 自己紹介文の白い枠（.about-desc）を小さく */
-.about-desc {
-  background: rgba(255,255,255,0.85);
-  border-radius: 12px;
-  box-shadow: 0 1.5px 6px 0 rgba(60,60,80,0.07);
-  padding: 8px 12px;
-  font-size: 0.7em;
-  color: #444;
-  line-height: 2.0;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 520px;
 }
 
 @media (max-width: 900px) {
