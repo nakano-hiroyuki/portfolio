@@ -39,8 +39,6 @@
   justify-content: center; /* 水平方向に中央揃え */
   gap: 80px; /* テキストと画像の間隔 */
   width: 100%;
-  height: auto;
-  padding: 0px !important;
 }
 
 .number-game-desc {
@@ -80,7 +78,7 @@
   align-items: center;
   gap: 8px;
   animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .ending-icon-wrapper {
@@ -97,6 +95,7 @@
 .ending-content {
   width: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 .ending-title {
   font-size: 2em;
@@ -115,7 +114,7 @@
   background: rgba(255,255,255,0.85);
   border-radius: 12px;
   box-shadow: 0 1.5px 6px 0 rgba(60,60,80,0.07);
-  padding: 18px 18px 12px 18px;
+  padding: 18px 18px 18px 18px;
   text-align: left;
 }
 .ending-highlight {
@@ -153,24 +152,28 @@
 
 #contact h2 {
   font-size: 2.2em;
-  color: #30475e;
+  color: #052c54;
   margin-bottom: 18px;
   letter-spacing: 0.08em;
 }
 
 #contact-form {
-  background: linear-gradient(120deg, #f6f6f6 80%, #e3e9f7 100%);
-  border-radius: 24px;
-  box-shadow: 0 6px 32px 0 rgba(60,60,80,0.13), 0 1.5px 6px 0 rgba(60,60,80,0.10);
-  padding: 40px 36px 32px 36px;
+  background: rgba(255, 255, 255, 0.0001); /* 半透明 */
+  backdrop-filter: blur(12px); /* 背景ぼかし */
+  -webkit-backdrop-filter: blur(12px); /* Safari対応 */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* 輪郭を柔らかく */
+  box-shadow: 0 8px 32px rgba(60, 60, 80, 0.2);
+  padding: 32px 24px;
   max-width: 420px;
   width: 100%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+   flex-direction: column;
   align-items: center;
   gap: 18px;
-  margin: 0 auto;
   transition: box-shadow 0.3s;
+  z-index: 3;
 }
 
 #contact-form:hover {
@@ -181,7 +184,7 @@
   align-self: flex-start;
   margin-bottom: 2px;
   font-size: 1.08em;
-  color: #30475e;
+  color: #092f56;
   font-weight: bold;
   letter-spacing: 0.03em;
 }
@@ -199,16 +202,16 @@
   transition: border 0.2s, box-shadow 0.2s;
   font-family: inherit;
   outline: none;
-}
-#contact-form input:focus,
-#contact-form textarea:focus {
-  border: 1.5px solid #30475e;
-  box-shadow: 0 0 0 2px #e3e9f7;
-}
-#contact-form textarea {
   min-height: 90px;
   resize: vertical;
 }
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border: 1.5px solid #092949;
+  box-shadow: 0 0 0 2px #e3e9f7;
+}
+
 #contact-form button {
   width: 100%;
   max-width: 340px;
@@ -227,54 +230,6 @@
 #contact-form button:hover {
   background: linear-gradient(90deg, #222f3e 60%, #30475e 100%);
   box-shadow: 0 4px 16px 0 rgba(60,60,80,0.13);
-}
-
-/* お問い合わせフォーム中央寄せ */
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin: 0 auto;
-  max-width: 400px;
-  background: rgba(255,255,255,0.92);
-  border-radius: 16px;
-  box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
-  padding: 32px 24px 24px 24px;
-}
-
-#contact-form label {
-  align-self: flex-start;
-  margin-bottom: 4px;
-  font-size: 1em;
-  color: #30475e;
-}
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  max-width: 340px;
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1em;
-  box-sizing: border-box;
-  margin-bottom: 8px;
-}
-#contact-form button {
-  width: 100%;
-  max-width: 340px;
-  padding: 10px 0;
-  background: #30475e;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: 0.2s;
-}
-#contact-form button:hover {
-  background: #222f3e;
 }
 
 /* --- 自己紹介カードデザイン --- */
@@ -491,7 +446,7 @@
   background: rgba(0,0,0,0.8);
 }
 /* styles.css */
-body {
+html, body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -607,26 +562,14 @@ nav ul li a {
 
 .image-container {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  justify-content: space-between; /* 均等に配置 */
-  align-items: flex-start;
   gap: 40px;
   margin-bottom: 30px;
-  width: 100%;
+  width: 100%; /* ← ここを100%に戻す */
   box-sizing: border-box;
   padding-left: 0;
   font-family: "Yu Mincho";
-}
-
-/* Pythonアプリ紹介部分のカルーセルと動画だけ左寄せ */
-.image-container {
-  padding-left: 5%;
-  margin-left: 0 !important;
-  width: calc(100% - 150px);
-}
- 
-.apps {
-  margin-bottom: 100px;
 }
 
 .project {
@@ -734,7 +677,7 @@ footer {
   float: right;
 }
 
-body {
+.app-bg, .website-bg, .design-bg, .learning-bg {
   background-image: url('背景.jpg'); /* 画像のファイル名 */
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
@@ -745,13 +688,14 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .carousel-video {
   width: 500px !important;
   height: 350px !important;
   display: block;
-  margin: 20px auto 0 auto;
   vertical-align: middle;
 }
 
@@ -764,16 +708,15 @@ body {
 .video-bg {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: -1;
 }
 
 .video-bg video {
-  
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   z-index: 0;
 }
@@ -784,7 +727,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
   z-index: 1;
 }
@@ -907,16 +850,16 @@ body {
   } 
   #contact-form {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin: 0 auto;
-  max-width: 200px;
-  background: rgba(255,255,255,0.92);
-  border-radius: 16px;
-  box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
-  padding: 32px 24px 24px 24px;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 200px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px 0 rgba(60,60,80,0.10);
+    padding: 32px 24px 24px 24px;  
   }   
 }
 

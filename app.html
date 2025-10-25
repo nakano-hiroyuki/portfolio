@@ -1,8 +1,11 @@
 <head>
+  <!-- AOSのCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- その他のCSS -->
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<main class="main-header">
+<main class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <div class="about-img-wrapper">
     <img src="サッカーイラスト.jpg" alt="サッカーイラスト画像" class="header-logo">
   </div>
@@ -15,12 +18,13 @@
     <a href="contact.html">CONTACT</a>
   </nav>
 </main>
-<h2 style="color: gray; opacity: 0.8;">Application/Python</h2>
-      <div class="content-wrapper">
+<div class="app-bg">
+<h2 style="color: gray; opacity: 0.8;" data-aos="zoom-in" data-aos-duration="1000">Application/Python</h2>
+      <div class="content-wrapper" data-aos="fade-in">
         <div class="image-content">
           <img src="プログラミング2.jpg" alt="プログラミング画像" width="550" height="auto">
         </div>
-        <div class="text-content">
+        <div class="text-content" data-aos="fade-in">
           <ul>
             <p class="study-reason-desc" style="color:rgb(184, 123, 3);">プログラミングを勉強して初めて開発したアプリです。</p>
             <p class="study-reason-desc" style="color:rgb(184, 123, 3);">ネットにあるサンプルコードを写して、難易度の低いプ</p>
@@ -31,8 +35,7 @@
           </ul>
         </div>
       </div>
-      <div class="apps">
-        <div class="python-apps">
+        <div class="python-apps" data-aos="fade-up">
           <h4>メモアプリ(tkinter)</h4>
           <div class="image-container">
             <div class="carousel" id="memo-app-carousel">
@@ -50,14 +53,14 @@
               <source src="メモAPP.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-list" style="margin-bottom: 0;">
+          <div class="card-list" style="margin-bottom: 0;" data-aos="fade-up">
             <p class="number-game-desc"
               style="max-width: 1200px; margin: 0px auto; padding: 0px; box-sizing: border-box; color: gray;">
               ユーザーインターフェース（UI）:Tkinterライブラリを使用してUIを作成しています。このライブラリはシンプルで初心者に最適です。主な要素には、メモの表示領域、入力フィールド、ボタン（例えば保存、削除、編集など）が含まれます。メモの保存と管理:入力されたメモを保存する機能。データをファイルやデータベースに保存する設計が可能です。すでに存在するメモの編集や削除機能も含めることで、実用性を高めています。動的なイベント処理:bind()などを使用して、ボタンや入力フィールドがユーザーの操作に応じて正しく動作する仕組みを構築できます。
             </p>
           </div>
-          <h4>電卓アプリ(tkinter)</h4>
-          <div class="image-container">
+          <h4 data-aos="fade-up">電卓アプリ(tkinter)</h4>
+          <div class="image-container" data-aos="fade-up">
             <div class="carousel" id="calc-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('calc-app-carousel')">&#10094;</button>
               <div class="carousel-images">
@@ -73,7 +76,7 @@
               <source src="電卓APP.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-list" style="margin-bottom: 0;">
+          <div class="card-list" style="margin-bottom: 0;" data-aos="fade-up">
             <p class="number-game-desc"
               style="max-width: 1200px; margin: 0px auto; padding: 0px; box-sizing: border-box; color: gray;">
               入力機能：ユーザーは数字や演算子（例：+、-、×、÷）を入力できます。これは通常、数字ボタンや演算子ボタンのクリックで実現されます。入力されたデータは、計算処理のために保存されます。演算処理入力された数値と演算子に基づいて計算が実行されます。Pythonのeval関数を使用して計算を効率的に処理します。結果表示計算結果を画面上のラベルやテキストエリアに表示します。ユーザーが追加計算を行いたい場合、入力を続けられるようになっています。クリア機能入力されたデータをすべてリセットし、電卓を初期状態に戻します。GUIレイアウトTkinterライブラリを使用して、ボタン、入力フィールド、結果表示のレイアウトを作成します。コードの構成は、ライブラリのインポートTkinterをインポートして、ウィンドウやウィジェットを作成するための準備を行います。メインウィンドウの作成TkinterのTkクラスを使用して、電卓アプリのメインウィンドウを作成します。titleメソッドでウィンドウタイトルを設定。ウィジェットの作成は、入力フィールド:
@@ -81,8 +84,8 @@
               数字や演算子を入力するためのButtonウィジェットを作成します。各ボタンは適切なクリックイベント処理を持っています。イベント処理ユーザーがボタンをクリックしたときの動作を関数で定義します。例えば、数字ボタンを押すと、その数字が入力フィールドに追加されます。=ボタンを押すと演算処理が実行されます。ウィジェットの配置は、Tkinterのgridメソッドを使用して、ボタンや入力フィールドを適切な位置に配置します。
             </p>
           </div>
-          <h4>ストップウォッチアプリ(tkinter)</h4>
-          <div class="image-container">
+          <h4 data-aos="fade-up" >ストップウォッチアプリ(tkinter)</h4>
+          <div class="image-container" data-aos="fade-up">
             <div class="carousel" id="stopwatch-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('stopwatch-app-carousel')">&#10094;</button>
               <div class="carousel-images">
@@ -99,14 +102,14 @@
               <source src="ストップウォッチAPP.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-list" style="margin-bottom: 0;">
+          <div class="card-list" style="margin-bottom: 0;"data-aos="fade-up" >
             <p class="number-game-desc"
               style="max-width: 1200px; margin: 0px auto; padding: 0px; box-sizing: border-box; color: gray;">
               時間の計測開始：ユーザーがスタートボタンをクリックすると、現在時刻を基準として計測が開始されます。start()関数で計測スタートを制御し、計測時間を記録します。時間の表示：計測中の時間がラベルに定期的に更新されます。after()メソッドを使って、短い間隔で時間を更新し、リアルタイムに表示します。計測停止：ストップボタンが押されると、計測が終了し、時間表示の更新も停止します。stop()関数内でラベルの表示を固定します。計測のリセット：必要に応じて計測をリセットし、最初の状態に戻す機能が含まれています。コード構成は、ライブラリのインポート：Tkinterを使用してGUIを構築します。必要に応じてtimeモジュールをインポートします。メインウィンドウの作成：TkinterのTkクラスをインスタンス化して、メイン画面を作成します。アプリのタイトルやサイズもここで設定します。ラベルとボタンの作成：ラベルは時間を表示するためのGUI要素です。ボタンは計測の開始、停止、リセットなどの操作を受け取ります。計測の開始と停止：start()関数で現在時刻を取得し、計測を開始します。stop()関数で計測時間の更新を停止し、現在の時間を表示したままにします。時間の更新処理：after()メソッドを用いて、ラベルの時間を一定間隔で更新します。ストップウォッチのリアルタイム性を実現します。メインループの実行：Tkinterのメインループを開始して、アプリを稼働させます。
             </p>
           </div>
-          <h4>ToDoリストアプリ(tkinter)</h4>
-          <div class="image-container">
+          <h4 data-aos="fade-up">ToDoリストアプリ(tkinter)</h4>
+          <div class="image-container" data-aos="fade-up">
             <div class="carousel" id="todo-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('todo-app-carousel')">&#10094;</button>
               <div class="carousel-images">
@@ -124,15 +127,20 @@
               <source src="ToDoリストAPP.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-list" style="margin-bottom: 0;">
+          <div class="card-list" style="margin-bottom: 0;" data-aos="fade-up">
             <p class="number-game-desc"
               style="max-width: 1200px; margin: 0px auto; padding: 0px; box-sizing: border-box; color: gray;">
               基本機能は、タスクの追加：入力欄（Entryウィジェット）を使用して、新しいタスクを入力します。ボタンをクリックするとタスクがリストに追加されます。タスクの削除：リスト内の選択したタスクを削除できます。ユーザーはリストボックスで削除対象のタスクを選び、ボタンを押すことで実行します。タスクの一覧表示：リストボックスに現在のタスクリストを表示します。新しいタスクが追加されたり削除された場合、リストボックスを更新して表示します。データの保存と読み込み：JSON形式でタスクのデータを保存し、アプリを閉じた後も情報を保持できます。起動時に保存されたデータを読み込む機能があります。ユーザーインターフェース（UI）：Tkinterを使用して、直感的で使いやすいGUIを提供します。リスト表示、ボタン操作、入力欄の配置が特徴です。コード構成は、ライブラリのインポート：Tkinterを使用してGUIを作成します。JSONのデータ操作に必要なjsonモジュールもインポートします。メインウィンドウの作成：TkinterのTkクラスを使用して、ウィンドウを作成します。タイトルやサイズを設定してアプリの外観を整えます。入力欄とボタンの作成：入力欄（Entry）は新しいタスクを受け付けます。追加、削除ボタンはユーザーがタスクを操作するためのものです。リストボックスの作成：現在のタスクリストを表示する領域を作成します。タスク管理ロジック：add_task関数で新しいタスクを追加し、delete_task関数で選択したタスクを削除します。データ操作を効率的に行うため、JSONを活用してタスクリストを保存します。データの保存と読み込み：アプリケーション終了時にタスクをJSONファイルに保存し、次回起動時に読み込む機能を追加します。アプリケーションの起動：メインループを開始して、GUIを表示します。
             </p>
           </div>
-        </div>
       </div>
-      <footer>
-        <p>© 2025 Portfolio</p>
-        <p>A futuer society that technology will create</p>
-      </footer>
+  </div>    
+  <footer data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+    <p>© 2025 Portfolio</p>
+    <p>A futuer society that technology will create</p>
+  </footer>    
+  <!-- AOSのJSと初期化 -->    
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>

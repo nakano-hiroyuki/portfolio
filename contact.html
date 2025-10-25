@@ -1,8 +1,10 @@
 <head>
+  <!-- AOSのCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<main class="main-header">
+<main class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <div class="about-img-wrapper">
     <img src="サッカーイラスト.jpg" alt="サッカーイラスト画像" class="header-logo">
   </div>
@@ -21,10 +23,10 @@
   </video>
   <div class="overlay">
   <div class="contact-content">
-  <h2>Contact</h2>
+  <h2 data-aos="zoom-in" data-aos-duration="1000">Contact</h2>
     <section id="contact">
-      <h3>お問い合わせ</h3>
-      <form id="contact-form">
+      <h3 data-aos="zoom-in">お問い合わせ</h3>
+      <form id="contact-form" data-aos="fade-up">
         <label for="name">名前:</label>
         <input type="text" id="name" name="name">
         <label for="message">メッセージ:</label>
@@ -32,11 +34,16 @@
         <button type="submit">送信</button>
       </form>
     </section>
- </div>
- </div>
+  </div>
+  </div>
 </div>
-<footer>
+<footer data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <p>© 2025 Portfolio</p>
   <p>A futuer society that technology will create</p>
 </footer>
+<!-- AOSのJSと初期化 -->    
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
