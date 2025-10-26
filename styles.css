@@ -148,6 +148,7 @@
   min-height: 60vh;
   background: none;
   padding-bottom: 80px;
+  z-index: 1;
 }
 
 #contact h2 {
@@ -158,7 +159,7 @@
 }
 
 #contact-form {
-  background: rgba(255, 255, 255, 0.0001); /* 半透明 */
+  background: rgba(255, 255, 255, 0.9); /* 半透明 */
   backdrop-filter: blur(12px); /* 背景ぼかし */
   -webkit-backdrop-filter: blur(12px); /* Safari対応 */
   border-radius: 16px;
@@ -173,7 +174,7 @@
   align-items: center;
   gap: 18px;
   transition: box-shadow 0.3s;
-  z-index: 3;
+  z-index: 1;
 }
 
 #contact-form:hover {
@@ -677,7 +678,7 @@ footer {
   float: right;
 }
 
-.app-bg, .website-bg, .design-bg, .learning-bg {
+.app-bg, .website-bg, .design-bg, .learning-bg, .contact-bg {
   background-image: url('背景.jpg'); /* 画像のファイル名 */
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
@@ -705,36 +706,9 @@ footer {
   gap: 6px; /* pタグとulの間隔を調整 */
 }
 
-.video-bg {
-  position: relative;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-}
-
-.video-bg video {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
-  z-index: 1;
-}
-
 .contact-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 1200px) {

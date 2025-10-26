@@ -17,16 +17,12 @@
     <a href="learning.html">LEARNING</a>
   </nav>
 </main>
-<div class="video-bg">
-  <video autoplay muted loop playsinline>
-    <source src="PC画面ビデオ.mp4" type="video/mp4">
-  </video>
-  <div class="overlay">
+  <div class="contact-bg">
   <div class="contact-content">
   <h2 data-aos="zoom-in" data-aos-duration="1000">Contact</h2>
     <section id="contact">
       <h3 data-aos="zoom-in">お問い合わせ</h3>
-      <form id="contact-form" data-aos="fade-up">
+      <form id="contact-form" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="400">
         <label for="name">名前:</label>
         <input type="text" id="name" name="name">
         <label for="message">メッセージ:</label>
@@ -36,8 +32,7 @@
     </section>
   </div>
   </div>
-</div>
-<footer data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+<footer data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
   <p>© 2025 Portfolio</p>
   <p>A futuer society that technology will create</p>
 </footer>
@@ -45,5 +40,6 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+    AOS.refresh(); // ← これで再計算されて、フェードイン表示されることがあるよ
   </script>
 </html>
