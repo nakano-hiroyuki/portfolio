@@ -122,7 +122,7 @@ barba.hooks.afterEnter(({ next }) => {
   // AOSの再初期化（index以外）
   if (namespace !== 'index') {
     AOS.init({
-      once: true,
+      once: false,
       duration: 800,
       easing: 'ease-in-out'
     });

@@ -530,7 +530,7 @@ header h1 {
   align-items: center;
   color: #fff;
   padding: 5px;
-  background-color: rgb(80, 40, 0);
+  background-color: rgb(75, 38, 0);
 }
 
 .header-logo {
@@ -706,6 +706,69 @@ footer {
 .contact-content {
   position: relative;
   z-index: 1;
+}
+
+.footer05 {
+ color: #808080;
+ background: #ffffff;
+ padding: 30px;
+}
+.footer05 a {
+ color: #808080;
+ text-decoration: none;
+}
+.footer05 li a:hover {
+ text-decoration: underline;
+}
+.footer05 .wrap {
+ width: 900px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.footer05 .wrap h3 {
+ margin: 0 0 10px 0;
+ padding: 0;
+ border-bottom: 1px #c4c4c4 solid;
+}
+.footer05 .wrap p {
+ margin: 0;
+ padding: 0 0 20px 0;
+}
+.footer05 .wrap .box {
+ width: 22%;
+}
+.footer05 .wrap .box ul {
+ margin: 0;
+ padding: 0 0 20px 0;
+ list-style: none;
+}
+.footer05 .wrap {
+ width: 100%;
+ padding: 20px 0 0 0;
+}
+
+@media only screen and (max-width: 599px) {
+.footer05 .wrap {
+ width: 100%;
+ padding: 0 20px;
+ box-sizing: border-box;
+}
+.footer05 .wrap h3 {
+ border: none;
+}
+.footer05 .wrap .box {
+ width: 100%;
+}
+.footer05 .wrap .box ul {
+ border-top: 1px #c4c4c4 solid;
+}
+.footer05 .wrap .box ul li a {
+ display: block;
+ padding: 5px 15px;
+ border-bottom: 1px #c4c4c4 solid;
+}
 }
 
 @media (max-width: 1200px) {
