@@ -29,7 +29,7 @@ function prevSlide(carouselId) {
 function nextSlide(carouselId) {
   showSlide(carouselId, 1);
 }
-// script.js
+// お問合せ
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', function(event) {
