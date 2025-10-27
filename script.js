@@ -107,6 +107,7 @@ barba.init({
       });
     },
     enter({ next }) {
+      window.scrollTo(0, 0); 
       return gsap.fromTo(next.container,
         { opacity: 0 },
         { opacity: 1, duration: 1.2, ease: 'power2.out' }

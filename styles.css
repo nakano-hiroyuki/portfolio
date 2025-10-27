@@ -530,7 +530,7 @@ header h1 {
   align-items: center;
   color: #fff;
   padding: 5px;
-  background-color: rgb(75, 38, 0);
+  background-color: rgb(56, 31, 3);
 }
 
 .header-logo {
@@ -710,7 +710,7 @@ footer {
 
 .footer05 {
  color: #808080;
- background: #ffffff;
+ background: #f9f9f9;
  padding: 30px;
 }
 .footer05 a {
