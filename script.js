@@ -94,4 +94,70 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
+// barbaでのページページ遷移
+barba.init({
+  prevent: () => false,
+  transitions: [{
+    name: 'fade',
+    leave({ current }) {
+      return gsap.to(current.container, {
+        opacity: 0,
+        duration: 1.2,
+        ease: 'power2.out'
+      });
+    },
+    enter({ next }) {
+      return gsap.fromTo(next.container,
+        { opacity: 0 },
+        { opacity: 1, duration: 1.2, ease: 'power2.out' }
+      );
+    }
+  }]
+});
+
+// ページ遷移後の初期化処理
+barba.hooks.afterEnter(({ next }) => {
+  const namespace = next.namespace;
+
+  // AOSの再初期化（index以外）
+  if (namespace !== 'index') {
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-in-out'
+    });
+  }
+
+// ホームページ用の処理（#time や #slideshow の初期化）
+  if (namespace === 'index') {
+    const timeElement = document.getElementById("time");
+    if (timeElement) {
+      setInterval(() => {
+        const now = new Date();
+        timeElement.textContent = now.toLocaleTimeString();
+      }, 1000);
+    }
+
+    const images = document.querySelectorAll('#slideshow img');
+    let currentIndex = 0;
+
+    images.forEach((img, i) => {
+      img.style.opacity = (i === 0) ? '1' : '0';
+      img.classList.toggle('active', i === 0);
+    });
+
+    function fadeToNextImage() {
+      images[currentIndex].classList.remove('active');
+      images[currentIndex].style.opacity = '0';
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+      images[currentIndex].style.opacity = '1';
+    }
+
+    setTimeout(() => {
+      fadeToNextImage();
+      setInterval(fadeToNextImage, 4000);
+    }, 4000);
+  }
+});
 
