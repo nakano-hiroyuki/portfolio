@@ -272,7 +272,6 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 24px 0 rgba(60,60,80,0.18);
-  border: 6px solid #f6f6f6;
   transition: transform 0.3s;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -542,7 +541,6 @@ header h1 {
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 24px 0 rgba(60,60,80,0.18);
-  border: 6px solid #f6f6f6;
   background: #f6f6f6;
   transition: transform 0.3s;
 }
