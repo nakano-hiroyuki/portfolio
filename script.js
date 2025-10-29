@@ -94,7 +94,7 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-// barbaでのページページ遷移
+// barbaでのページ遷移
 barba.init({
   prevent: () => false,
   transitions: [{
