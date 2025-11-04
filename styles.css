@@ -5,7 +5,7 @@
 }
 
 .bg-img {
-  background-image: url('PC8.jpg');
+  background-image: url('PC画像7.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -35,9 +35,9 @@
 .content-wrapper {
   font-size: 23px;
   display: flex;
+  justify-content: center; /* 縦方向の中央揃え */
   white-space: nowrap;
-  justify-content: center; /* 水平方向に中央揃え */
-  gap: 80px; /* テキストと画像の間隔 */
+  gap: 100px; /* テキストと画像の間隔 */
   width: 100%;
 }
 
@@ -103,7 +103,7 @@
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 0.08em;
-  font-family: 'Yu Mincho', serif;
+  font-family: 'Yu Mincho', "Hiragino Mincho ProN", serif;
 }
 .ending-message {
   font-size: 0.7em;
@@ -321,6 +321,15 @@
   }
 }
 
+.skill-content {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: bold;
+  flex-direction: column;
+  min-width: 0;
+  white-space: nowrap; /* 改行を防ぐ */
+  color: #565454;
+}
+
 /* 独学理由冒頭文のフォントサイズ・色調整 */
 .study-reason-desc {
   font-size: 0.7em;
@@ -472,7 +481,7 @@ html, body {
   font-size: 20px;  /* フォントサイズ調整 */
   color: #fff;
   z-index: 999;
-  font-family: "Yu Mincho";     /* 最前面に配置 */
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;     /* 最前面に配置 */
 }
 
 #slideshow img {
@@ -492,7 +501,7 @@ html, body {
 header {
   color: #fff;
   display: flex;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: bold;
   flex-direction: column;
   justify-content: center; /* 高さ方向の中央揃え */
@@ -510,7 +519,7 @@ h1, nav, a {
 
 header h1 {
   text-align: center;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   color: #fff(59, 5, 255);
 }
 
@@ -554,7 +563,7 @@ header h1 {
   margin-left: 30px;
   color: white;
   font-weight: bold;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 .image-container {
@@ -566,7 +575,7 @@ header h1 {
   width: 100%; /* ← ここを100%に戻す */
   box-sizing: border-box;
   padding-left: 0;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 .project {
@@ -605,32 +614,32 @@ img, video {
 h2 {
   text-align: center;
   font-size: 60px;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 h3 {
   text-align: center;
   font-size: 30px;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 h4 {
   text-align: center;
   font-size: 24px;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 section h2 {
   text-align: center;
   font-size: 60px;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 footer {
   text-align: center;
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   font-size: 20px;
-  font-family: "Yu Mincho";
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   background: url('footer3背景.jpg');
   color: #fff;
   padding: 5em 0;
@@ -801,7 +810,6 @@ footer {
     margin-bottom: 20px;  /* 下に空白 */
     white-space: nowrap; /* 改行を防ぐ */
     padding: 0px !important;
-
   }
 }
 
@@ -862,7 +870,7 @@ footer {
   }
   h2 {
     font-size: 22px !important;
-    font-family: "Yu Mincho" !important;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   }
   h3 {
     font-size: 18px !important;
