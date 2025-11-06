@@ -148,6 +148,7 @@
   background: none;
   padding-bottom: 80px;
   z-index: 1;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
 #contact h2 {
@@ -219,6 +220,7 @@
   background: linear-gradient(90deg, #30475e 60%, #222f3e 100%);
   color: #fff;
   border: none;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   border-radius: 10px;
   font-size: 1.15em;
   font-weight: bold;
@@ -235,7 +237,6 @@
 /* --- 自己紹介カードデザイン --- */
 .about-title {
   text-align: center;
-  font-size: 4em;
   letter-spacing: 0.08em;
   padding-top: 20px;
   color: #444343;
@@ -636,11 +637,13 @@ section h2 {
 }
 
 footer {
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   font-size: 20px;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  background: url('footer3背景.jpg');
+  background-image: url('footer3背景.jpg');
   color: #fff;
   padding: 5em 0;
 }
@@ -684,7 +687,7 @@ footer {
   float: right;
 }
 
-.app-bg, .website-bg, .design-bg, .learning-bg, .contact-bg {
+.app-bg, .website-bg, .design-bg, .learning-bg {
   background-image: url('背景.jpg'); /* 画像のファイル名 */
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
@@ -697,6 +700,16 @@ footer {
   width: 100%;
   padding-bottom: 70px;
   padding-top: 40px;
+}
+
+.contact-bg {
+  background-image: url('contact背景.jpg');
+  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
+  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
+  background-position: center; /* 中央に配置 */
+  background-attachment: fixed;
+  padding-bottom: 400px;
+  padding-top: 350px;
 }
 
 .carousel-video {
@@ -715,6 +728,32 @@ footer {
 .contact-content {
   position: relative;
   z-index: 1;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fancy-button {
+  background: linear-gradient(135deg, #3d3d3db7 0%, #bfc0c0a9 100%);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  color: white;
+  text-decoration: none;
+  padding: 24px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 60%;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fancy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .footer05 {
