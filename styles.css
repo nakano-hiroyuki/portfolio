@@ -809,6 +809,30 @@ section h2 {
   min-width: 10px;   /* 最小幅 */
   max-width: 200px;  /* 最大幅 */
 }
+.explanation1 {
+  display: flex;
+  color: gray;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding-bottom: 80px;
+  gap: 50px;
+}
+.explanation2 {
+  display: flex;
+  color: gray;
+  justify-content: center;
+  padding-bottom: 80px;
+  gap: 50px;
+}
+.explanation-text {
+  font-family: 'Yu Mincho', "Hiragino Mincho ProN", serif;
+  display: flex;
+  flex-direction: column;
+}
+.app-name {
+  margin: 4px 0;
+  line-height: 1.1;
+}
 
 
 #website .title-bg {
