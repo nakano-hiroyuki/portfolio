@@ -809,6 +809,17 @@ section h2 {
   min-width: 10px;   /* 最小幅 */
   max-width: 200px;  /* 最大幅 */
 }
+.app-message {
+  color: rgba(168, 167, 167, 0.507);
+  writing-mode: vertical-rl; /* 縦書きにする */
+  text-align: left; /* 左寄せにする */
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 5rem;
+}
+
 
 #website .title-bg {
   background-image: url('website.jpg');
@@ -992,6 +1003,9 @@ Products2
   list-style: none;
   margin-bottom: 23px;
 }
+.URL {
+  color: gray;
+}
 
 .design-title-bg {
   width: 100%;
@@ -1109,7 +1123,7 @@ Products2
 
 
 .learning-bg {
-  background-color: rgb(255, 245, 219);
+  background-color: rgb(253, 247, 230);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -1134,8 +1148,12 @@ Products2
   padding-bottom: 20px;
   margin-bottom: 50px;
 }
-
-
+#learning-menu .border-list {
+  border: 1px solid  rgb(168, 142, 106);
+}
+#learning-menu .title {
+  color: rgb(163, 138, 103);
+}
 .learning-bg-title2 {
   border-bottom: 5px double rgb(251, 240, 211);
   width: 80%;
@@ -1156,7 +1174,7 @@ Products2
 }
 
 .learning-bg3 {
-  background-image: url("花.jpg");
+  background-image: url("本1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
