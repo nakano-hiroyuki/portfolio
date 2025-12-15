@@ -2,11 +2,12 @@
 <html lang="ja">
 
 <head>
-  <!-- AOSのCSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオサイト</title>
+  <title>ポートフォリオサイト ホーム</title>
+  <meta name="description" content="デザインとプログラミングを掛け合わせたクリエイティブなポートフォリオサイトです！">
+  <!-- AOSのCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
@@ -17,7 +18,6 @@
 <!-- barbaのJS -->
 <body data-barba="wrapper">
 <main data-barba="container" data-barba-namespace="index">
-
   <header>
     <p id="time">現在の時刻が表示されます。</p>
     <div id="slideshow">
@@ -30,10 +30,9 @@
       <img src="デザインブーケ.jpg" alt="デザインブーケ画像">
       <img src="テクノロジー.jpg" alt="テクノロジー画像">
       <img src="ドライフラワー1.jpg" alt="ドライフラワー画像">
-      <img src="夜景.jpg" alt="夜景画像">
       <img src="愛のイメージ.jpg" alt="愛のイメージ画像">
       <img src="コーディング.jpg" alt="コーディング画像">
-      <img src="PC.jpg" alt="PC画像">
+      <img src="夜景.jpg" alt="夜景画像">
       <img src="デザインカラフル.jpg" alt="デザインカラフル画像">
       <img src="アンドロイド.jpg" alt="アンドロイド画像">
       <img src="サグラダファミリア1.jpg" alt="サグラダファミリア画像">
@@ -48,8 +47,29 @@
       <img src="サイバー空間.jpg" alt="サイバー空間画像">
       <img src="オフィス6.jpg" alt="オフィス画像">
     </div>
+
     <a>OFFICIAL WEBSITE</a>
     <h1>HIROYUKI NAKANO</h1>
+
+    <!-- ハンバーガーボタン -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- オーバーレイナビ -->
+    <div class="overlay" id="overlay">
+      <nav class="overlay-nav">
+        <a href="profile.html">PROFILE</a>
+        <a href="app.html">APPLICATION</a>
+        <a href="website.html">WEBSITE</a>
+        <a href="design.html">GRAPHIC DESIGN</a>
+        <a href="learning.html">LEARNING</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </div>
+
     <nav class="header-nav" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
       <a href="profile.html">PROFILE</a>
       <a href="app.html">APPLICATION</a>

@@ -1,4 +1,8 @@
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問合せ</title>
+  <meta name="description" content="NAKANO HIROYUKIへの質問やメッセージはこちらからどうぞ！">
   <!-- AOSのCSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -10,10 +14,27 @@
 <!-- barbaのJS -->
 <body data-barba="wrapper">
 <main data-barba="container" data-barba-namespace="contact">
-<div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-  <div class="about-img-wrapper">
-    <img src="サッカーイラスト.jpg" alt="サッカーイラスト画像" class="header-logo">
+
+<!-- ハンバーガーボタン -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
+
+<!-- オーバーレイナビ -->
+  <div class="overlay" id="overlay">
+    <nav class="overlay-nav">
+      <a href="index.html">HOME</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="app.html">APPLICATION</a>
+      <a href="website.html">WEBSITE</a>
+      <a href="design.html">GRAPHIC DESIGN</a>
+      <a href="learning.html">LEARNING</a>
+    </nav>
+  </div>
+
+<div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <nav class="header-nav">
     <a href="index.html">HOME</a>
     <a href="profile.html">PROFILE</a>
@@ -24,12 +45,12 @@
   </nav>
 </div>
   <div class="contact-bg" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
-  <h2 data-aos="zoom-in" data-aos-duration="1000">CONTACT</h2>
-  <h4 data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">当サイトをご覧いただき誠にありがとうございました。</h4>
-  <h4 data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">いただいた情報はお問い合わせ対応以外には使用致しません。</h4>
-  <h4 data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">ご意見、ご相談等ございましたらお気軽にお問合せください。</h4>
-  <h4 data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">あなたのひとことが、次の作品へのきっかけになるかもしれません。</h4>
-  <h4 data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">ささやかなご縁が、心に残る波紋となりますように。</h4>
+    <h2 data-aos="zoom-in" data-aos-duration="1000">CONTACT</h2>
+    <h4 data-aos="fade-in" data-aos-duration="2500" data-aos-delay="500">当サイトをご覧いただき誠にありがとうございました。</h4>
+    <h4 data-aos="fade-in" data-aos-duration="2500" data-aos-delay="550">いただいた情報はお問い合わせ対応以外には使用致しません。</h4>
+    <h4 data-aos="fade-in" data-aos-duration="2500" data-aos-delay="600">ご意見、ご相談等ございましたらお気軽にお問合せください。</h4>
+    <h4 data-aos="fade-in" data-aos-duration="2500" data-aos-delay="650">あなたのひとことが、次の作品へのきっかけになるかもしれません。</h4>
+    <h4 data-aos="fade-in" data-aos-duration="2500" data-aos-delay="700">ささやかなご縁が、心に残る波紋となりますように。</h4>
   </div>
   <div class="contact-content">
     <section id="contact" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
@@ -46,9 +67,8 @@
   <div class="footer05" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <div class="wrap">
   <div class="box">
-    <h3>HIROYUKI NAKANO</h3>
+    <h3>SNS</h3>
     <ul>
-    <a style="color: rgb(246, 20, 50);  font-family: Yu Mincho, Hiragino Mincho ProN, serif; font-weight: bold;">テクノロジーと拓く未来へ。<br></a>
     <li><a href="#">Instagram</a></li>
     <li><a href="#">X(Twitter)</a></li>
     <li><a href="#">Youtube</a></li>
@@ -87,7 +107,7 @@
 </div>
 </div>
 <footer data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
-  <p>© 2025 Hiroyuki Nakano. All rights reserved.</p>
+  <p>© 2025 Hiroyuki Nakano.<br> All rights reserved.</p>
   <p>A futuer society that technology will create</p>
 </footer>
 </main>

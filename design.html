@@ -1,4 +1,8 @@
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デザイン</title>
+  <meta name="description" content="これまでに制作したデザインの紹介をしています！">
   <!-- AOSのCSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -11,10 +15,26 @@
 <body data-barba="wrapper">
 <main data-barba="container" data-barba-namespace="design">
 
+<!-- ハンバーガーボタン -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+<!-- オーバーレイナビ -->
+    <div class="overlay" id="overlay">
+      <nav class="overlay-nav">
+        <a href="index.html">HOME</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="app.html">APPLICATION</a>
+        <a href="website.html">WEBSITE</a>
+        <a href="learning.html">LEARNING</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </div>
+
 <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-  <div class="about-img-wrapper">
-    <img src="サッカーイラスト.jpg" alt="サッカーイラスト画像" class="header-logo">
-  </div>
   <nav class="header-nav">
     <a href="index.html">HOME</a>
     <a href="profile.html">PROFILE</a>
@@ -24,24 +44,19 @@
     <a href="contact.html">CONTACT</a>
   </nav>
 </div>
-<div class="design-bg" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
-<h2 style="color: gray; opacity: 0.8;" data-aos="zoom-in" data-aos-duration="1000">GRAPHIC DESIGN</h2>
-<h3 style="color: gray; opacity: 0.8;" data-aos="zoom-in" data-aos-duration="1000">Illustrator/Photoshop/Inkscape</h3>
-      <div class="content-wrapper" >
-        <div class="image-content" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
-          <img src="デザインオフィス.jpg" alt="デザイン画像" width="600" height="auto">
-        </div>
-        <div class="text-content" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
+
+<section id="design">
+<div class="design-title-bg">
+  <h2 data-aos="zoom-in" data-aos-duration="1000">GRAPHIC DESIGN</h2>
+</div>
+<div class="design-bg" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0">
+        <div class="text-content" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">
           <ul>
-            <p class="study-reason-desc" style="color:rgb(184, 123, 3);">Inkscape、Illustrator、Photoshopを使用してデザイン作成し、</p>
-            <p class="study-reason-desc" style="color:rgb(184, 123, 3);">3年間ほど基礎を学びました。</p>
-            <p class="study-reason-desc" style="color:rgb(184, 123, 3);">視覚的に楽しく、読み手の目を引く設計です。</p>
-            <p class="study-reason-desc" style="color:rgb(184, 123, 3);">今後はIllustrator、Photoshopを中心に、WEBデザインに経験を最</p>
-            <p class="study-reason-desc" style="color:rgb(184, 123, 3);">大限に活かしていきたいと考えています。</p>
+            <h2>Inkscape/Illustrator/Photoshop</h2>
+            <p>自分のカラーとユーザー目線を大切にしています。<br>世界観や色を出しつつバランスをとることで<br>視覚的に楽しく、読み手の目を引く設計です。</p>
           </ul>
         </div>
-      </div>
-      <h4 data-aos="fade-up">Lineスタンプ</h4>
+      <h2 data-aos="fade-up">LINE stickers</h2>
       <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
         <div class="project" >
           <li >秋田柴犬雑種Lineスタンプ</li>
@@ -68,13 +83,8 @@
         <span class="close" onclick="closeModal()">×</span>
         <img id="modalImage" class="modal-content">
       </div>
-      <div class="card-list" style="margin-bottom: 0;" data-aos="fade-up">
-        <p class="number-game-desc"
-          style="max-width: 1200px; margin: 0px auto; padding: 0px; box-sizing: border-box; color: gray;">
-          インクスケープを活用して制作されたLINEスタンプは、独自の魅力が詰まったクリエイティブな作品です！例えば、秋田柴犬雑種やポメラニアンなど、犬種ごとの個性豊かなデザインがスタンプとしてラインアップされています。これらのスタンプは、日常会話をさらに楽しくするためのアイテムとして人気を集めています。スタンプの特徴としては、表情豊かなキャラクターと細部まで丁寧に描かれたデザインが挙げられます。インクスケープというベクターグラフィックソフトを使用して制作されているため、イラストがシャープで高品質。視覚的にもインパクトがあり、使うたびに笑顔を届けてくれると思います。「秋田柴犬雑種Lineスタンプ」「ポメラニアンLineスタンプ」など、友達や家族との会話を盛り上げるユーモラスな表現が含まれており、リラックスした雰囲気を楽しむことができます。LINEストアにて購入可能で、使い勝手抜群です。特に犬好きの方にはぴったりな作品に仕上げました。
-        </p>
-      </div>
-      <h4 data-aos="fade-up">パンフレット・チラシ</h4>
+      
+      <h2 data-aos="fade-up">Pamphlet/Flyer</h2>
       <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
         <div class="project">
           <li>研修医交流会チラシ</li>
@@ -119,21 +129,20 @@
           <img src="医院クリニック建築チラシ.png" alt="医院クリニックチラシ画像" class="thumbnail" onclick="openModal('医院クリニック建築チラシ.png')">
         </div>
       </div>  
-    <div class="apps">
-      <div class="card-list" style="margin-bottom: 0;" data-aos="fade-up">
-        <p class="number-game-desc"
-          style="max-width: 1200px; margin: 0px auto; padding: 0px; box-sizing: border-box; color: gray;">
-          インクスケープを利用して作成されたパンフレットやチラシは、クリエイティブな視点と実用性が融合した作品です。特にデザインの柔軟性と高い表現力を持つこのソフトウェアは、プロのグラフィックデザイナーから趣味での利用者まで幅広く活用されています。インクスケープでのデザインの特徴として、ベクター形式での編集:インクスケープは、ベクターデータを扱うため、デザインを高解像度で保存可能です。拡大縮小しても画質が劣化しないので、パンフレットやチラシには最適です。カスタムフォントやスタイル:フォントの種類やサイズ、文字間隔など細かい調整が簡単で、特にタイトルやキャッチコピーにインパクトを与えることができます。画像やグラフィックの挿入写真やイラストを簡単に組み込むことができ、視覚的に豊かな表現が可能。背景デザインやアイコンを駆使して読み手の注意を引く工夫ができます。レイヤー機能:レイヤーを利用することで、複数の要素を整理しながらデザインを進められます。例えば、背景、テキスト、画像を別々に管理することで効率的な編集が可能です。パンフレットやチラシ制作においては、企業案内や商品プロモーション:例えば、新商品を紹介するチラシでは、商品の特長を色鮮やかなグラフィックとともに強調するデザインを作成。イベント案内:研修医交流会の案内チラシなど、日時や場所を視覚的に分かりやすく配置。サービス情報:パーソナルジムの案内では、適切なレイアウトと写真を活用して、読み手に具体的なイメージを提供。これまで手がけた作品はどれも、チラシデザインを細かいディテールで仕上げることで高い視認性と集客効果を実現しています。
-        </p>
-      </div>
+    <div class="design-end-bg" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+      <h3>CREATIVE DESIGN</h3>
+      <h4>
+        クリエイティブな視点と実用性が融合したデザイン。<br>細かいディテールで仕上げることで<br>高い視認性と集客効果を実現しています。
+      </h4>
     </div>
 </div>
+</section>
+
 <div class="footer05" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <div class="wrap">
   <div class="box">
-    <h3>HIROYUKI NAKANO</h3>
+    <h3>SNS</h3>
     <ul>
-    <a style="color: rgb(246, 20, 50);  font-family: Yu Mincho, Hiragino Mincho ProN, serif; font-weight: bold;">テクノロジーと拓く未来へ。<br></a>
     <li><a href="#">Instagram</a></li>
     <li><a href="#">X(Twitter)</a></li>
     <li><a href="#">Youtube</a></li>
@@ -172,7 +181,7 @@
   </div>
   </div>       
 <footer data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-  <p>© 2025 Hiroyuki Nakano. All rights reserved.</p>
+  <p>© 2025 Hiroyuki Nakano.<br>All rights reserved.</p>
   <p>A futuer society that technology will create</p>
 </footer> 
 </main>

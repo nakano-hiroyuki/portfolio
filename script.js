@@ -29,10 +29,31 @@ function prevSlide(carouselId) {
 function nextSlide(carouselId) {
   showSlide(carouselId, 1);
 }
+
+// ハンバーガーメニュー
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const overlay = document.getElementById("overlay");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    overlay.classList.toggle("active");
+  });
+
+  // メニューリンクをクリックしたら閉じる
+  document.querySelectorAll(".overlay-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("open");
+      overlay.classList.remove("active");
+    });
+  });
+});
+
+
 // お問合せ
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', function(event) {
+  contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
@@ -44,6 +65,7 @@ if (contactForm) {
   });
 }
 
+// モーダル表示
 function openModal(modalId) {
   document.getElementById(modalId).style.display = 'flex';
 }
@@ -51,11 +73,19 @@ function openModal(modalId) {
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = 'none';
 }
-setInterval(() => {
-  const now = new Date();
-  document.getElementById("time").textContent = now.toLocaleTimeString();
-}, 1000);
 
+// 時間表示
+function startClock() {
+  const timeElement = document.getElementById("time");
+  if (!timeElement) return;
+
+  setInterval(() => {
+    const now = new Date();
+    timeElement.textContent = now.toLocaleTimeString();
+  }, 1000);
+}
+
+//ホームスライドショー
 const images = document.querySelectorAll('#slideshow img');
 let currentIndex = 0;
 
@@ -83,15 +113,15 @@ setTimeout(() => {
 }, 4000);
 
 function openModal(imageSrc) {
-    const modal = document.getElementById('modal');
-    const modalImage = document.getElementById('modalImage');
-    modal.style.display = 'flex';
-    modalImage.src = imageSrc;
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modalImage');
+  modal.style.display = 'flex';
+  modalImage.src = imageSrc;
 }
 
 function closeModal() {
-    const modal = document.getElementById('modal');
-    modal.style.display = 'none';
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
 }
 
 // barbaでのページ遷移
@@ -102,26 +132,55 @@ barba.init({
     leave({ current }) {
       return gsap.to(current.container, {
         opacity: 0,
-        duration: 1.2,
+        duration: 0.6,
         ease: 'power2.out'
       });
     },
     enter({ next }) {
-      window.scrollTo(0, 0); 
+      window.scrollTo(0, 0);
       return gsap.fromTo(next.container,
         { opacity: 0 },
-        { opacity: 1, duration: 1.2, ease: 'power2.out' }
+        { opacity: 1, duration: 0.6, ease: 'power2.out' }
       );
     }
   }]
 });
 
-// ページ遷移後の初期化処理
-barba.hooks.afterEnter(({ next }) => {
-  const namespace = next.namespace;
+// ハンバーガーメニューの初期化関数
+function initHamburgerMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const overlay = document.querySelector('.overlay');
 
-  // AOSの再初期化（index以外）
-  if (namespace !== 'index') {
+  if (!hamburger || !overlay) return;
+
+  // 古いイベントを削除するためにクローン
+  const newHamburger = hamburger.cloneNode(true);
+  hamburger.parentNode.replaceChild(newHamburger, hamburger);
+
+  newHamburger.addEventListener('click', () => {
+    newHamburger.classList.toggle('open');
+    overlay.classList.toggle('active');
+  });
+
+  overlay.addEventListener('click', () => {
+    newHamburger.classList.remove('open');
+    overlay.classList.remove('active');
+  });
+}
+
+// ページ遷移後の初期化処理
+document.addEventListener('DOMContentLoaded', () => {
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  const namespace = document.querySelector('[data-barba="container"]')?.dataset.barbaNamespace;
+
+  initHamburgerMenu(); // ← 最初の表示でも実行！
+
+  if (namespace === 'index') {
+    startClock();
+    initHomePage();
+  } else {
     AOS.init({
       once: false,
       duration: 800,
@@ -129,8 +188,29 @@ barba.hooks.afterEnter(({ next }) => {
     });
   }
 
-// ホームページ用の処理（#time や #slideshow の初期化）
-  if (namespace === 'index') {
+  // その後に barba.init() を呼び出す
+  barba.init({
+    transitions: [{
+      name: 'fade',
+      leave({ current }) {
+        return gsap.to(current.container, {
+          opacity: 0,
+          duration: 0.6,
+          ease: 'power2.out'
+        });
+      },
+      enter({ next }) {
+        window.scrollTo(0, 0); // ← ここでスクロール位置をリセット
+        return gsap.fromTo(next.container,
+          { opacity: 0 },
+          { opacity: 1, duration: 0.6, ease: 'power2.out' }
+        );
+      }
+    }]
+  });
+
+  // ホームページ用の処理（#time や #slideshow の初期化）
+  function initHomePage() {
     const timeElement = document.getElementById("time");
     if (timeElement) {
       setInterval(() => {
@@ -154,11 +234,14 @@ barba.hooks.afterEnter(({ next }) => {
       images[currentIndex].classList.add('active');
       images[currentIndex].style.opacity = '1';
     }
-
+    
+    // ホーム画面のフェードイン時間
     setTimeout(() => {
-      fadeToNextImage();
-      setInterval(fadeToNextImage, 4000);
-    }, 4000);
-  }
-});
+    fadeToNextImage();
+    setInterval(fadeToNextImage, 4000);
+  }, 4000);
+}
+}); 
+  
+  
 
