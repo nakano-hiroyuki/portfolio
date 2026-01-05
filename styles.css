@@ -916,8 +916,8 @@ section h2 {
   color: #7a7a7a;
   text-align: center;
   justify-content: center;
-  border-left: 3px solid #7a7a7a;
-  border-right: 3px solid #7a7a7a;
+  border-left: 1px solid #7a7a7a;
+  border-right: 1px solid #7a7a7a;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -936,8 +936,8 @@ section h2 {
   color: #7a7a7a;
   text-align: center;
   justify-content: center;
-  border-left: 3px solid #7a7a7a;
-  border-right: 3px solid #7a7a7a;
+  border-left: 1px solid #7a7a7a;
+  border-right: 1px solid #7a7a7a;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -972,7 +972,7 @@ Products2
 
 
 #works .title {
-  color: gray;
+  color: rgb(144, 118, 89);
   font-weight: normal;
 }
 .wrapper {
