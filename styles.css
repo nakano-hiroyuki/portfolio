@@ -809,16 +809,6 @@ section h2 {
   min-width: 10px;   /* 最小幅 */
   max-width: 200px;  /* 最大幅 */
 }
-.app-message {
-  color: rgba(168, 167, 167, 0.507);
-  writing-mode: vertical-rl; /* 縦書きにする */
-  text-align: left; /* 左寄せにする */
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  font-size: 5rem;
-}
 
 
 #website .title-bg {
@@ -1007,6 +997,7 @@ Products2
   color: gray;
 }
 
+
 .design-title-bg {
   width: 100%;
   height: 100vh;
@@ -1028,7 +1019,6 @@ Products2
   padding: 0;
   color: white;
   width: 100%;
-  padding-bottom: 300px;
   padding-top: 40px;
 }
 
@@ -1046,6 +1036,14 @@ Products2
   color: white;
   flex-direction: column;
 }
+.last-text {
+  margin-top: 100px;
+  color: rgb(184, 123, 3);
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
 
 #learning-menu .title-bg {
   width: 100%;
