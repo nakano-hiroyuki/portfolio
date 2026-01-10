@@ -1184,6 +1184,7 @@ Products2
   padding-bottom: 200px;
 }
 
+
 .contact-bg {
   background-image: url('contact背景.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
@@ -1194,6 +1195,7 @@ Products2
   padding-bottom: 400px;
   padding-top: 400px;
 }
+
 
 .carousel-video {
   width: 500px;
