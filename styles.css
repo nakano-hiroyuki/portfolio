@@ -1142,15 +1142,15 @@ Products2
 }
 
 .last-section {
-  border-bottom: 5px double rgb(138, 82, 4);
+  border-bottom: 5px double rgb(145, 85, 1);
   padding-bottom: 20px;
   margin-bottom: 50px;
 }
 #learning-menu .border-list {
-  border: 1px solid  rgb(168, 142, 106);
+  border: 1px solid  rgb(229, 191, 137);
 }
 #learning-menu .title {
-  color: rgb(163, 138, 103);
+  color: rgb(238, 197, 141);
 }
 .learning-bg-title2 {
   border-bottom: 5px double rgb(251, 240, 211);
