@@ -1146,12 +1146,15 @@ Products2
   padding-bottom: 20px;
   margin-bottom: 50px;
 }
-#learning-menu .border-list {
-  border: 1px solid  rgb(229, 191, 137);
-}
+
 #learning-menu .title {
-  color: rgb(238, 197, 141);
+  color: rgb(210, 178, 134);
 }
+
+#learning-menu .border-list {
+  border: 1px solid   rgb(210, 178, 134);
+}
+
 .learning-bg-title2 {
   border-bottom: 5px double rgb(251, 240, 211);
   width: 80%;
@@ -1182,6 +1185,9 @@ Products2
   flex-direction: column;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.highlight {
+  color: rgb(163, 68, 64);
 }
 
 
