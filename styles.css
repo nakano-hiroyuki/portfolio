@@ -1,9 +1,91 @@
-#projects {
-  padding-bottom: 5px;
-  width: 100%;
+/* styles.css */
+html,
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
+  padding: 0;
 }
 
+
+/* homeページ*/
+#slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* スライドショーを後ろに移動 */
+  width: 100vw; /* ビューポート幅全体 */
+  height: 100vh; /* ビューポート高さ全体 */
+  overflow: hidden;
+}
+
+#time {
+  position: fixed;/* ページ内で固定表示 */
+  top: 0; /* 上端に配置 */
+  left: 0; /* 左端に配置 */
+  margin: 10px; /* 不要な余白を削除 */
+  padding: 10px; /* 少し余白を加えて見やすく */
+  border: 1px solid #ccc; /* 見やすいように枠線を追加 */
+  font-size: 20px; /* フォントサイズ調整 */
+  color: #fff;
+  z-index: 999;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; /* 最前面に配置 */
+}
+
+#slideshow img {
+  position: absolute;
+  object-fit: cover; /* 画像を全体に収める */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#slideshow img.active {
+  opacity: 1;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center; /* 高さ方向の中央揃え */
+  align-items: center; /* 横方向の中央揃え */
+  height: 100vh;
+  background-size: cover;
+  position: relative; /* ヘッダー内の要素をスライドショーの上に配置 */
+  z-index: 1; /* スライドショーの上に表示する */
+}
+
+h1,
+nav,
+a {
+  position: relative; /* 必要に応じて適用 */
+  color: #fff; /* スライドショー背景での視認性向上 */
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  color: #fff(59, 5, 255);
+}
+
+.nav a {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  gap: 5px;
+}
+
+
+
+/*profileページ*/
 .bg-img {
   background-image: url('PC画像7.jpg');
   background-repeat: no-repeat;
@@ -18,207 +100,7 @@
   padding-top: 120px;
   min-height: 100vh;
 }
-
-/* ToDoリストアプリ「基本機能」説明文カード用スタイル */
-.card-section {
-  margin: 28px auto 0;
-  width: 100%;
-  max-width: 3000px;
-  padding: 0 32px;
-  box-sizing: border-box;
-  background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10);
-  overflow-x: auto;
-}
-
-.content-wrapper {
-  font-size: 23px;
-  display: flex;
-  justify-content: center; /* 縦方向の中央揃え */
-  white-space: nowrap;
-  gap: 100px;
-  width: 100%;
-  margin-bottom: 200px;
-}
-
-.text-content {
-  display: flex;
-  color: rgb(184, 123, 3);
-  font-size: 20px;
-  text-align: center;
-  justify-content: center; /* 縦方向の中央揃え */
-  flex-direction: column; /* 縦並びにする */
-  gap: 0; /* pタグとulの間隔なし*/
-  margin: 0;
-  padding: 0;
-}
-
-#website .text-content {
-  display: flex;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  text-align: center;
-  justify-content: center; /* 縦方向の中央揃え */
-  flex-direction: column; /* 縦並びにする */
-  gap: 0; /* pタグとulの間隔なし*/
-  margin: 0;
-  padding: 0;
-}
-
-#design .text-content {
-  margin-bottom: 200px;
-}
-
-
-/* --- カード型リスト --- */
-.card-list {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-  padding: 18px 24px 18px 24px;
-  margin-bottom: 80px;
-  font-size: 1.08em;
-  line-height: 1.7;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.border-list {
-  border: 1px solid #ffffff; 
-  padding: 18px 24px 18px 24px;
-  margin-bottom: 80px;
-  font-size: 1.08em;
-  line-height: 1.7;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-}
-
-.border-list-second {
-  border: 1px solid #ffffff; 
-  padding: 18px 24px 18px 24px;
-  margin-bottom: 80px;
-  font-size: 1.08em;
-  line-height: 1.7;
-  max-width: 900px;
-  color: rgb(184, 182, 182);
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* --- お問い合わせフォームをさらにオシャレに --- */
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 60vh;
-  padding-bottom: 80px;
-  z-index: 1;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-#contact h2 {
-  font-size: 2.2em;
-  color: #00264b;
-  margin-bottom: 18px;
-  letter-spacing: 0.08em;
-}
-
-#contact-form {
-  background-image: url("contact背景2.jpg");
-  backdrop-filter: blur(12px); /* 背景ぼかし */
-  -webkit-backdrop-filter: blur(12px); /* Safari対応 */
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.9); /* 輪郭を柔らかく */
-  box-shadow: 0 8px 32px rgba(50, 50, 59, 0.4);
-  padding: 32px 24px;
-  max-width: 420px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  transition: box-shadow 0.3s;
-  z-index: 1;
-}
-
-#contact-form:hover {
-  box-shadow: 0 20px 40px 0 rgba(51, 51, 62, 0.28), 0 4px 10px 0 rgba(60, 60, 80, 0.23);
-}
-
-#contact-form label {
-  align-self: flex-start;
-  margin-bottom: 2px;
-  font-size: 1.08em;
-  color: #092f56;
-  font-weight: bold;
-  letter-spacing: 0.03em;
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  max-width: 340px;
-  padding: 10px 14px;
-  border: 1.5px solid #bfc9d9;
-  border-radius: 10px;
-  font-size: 1.05em;
-  box-sizing: border-box;
-  margin-bottom: 8px;
-  background: #fff;
-  transition: border 0.2s, box-shadow 0.2s;
-  font-family: inherit;
-  outline: none;
-  min-height: 90px;
-  resize: vertical;
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-  border: 1.5px solid #092949;
-  box-shadow: 0 0 0 2px #e3e9f7;
-}
-
-#contact-form button {
-  width: 100%;
-  max-width: 340px;
-  padding: 12px 0;
-  background: linear-gradient(90deg, #30475e 60%, #222f3e 100%);
-  color: #fff;
-  border: none;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  border-radius: 10px;
-  font-size: 1.15em;
-  font-weight: bold;
-  cursor: pointer;
-  letter-spacing: 0.04em;
-  box-shadow: 0 2px 8px 0 rgba(60, 60, 80, 0.10);
-  transition: 0.2s, box-shadow 0.2s;
-}
-
-#contact-form button:hover {
-  background: linear-gradient(90deg, #222f3e 60%, #30475e 100%);
-  box-shadow: 0 4px 16px 0 rgba(60, 60, 80, 0.13);
-}
-
-/* --- 自己紹介カードデザイン --- */
+/*自己紹介カードデザイン*/
 .about-title {
   text-align: center;
   letter-spacing: 0.08em;
@@ -314,188 +196,6 @@
   width: 100%;
 }
 
-/* カルーセル用スタイル */
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.carousel-images {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 520px;
-  height: 370px;
-  overflow: hidden;
-}
-
-.carousel-image {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%) scale(1);
-  object-fit: contain;
-  transition: opacity 0.6s, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  z-index: 0;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 1.5px 8px rgba(0, 0, 0, 0.10);
-  border-radius: 18px;
-}
-
-.carousel-image.active {
-  display: block;
-  opacity: 1;
-  z-index: 1;
-  animation: carousel-slide-in 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes carousel-slide-in {
-  0% {
-    transform: translate(-80%, -50%) scale(0.92) rotateY(-30deg);
-    opacity: 0.3;
-    filter: blur(2px);
-  }
-
-  60% {
-    transform: translate(-50%, -50%) scale(1.04) rotateY(6deg);
-    opacity: 1;
-    filter: blur(0);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(1) rotateY(0deg);
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
-.carousel-image.active {
-  display: block;
-  opacity: 1;
-  z-index: 1;
-  animation: carousel-zoom-in 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes carousel-zoom-in {
-  0% {
-    transform: translate(-50%, -50%) scale(0.92);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-}
-
-.carousel-btn {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  font-size: 2em;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: 0.2s;
-  z-index: 2;
-}
-
-.carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* styles.css */
-html,
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-/* ホーム画像スライドショー　*/
-#slideshow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0; /* スライドショーを後ろに移動 */
-  width: 100vw; /* ビューポート幅全体 */
-  height: 100vh; /* ビューポート高さ全体 */
-  overflow: hidden;
-}
-
-#time {
-  position: fixed;/* ページ内で固定表示 */
-  top: 0; /* 上端に配置 */
-  left: 0; /* 左端に配置 */
-  margin: 10px; /* 不要な余白を削除 */
-  padding: 10px; /* 少し余白を加えて見やすく */
-  border: 1px solid #ccc; /* 見やすいように枠線を追加 */
-  font-size: 20px; /* フォントサイズ調整 */
-  color: #fff;
-  z-index: 999;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; /* 最前面に配置 */
-}
-
-#slideshow img {
-  position: absolute;
-  object-fit: cover; /* 画像を全体に収める */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-#slideshow img.active {
-  opacity: 1;
-}
-
-header {
-  color: #fff;
-  display: flex;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-weight: bold;
-  flex-direction: column;
-  justify-content: center; /* 高さ方向の中央揃え */
-  align-items: center; /* 横方向の中央揃え */
-  height: 100vh;
-  background-size: cover;
-  position: relative; /* ヘッダー内の要素をスライドショーの上に配置 */
-  z-index: 1; /* スライドショーの上に表示する */
-}
-
-h1,
-nav,
-a {
-  position: relative; /* 必要に応じて適用 */
-  color: #fff; /* スライドショー背景での視認性向上 */
-}
-
-header h1 {
-  text-align: center;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  color: #fff(59, 5, 255);
-}
-
-.nav a {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
-  gap: 5px;
-}
 
 .main-header {
   display: flex;
@@ -506,17 +206,6 @@ header h1 {
   background-color: rgb(88, 50, 9);
 }
 
-.header-logo {
-  display: flex;
-  width: 60px;
-  height: auto;
-  margin-right: 30px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 24px 0 rgba(60, 60, 80, 0.18);
-  background: #f6f6f6;
-  transition: transform 0.3s;
-}
 
 .header-nav {
   justify-content: center;
@@ -687,6 +376,12 @@ video {
   margin: 0 auto;
 }
 
+h1 {
+  text-align: center;
+  font-size: 65px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
 h2 {
   text-align: center;
   font-size: 60px;
@@ -750,10 +445,11 @@ section h2 {
   float: right;
 }
 
+/*appページ*/
 .video-background {
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-repeat: no-repeat; /* 繰り返しなし */
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -762,27 +458,130 @@ section h2 {
   align-items: center; /* 縦方向の中央揃え */
   color: white;
   font-weight: bold; /* 太字にする */
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .video-background video {
-  top: 0;
-  left: 0;
-  margin: 0;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
   padding: 0;
-  position: fixed;
-  object-fit: cover; /* 動画を要素いっぱいに表示 */
-  z-index: -1; /* 背景として後ろに配置 */
+  margin: 0;
 }
 
 .app-bg {
+  padding-top: 400px;
   color: white;
 }
 
 #app .text-content {
+  padding-top: 300px;
   color: white;
   margin: 0 auto 200px;
   border-bottom: 1px solid white;
   width: 80%;
+}
+/* カルーセル用スタイル */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.carousel-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 520px;
+  height: 370px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%) scale(1);
+  object-fit: contain;
+  transition: opacity 0.6s, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  z-index: 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 1.5px 8px rgba(0, 0, 0, 0.10);
+  border-radius: 18px;
+}
+
+.carousel-image.active {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+  animation: carousel-slide-in 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes carousel-slide-in {
+  0% {
+    transform: translate(-80%, -50%) scale(0.92) rotateY(-30deg);
+    opacity: 0.3;
+    filter: blur(2px);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) scale(1.04) rotateY(6deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotateY(0deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.carousel-image.active {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+  animation: carousel-zoom-in 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes carousel-zoom-in {
+  0% {
+    transform: translate(-50%, -50%) scale(0.92);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .app-about-bg {
@@ -834,7 +633,7 @@ section h2 {
   line-height: 1.1;
 }
 
-
+/*websiteページ*/
 #website .title-bg {
   background-image: url('website.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
@@ -850,9 +649,27 @@ section h2 {
   color: white !important;
   align-items: center;
   justify-content: center;
-
 }
-
+.content-wrapper {
+  font-size: 23px;
+  display: flex;
+  justify-content: center; /* 縦方向の中央揃え */
+  white-space: nowrap;
+  gap: 100px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+#website .text-content {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  justify-content: center; /* 縦方向の中央揃え */
+  flex-direction: column; /* 縦並びにする */
+  gap: 0; /* pタグとulの間隔なし*/
+  margin: 0;
+  padding: 0;
+}
 .website-bg {
   background-image: url('背景.jpg'); /* 画像のファイル名 */
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
@@ -868,7 +685,7 @@ section h2 {
   padding-top: 40px;
 }
 
-#website .title {
+#website .main-title {
   color: rgb(128, 74, 38);
   font-weight: normal;
 }
@@ -969,14 +786,8 @@ section h2 {
 /*
 productsの共通定義以外は、idを指定（#products1、#products2）して個別に設定
 */
-/*-------------------------------------------
-Products1
--------------------------------------------*/
-/*
-そのままではタイトルが左にくるため、「row-reverse」で順序を入れ替える。
-*/
 #products1 {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; /*タイトルと画像の位置を入れ替える*/
 }
 #products1 .section-title {
   margin-left: 20px;
@@ -986,9 +797,7 @@ Products1
   padding: 0;
 }
 
-/*-------------------------------------------
-Products2
--------------------------------------------*/
+
 #products2 .section-title {
   margin-right: 20px;
   writing-mode: vertical-lr;
@@ -1021,7 +830,7 @@ Products2
   color: gray;
 }
 
-
+/*designページ*/
 .design-title-bg {
   width: 100%;
   height: 100vh;
@@ -1046,6 +855,20 @@ Products2
   margin-bottom: 0px;
 }
 
+.text-content {
+  display: flex;
+  color: rgb(184, 123, 3);
+  font-size: 20px;
+  text-align: center;
+  justify-content: center; /* 縦方向の中央揃え */
+  flex-direction: column; /* 縦並びにする */
+  gap: 0; /* pタグとulの間隔なし*/
+  margin: 0;
+  padding: 0;
+}
+#design .text-content {
+  margin-bottom: 200px;
+}
 .design-end-bg {
   width: 100%;
   height: 100%;
@@ -1071,6 +894,8 @@ Products2
   margin-bottom: 0;
 }
 
+
+/*learningページ*/
 #learning-menu .title-bg {
   width: 100%;
   height: 100vh; /* 好きな高さに調整 */
@@ -1118,7 +943,7 @@ Products2
 #learning-ending .ending-bg {
   width: 100%;
   height: 300px;
-  background-image: url('PC8.jpg'); /* 画像のパスを指定 */
+  background-image: url('PC7.jpg'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -1167,6 +992,30 @@ Products2
   margin: 0 auto 100px; /* 左右の margin を auto にする */
 }
 
+.border-list {
+  border: 1px solid #ffffff; 
+  padding: 18px 24px 18px 24px;
+  margin-bottom: 80px;
+  font-size: 1.08em;
+  line-height: 1.7;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.border-list-second {
+  border: 1px solid #ffffff; 
+  padding: 18px 24px 18px 24px;
+  margin-bottom: 80px;
+  font-size: 1.08em;
+  line-height: 1.7;
+  max-width: 900px;
+  color: rgb(184, 182, 182);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
 .last-section {
   border-bottom: 5px double rgb(145, 85, 1);
   padding-bottom: 20px;
@@ -1216,7 +1065,7 @@ Products2
   color: rgb(163, 68, 64);
 }
 
-
+/*contactページ*/
 .contact-bg {
   background-image: url('contact背景.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
@@ -1227,7 +1076,102 @@ Products2
   padding-bottom: 400px;
   padding-top: 400px;
 }
+/* --- お問い合わせフォームをさらにオシャレに --- */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding-bottom: 80px;
+  z-index: 1;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
 
+#contact h2 {
+  font-size: 2.2em;
+  color: #00264b;
+  margin-bottom: 18px;
+  letter-spacing: 0.08em;
+}
+
+#contact-form {
+  background-image: url("contact背景2.jpg");
+  backdrop-filter: blur(12px); /* 背景ぼかし */
+  -webkit-backdrop-filter: blur(12px); /* Safari対応 */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.9); /* 輪郭を柔らかく */
+  box-shadow: 0 8px 32px rgba(50, 50, 59, 0.4);
+  padding: 32px 24px;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  transition: box-shadow 0.3s;
+  z-index: 1;
+}
+
+#contact-form:hover {
+  box-shadow: 0 20px 40px 0 rgba(51, 51, 62, 0.28), 0 4px 10px 0 rgba(60, 60, 80, 0.23);
+}
+
+#contact-form label {
+  align-self: flex-start;
+  margin-bottom: 2px;
+  font-size: 1.08em;
+  color: #092f56;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  max-width: 340px;
+  padding: 10px 14px;
+  border: 1.5px solid #bfc9d9;
+  border-radius: 10px;
+  font-size: 1.05em;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  outline: none;
+  min-height: 90px;
+  resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border: 1.5px solid #092949;
+  box-shadow: 0 0 0 2px #e3e9f7;
+}
+
+#contact-form button {
+  width: 100%;
+  max-width: 340px;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #30475e 60%, #222f3e 100%);
+  color: #fff;
+  border: none;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  border-radius: 10px;
+  font-size: 1.15em;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 8px 0 rgba(60, 60, 80, 0.10);
+  transition: 0.2s, box-shadow 0.2s;
+}
+
+#contact-form button:hover {
+  background: linear-gradient(90deg, #222f3e 60%, #30475e 100%);
+  box-shadow: 0 4px 16px 0 rgba(60, 60, 80, 0.13);
+}
 
 .carousel-video {
   width: 500px;
@@ -1266,6 +1210,7 @@ Products2
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
 
 /*コンテンツへリンクのフッター*/
 .footer05 {
@@ -1317,6 +1262,7 @@ Products2
   padding: 20px 0 0 0;
 }
 
+
 /*デジタルイメージの背景フッター*/
 footer {
   background-repeat: no-repeat;
@@ -1330,6 +1276,8 @@ footer {
   padding: 5em 0;
 }
 
+
+/*レスポンシブ対応*/
 @media (max-width: 1200px) {
   .content-wrapper {
     flex-direction: column;
@@ -1371,6 +1319,31 @@ footer {
   .card-list {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  /*website*/
+  #products1, #products2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #products1 .section-title {
+  align-self: flex-end;
+  margin-right: 5%;
+  }
+  #products2 .section-title {
+  align-self: flex-start;
+  margin-left: 5%;
+  }
+  .products {
+    margin-bottom: 100px;
+  }
+  .products .img {
+    width: 90%;
+    margin-top: 70px;
+  }
+  .products .text {
+    width: 64%;
+    font-size: 0.875rem;
+    padding: 30px 0;
   }
 }
 
@@ -1462,7 +1435,6 @@ footer {
   #app .study-reason-desc {
     font-size: 20px;
   }
-
   .carousel-images {
     display: flex;
     align-items: center;
@@ -1472,43 +1444,34 @@ footer {
     height: 300px;
     overflow: hidden;
   }
-
   .carousel-video {
     width: 450px;
     height: 300px;
   }
-
   .ending-message {
     font-size: 0.98em;
     padding: 10px 8px;
   }
-
   .image-container {
     flex-direction: column;
     align-items: center;
   }
-
-  /*website*/
-  .products {
-    margin-bottom: 100px;
+  .explanation1, .explanation2 {
+    flex-direction: column;
+    align-items: center;
   }
+
   .products .section-title .ja {
     font-size: 1.5rem;
   }
-  .products .img {
-    width: 90%;
-    margin-top: 70px;
+  .products .section-title .en {
+    font-size: 0.9rem;
   }
-  .products .text {
-    width: 64%;
-    font-size: 0.875rem;
-    padding: 30px 0;
+  #products1 .text {
+  width: 100%;
   }
-  #products1 .section-title {
-    margin-left: 10px;
-  }
-  #products2 .section-title {
-    margin-right: 10px;
+  #products2 .text {
+  width: 100%;
   }
   #works ul {
     flex-direction: column;
@@ -1516,6 +1479,11 @@ footer {
   #works li {
     width: 100%;
   }
+
+  #website .URL {
+    font-size: 25px;
+  }
+
   /*フッター*/
   .footer05 .wrap {
     width: 100%;
@@ -1546,7 +1514,6 @@ footer {
   #app .study-reason-desc {
     font-size: 15px;
   }
-
   .carousel-images {
     display: flex;
     align-items: center;
@@ -1556,20 +1523,24 @@ footer {
     height: 200px;
     overflow: hidden;
   }
-
   .carousel-video {
     width: 300px;
     height: 200px;
     display: block;
     vertical-align: middle;
   }
-
   .image-content {
     width: 100%;
   }
-
-  .text-content {
+  #app .text-content {
     font-size: 15px;
+  }
+  .explanation-text {
+    max-width: 90%;
+  }
+
+  #website .main-title {
+    font-size: 45px;
   }
 }
 
@@ -1577,11 +1548,31 @@ footer {
   #app .study-reason-desc {
     font-size: 12px;
   }
-
-  .text-content {
+  #app h1 {
+    font-size: 50px;
+  }
+  #app h2 {
+    font-size: 30px;
+  }
+  #app .text-content {
     font-size: 14px;
   }
-
+  
+  .products .img {
+  width: 100%;
+  margin-top: 100px;
+  }
+  #products1 .section-title {
+  align-self: flex-end;
+  margin-right: 0;
+  }
+  #products2 .section-title {
+  align-self: flex-start;
+  margin-left: 0;
+  }
+  #website .text-content {
+    font-size: 15px;
+  }
   #contact-form {
     width: 340px;
     margin-left: 5%;
@@ -1590,6 +1581,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .about-title {
+    font-size: 55px;
+  }
   .about-card {
     flex-direction: column;
     gap: 24px;
@@ -1597,14 +1591,42 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
   }
-
-  #website h2 {
-    font-size: 35px;
+  
+  #app h1 {
+    font-size: 40px;
   }
-
-  .text-content {
+  #app .text-content {
     font-size: 11px;
   }
+  .explanation-title {
+    font-size: 20px;
+  }
+
+  #website h1 {
+    font-size: 55px;
+  }
+  .products .section-title .ja {
+    font-size: 1.2rem;
+  }
+  .products .section-title .en {
+    font-size: 0.7rem;
+  }
+  #website .text-content {
+    font-size: 11px;
+  }
+  #website .main-title {
+    font-size: 35px;
+  }
+  #products1 h4 {
+    font-size: 20px;
+  }
+  #products2 h4 {
+    font-size: 20px;
+  }
+  #website .URL {
+    font-size: 22px;
+  }
+  
 
   .carousel-images {
     display: flex;
