@@ -158,6 +158,11 @@ header h1 {
   letter-spacing: 0.04em;
 }
 
+#about .about-desc {
+  color: rgb(65, 62, 62);
+  font-size: 17px;
+}
+
 .skill-title {
   text-align: center;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -925,6 +930,16 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   font-weight: bold; /* 太字にする */
 }
 
+#learning-menu .subtitle {
+  font-weight: normal;
+}
+#learning-about .subtitle {
+  font-weight: normal;
+}
+#learning-ending .subtitle {
+  font-weight: normal;
+}
+
 #learning-about .about-bg {
   width: 100%;
   height: 300px;
@@ -943,7 +958,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 #learning-ending .ending-bg {
   width: 100%;
   height: 300px;
-  background-image: url('PC7.jpg'); /* 画像のパスを指定 */
+  background-image: url('時計.jpg'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -1075,6 +1090,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   overflow-wrap: break-word; /* 文字を必要に応じて改行 */
   padding-bottom: 400px;
   padding-top: 400px;
+}
+.contact-bg p {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 /* --- お問い合わせフォームをさらにオシャレに --- */
 #contact {
@@ -1345,6 +1365,20 @@ footer {
     font-size: 0.875rem;
     padding: 30px 0;
   }
+  
+  #design .text-content h2 {
+    font-size: 40px;
+  }
+
+  #learning-menu .border-list {
+    max-width: 90%;
+  }
+  #learning-about .border-list-second {
+    max-width: 90%;
+  }
+  .contact-bg p {
+    font-size: 25px;
+  }
 }
 
 
@@ -1483,6 +1517,10 @@ footer {
   #website .URL {
     font-size: 25px;
   }
+  
+  .contact-bg p {
+    font-size: 20px;
+  }
 
   /*フッター*/
   .footer05 .wrap {
@@ -1510,6 +1548,17 @@ footer {
   }
 }
 
+@media (max-width: 700px) {
+  #design .text-content h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-bg p {
+    font-size: 15px;
+  }
+}
 @media (max-width: 600px) {
   #app .study-reason-desc {
     font-size: 15px;
@@ -1542,6 +1591,18 @@ footer {
   #website .main-title {
     font-size: 45px;
   }
+  #design .text-content h2 {
+    font-size: 30px;
+  }
+  #design .design-end-bg h4 {
+    font-size: 20px;
+  }
+  #learning-menu li {
+    font-size: 16px;
+  }
+  #learning-about li {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1573,6 +1634,33 @@ footer {
   #website .text-content {
     font-size: 15px;
   }
+  #design .text-content h2 {
+    font-size: 25px;
+  }
+  #design .text-content p {
+    font-size: 15px;
+  }
+  #design .title {
+    font-size: 40px;
+  }
+  #design .design-end-bg h4 {
+    font-size: 15px;
+  }
+  #design .last-text {
+    font-size: 17px;
+  }
+  .learning-bg-title h3 {
+    font-size: 23px;
+  }
+  .learning-bg-title2 h3 {
+    font-size: 23px;
+  }
+  #learning-menu li {
+    font-size: 15px;
+  }
+  #learning-about li {
+    font-size: 15px;
+  }
   #contact-form {
     width: 340px;
     margin-left: 5%;
@@ -1591,12 +1679,28 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
   }
+  #about .about-desc {
+    font-size: 15px;
+  }
   
   #app h1 {
     font-size: 40px;
   }
   #app .text-content {
     font-size: 11px;
+  }
+  .carousel-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 220px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .carousel-video {
+    width: 220px;
+    height: 180px;
   }
   .explanation-title {
     font-size: 20px;
@@ -1626,25 +1730,56 @@ footer {
   #website .URL {
     font-size: 22px;
   }
-  
 
-  .carousel-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 220px;
-    height: 180px;
-    overflow: hidden;
+  #design h1 {
+    font-size: 55px;
   }
-
-  .carousel-video {
-    width: 220px;
-    height: 180px;
+  #design .text-content h2 {
+    font-size: 18px;
+  }
+  #design .text-content p {
+    font-size: 12px;
+  }
+  #design .title {
+    font-size: 35px;
+  }
+  #design .design-end-bg h4 {
+    font-size: 13px;
+  }
+  #design .last-text {
+    font-size: 15px;
+  }
+  
+  #learning-menu h1 {
+    font-size: 53px;
+  }
+  #learning-menu .subtitle {
+    font-size: 50px;
+  }
+  #learning-adout .subtitle {
+    font-size: 50px;
+  }
+  #learning-end .subtitle {
+    font-size: 50px;
+  }
+  .learning-bg-title h3 {
+    font-size: 19px;
+  }
+  .learning-bg-title2 h3 {
+    font-size: 19px;
+  }
+  #learning-menu .title h4 {
+    font-size: 20px;
+  }
+  #learning-about .card-section-title {
+    font-size: 20px;
+  }
+  .contact-bg h2 {
+    font-size: 55px;
   }
 
   #contact-form {
-    width: 280px;
+    width: 270px;
     margin-left: 5%;
     margin-right: 5%;
   }
