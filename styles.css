@@ -87,7 +87,7 @@ header h1 {
 
 /*profileページ*/
 .bg-img {
-  background-image: url('PC画像7.jpg');
+  background-image: url('PC2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -113,7 +113,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-image: url('夜空.jpg');
+  background-image: url('背景2.jpg');
   background-size: cover;
   border-radius: 24px;
   box-shadow: 0 6px 32px 0 rgba(60, 60, 80, 0.13), 0 1.5px 6px 0 rgba(60, 60, 80, 0.10);
