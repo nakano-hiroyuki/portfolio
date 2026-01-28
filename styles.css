@@ -94,17 +94,17 @@ header h1 {
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
+  flex-direction: column;
   width: 100%;
   margin: 0;
   padding-bottom: 250px;
-  padding-top: 120px;
   min-height: 100vh;
 }
 /*自己紹介カードデザイン*/
 .about-title {
   text-align: center;
   letter-spacing: 0.08em;
-  padding-top: 20px;
+  padding-top: 120px;
   color: #444343;
 }
 
@@ -206,9 +206,11 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center; /* 縦方向の中央揃え（任意） */
-  color: #fff;
+  color: #858585;
   padding: 40px;
-  background-color: rgb(88, 50, 9);
+  background-color: rgba(255, 255, 255, 0.527);
+  z-index: 10;
+  position: relative;
 }
 
 
@@ -218,11 +220,46 @@ header h1 {
   display: flex;
   gap: 30px;
 }
-
-.header-nav a {
+#about .header-nav a {
   display: flex;
   text-align: center; /* テキストを中央揃え */
-  color: white;
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+#app-header .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+} 
+#contact-text .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+#design .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+} 
+#learning-menu .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+#website .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
@@ -648,12 +685,16 @@ section h2 {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top: 300px;
+  padding-top: 0;
+  padding-bottom: 300px;
   height: 100vh;
   gap: 200px;
-  color: white !important;
-  align-items: center;
-  justify-content: center;
+  color: white;
+}
+#website .title {
+  text-align: center;
+  margin-top: 200px;
+  color: white ;
 }
 .content-wrapper {
   font-size: 23px;
@@ -843,14 +884,17 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
   background-attachment: fixed; /* 背景を固定 */
   display: flex;
+  flex-direction: column;
   color: white;
   font-weight: bold; /* 太字にする */
 }
-
+#design .main-title {
+  text-align: center;
+  margin-top: 350px;
+  color: white ;
+}
 .design-bg {
   background-color: rgb(0, 0, 0);
   margin: 0;
@@ -908,13 +952,15 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
   display: flex;
   color: white;
+  flex-direction: column;
   font-weight: bold; /* 太字にする */
 }
-
+#learning-menu .main-title {
+  text-align: center;
+  margin-top: 350px;
+}
 #learning-menu .step-bg {
   width: 100%;
   height: 300px;
@@ -1089,7 +1135,9 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-attachment: fixed;
   overflow-wrap: break-word; /* 文字を必要に応じて改行 */
   padding-bottom: 400px;
-  padding-top: 400px;
+}
+#contact-text .main-title {
+  padding-top: 300px;
 }
 .contact-bg p {
   font-size: 30px;
