@@ -523,10 +523,15 @@ section h2 {
 #app .text-content {
   padding-top: 300px;
   color: white;
+  text-align: center;
+  justify-content: center; /* 縦方向の中央揃え */
+  flex-direction: column; /* 縦並びにする */
+  font-size: 20px;
   margin: 0 auto 200px;
   border-bottom: 1px solid white;
   width: 80%;
 }
+
 /* カルーセル用スタイル */
 .carousel {
   display: flex;
@@ -715,6 +720,9 @@ section h2 {
   gap: 0; /* pタグとulの間隔なし*/
   margin: 0;
   padding: 0;
+}
+#website .subtitle {
+  font-weight: normal;
 }
 .website-bg {
   background-image: url('背景.jpg'); /* 画像のファイル名 */
