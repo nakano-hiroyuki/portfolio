@@ -889,7 +889,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   flex-direction: column;
   color: white;
   font-weight: bold; /* 太字にする */
-  padding-bottom: 500px;
+  padding-bottom: 700px;
 }
 #design .main-title {
   text-align: center;
