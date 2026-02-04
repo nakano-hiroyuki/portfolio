@@ -912,9 +912,8 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   justify-content: center; /* 縦方向の中央揃え */
   flex-direction: column; /* 縦並びにする */
   gap: 0; /* pタグとulの間隔なし*/
-  margin: 0;
   font-weight: normal;
-  padding-top: 300px;
+  margin-top: 300px;
   padding-bottom: 60px;
 }
 #design .subtitle {
