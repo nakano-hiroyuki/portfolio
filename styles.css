@@ -900,7 +900,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 #design .main-title {
   text-align: center;
-  margin-top: 450px;
+  margin-top: 400px;
   color: white;
   font-weight: bold; /* 太字にする */
 }
