@@ -691,7 +691,7 @@ section h2 {
   flex-direction: column;
   margin: 0;
   padding-top: 0;
-  padding-bottom: 500px;
+  padding-bottom: 600px;
   height: 100vh;
   gap: 200px;
   color: white;
@@ -719,7 +719,7 @@ section h2 {
   flex-direction: column; /* 縦並びにする */
   gap: 0; /* pタグとulの間隔なし*/
   margin: 0;
-  padding: 0;
+  padding-bottom: 60px;
 }
 #website .subtitle {
   font-weight: normal;
