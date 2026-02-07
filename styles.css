@@ -7,6 +7,30 @@ body {
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  font-size: 65px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+h4 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
 
 /* homeページ*/
 #slideshow {
@@ -227,42 +251,6 @@ header h1 {
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
-#app-header .header-nav a {
-  display: flex;
-  text-align: center; /* テキストを中央揃え */
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-} 
-#contact-text .header-nav a {
-  display: flex;
-  text-align: center; /* テキストを中央揃え */
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-#design .header-nav a {
-  display: flex;
-  text-align: center; /* テキストを中央揃え */
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-} 
-#learning-menu .header-nav a {
-  display: flex;
-  text-align: center; /* テキストを中央揃え */
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-#website .header-nav a {
-  display: flex;
-  text-align: center; /* テキストを中央揃え */
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
 
 /* ハンバーガーボタン */
 .hamburger {
@@ -418,76 +406,15 @@ video {
   margin: 0 auto;
 }
 
-h1 {
-  text-align: center;
-  font-size: 65px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-h3 {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-h4 {
-  text-align: center;
-  font-size: 24px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-
-/* モーダルのスタイル */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  padding: 10px; /* 少し余白を追加してモバイルに優しい設計に */
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 20px; /* 丸みを強調しておしゃれに */
-  max-width: 90vw;
-  max-height: 90vh;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* シャドウ追加で高級感アップ */
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 70px;
-  color: white;
-  font-size: 150px;
-  cursor: pointer;
-}
-
-.modal .close {
-  cursor: pointer;
-  color: red;
-  float: right;
-}
 
 /*appページ*/
+#app-header .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+} 
 .video-background {
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -681,6 +608,13 @@ section h2 {
 }
 
 /*websiteページ*/
+#website .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
 #website .title-bg {
   background-image: url('website.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
@@ -885,6 +819,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 /*designページ*/
+#design .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+} 
 .design-title-bg {
   width: 100%;
   height: 100vh;
@@ -927,6 +868,44 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   padding-top: 40px;
   margin-bottom: 0px;
 }
+/* モーダルのスタイル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* 少し余白を追加してモバイルに優しい設計に */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px; /* 丸みを強調しておしゃれに */
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* シャドウ追加で高級感アップ */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: white;
+  font-size: 150px;
+  cursor: pointer;
+}
+
+.modal .close {
+  cursor: pointer;
+  color: red;
+  float: right;
+}
 
 .design-end-bg {
   width: 100%;
@@ -955,6 +934,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 
 /*learningページ*/
+#learning-menu .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
 #learning-menu .title-bg {
   width: 100%;
   height: 100vh; /* 好きな高さに調整 */
@@ -1139,6 +1125,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 /*contactページ*/
+#contact-text .header-nav a {
+  display: flex;
+  text-align: center; /* テキストを中央揃え */
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
 .contact-bg {
   background-image: url('contact背景.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
