@@ -735,7 +735,7 @@ section h2 {
   margin: 0;
   padding: 0;
   width: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   padding-top: 40px;
 }
 
@@ -1043,7 +1043,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 
 .learning-bg {
-  background-color: rgb(253, 247, 230);
+  background-image: url("和紙3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -1076,7 +1076,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .border-list-second {
-  border: 1px solid #ffffff; 
+  border: 1px solid #583601; 
   padding: 18px 24px 18px 24px;
   margin-bottom: 80px;
   font-size: 1.08em;
@@ -1094,21 +1094,21 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 #learning-menu .title {
-  color: rgb(210, 178, 134);
+  color: rgb(112, 69, 8);
 }
 
 #learning-menu .border-list {
-  border: 1px solid   rgb(210, 178, 134);
+  border: 1px solid   rgb(116, 73, 14);
 }
 
 .learning-bg-title2 {
-  border-bottom: 5px double rgb(251, 240, 211);
+  border-bottom: 5px double rgb(122, 91, 5);
   width: 80%;
   margin: 0 auto 100px; /* 左右の margin を auto にする */
 }
 
 .learning-bg2 {
-  background-color: rgb(117, 80, 31);
+  background-image: url("和紙3.jpg");
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
@@ -1117,9 +1117,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   padding-top: 100px;
 }
 .border-list-second {
-  color:rgb(255, 238, 208);
+  color:rgb(119, 118, 117);
 }
-
+.card-section-title{
+  color: rgb(106, 57, 8);
+}
 .learning-bg3 {
   background-image: url("本1.jpg");
   background-repeat: no-repeat;
@@ -1339,19 +1341,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   width: 100%;
   padding: 20px 0 0 0;
 }
-
-
-/*デジタルイメージの背景フッター*/
-footer {
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
-  font-size: 20px;
+.reserved {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  background-image: url('footer3背景.jpg');
-  color: #fff;
-  padding: 5em 0;
+  text-align: center;
+  color: gray;
 }
 
 
