@@ -1,3 +1,53 @@
+// 時間表示
+function startClock() {
+  const timeElement = document.getElementById("time");
+  if (!timeElement) return;
+
+  setInterval(() => {
+    const now = new Date();
+    timeElement.textContent = now.toLocaleTimeString();
+  }, 1000);
+}
+
+
+//ホームスライドショー
+const images = document.querySelectorAll('#slideshow img');
+let currentIndex = 0;
+
+// 初期状態で最初の画像を表示
+images.forEach((img, i) => {
+  img.style.opacity = (i === 0) ? '1' : '0';
+  img.classList.toggle('active', i === 0);
+});
+
+function fadeToNextImage() {
+  // 現在の画像をフェードアウト
+  images[currentIndex].classList.remove('active');
+  images[currentIndex].style.opacity = '0';
+
+  // 次の画像をフェードイン
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].classList.add('active');
+  images[currentIndex].style.opacity = '1';
+}
+
+// 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
+setTimeout(() => {
+  fadeToNextImage();
+  setInterval(fadeToNextImage, 4000);
+}, 4000);
+
+function openModal(imageSrc) {
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modalImage');
+  modal.style.display = 'flex';
+  modalImage.src = imageSrc;
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
 
 
 // カルーセル機能
@@ -50,6 +100,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// モーダル表示
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'flex';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
 // お問合せ
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
@@ -63,65 +122,6 @@ if (contactForm) {
       alert('名前とメッセージを入力してください！');
     }
   });
-}
-
-// モーダル表示
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = 'flex';
-}
-
-function closeModal(modalId) {
-  document.getElementById(modalId).style.display = 'none';
-}
-
-// 時間表示
-function startClock() {
-  const timeElement = document.getElementById("time");
-  if (!timeElement) return;
-
-  setInterval(() => {
-    const now = new Date();
-    timeElement.textContent = now.toLocaleTimeString();
-  }, 1000);
-}
-
-//ホームスライドショー
-const images = document.querySelectorAll('#slideshow img');
-let currentIndex = 0;
-
-// 初期状態で最初の画像を表示
-images.forEach((img, i) => {
-  img.style.opacity = (i === 0) ? '1' : '0';
-  img.classList.toggle('active', i === 0);
-});
-
-function fadeToNextImage() {
-  // 現在の画像をフェードアウト
-  images[currentIndex].classList.remove('active');
-  images[currentIndex].style.opacity = '0';
-
-  // 次の画像をフェードイン
-  currentIndex = (currentIndex + 1) % images.length;
-  images[currentIndex].classList.add('active');
-  images[currentIndex].style.opacity = '1';
-}
-
-// 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
-setTimeout(() => {
-  fadeToNextImage();
-  setInterval(fadeToNextImage, 4000);
-}, 4000);
-
-function openModal(imageSrc) {
-  const modal = document.getElementById('modal');
-  const modalImage = document.getElementById('modalImage');
-  modal.style.display = 'flex';
-  modalImage.src = imageSrc;
-}
-
-function closeModal() {
-  const modal = document.getElementById('modal');
-  modal.style.display = 'none';
 }
 
 // barbaでのページ遷移
