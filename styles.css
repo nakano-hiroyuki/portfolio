@@ -106,7 +106,10 @@ header h1 {
   text-decoration: none;
   gap: 5px;
 }
-
+#home .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
 
 
 /*profileページ*/
@@ -251,7 +254,10 @@ header h1 {
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
-
+#about .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
 /* ハンバーガーボタン */
 .hamburger {
   display: none;
@@ -326,6 +332,11 @@ header h1 {
   animation: fadeInUp 0.6s forwards;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
+.overlay-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
+
 
 .overlay.active .overlay-nav a:nth-child(1) {
   animation-delay: 0.2s;
@@ -376,17 +387,6 @@ header h1 {
   text-align: center;
 }
 
-.thumbnail {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.thumbnail:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 img,
 video {
@@ -415,6 +415,10 @@ video {
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 } 
+#app-header .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
 .video-background {
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -615,6 +619,10 @@ video {
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
+#website .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
 #website .title-bg {
   background-image: url('website.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
@@ -664,7 +672,7 @@ video {
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
   margin: 0;
   padding: 0;
@@ -826,6 +834,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 } 
+#design .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
 .design-title-bg {
   width: 100%;
   height: 100vh;
@@ -907,6 +919,20 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   float: right;
 }
 
+.thumbnail {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
 .design-end-bg {
   width: 100%;
   height: 100%;
@@ -942,6 +968,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+#learning-menu .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
 }
 #learning-menu .title-bg {
   width: 100%;
@@ -1036,6 +1066,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
   width: 100%;
   margin: 0;
@@ -1100,6 +1131,8 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
   color: white;
   padding-bottom: 100px;
   padding-top: 100px;
@@ -1133,6 +1166,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+#contact-text .header-nav a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
 }
 .contact-bg {
   background-image: url('contact背景.jpg');
@@ -1287,23 +1324,23 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 
-/*コンテンツへリンクのフッター*/
-.footer05 {
+/*フッター*/
+.footer {
   color: #808080;
-  background: #f9f9f9;
+  background: #fcfbfb;
   padding: 30px;
 }
 
-.footer05 a {
+.footer a {
   color: #808080;
   text-decoration: none;
 }
 
-.footer05 li a:hover {
+.footer li a:hover {
   text-decoration: underline;
 }
 
-.footer05 .wrap {
+.footer .wrap {
   width: 900px;
   margin: 0 auto;
   display: flex;
@@ -1311,28 +1348,28 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   justify-content: space-between;
 }
 
-.footer05 .wrap h3 {
+.footer .wrap h3 {
   margin: 0 0 10px 0;
   padding: 0;
   border-bottom: 1px #c4c4c4 solid;
 }
 
-.footer05 .wrap p {
+.footer .wrap p {
   margin: 0;
   padding: 0 0 20px 0;
 }
 
-.footer05 .wrap .box {
+.footer .wrap .box {
   width: 22%;
 }
 
-.footer05 .wrap .box ul {
+.footer .wrap .box ul {
   margin: 0;
   padding: 0 0 20px 0;
   list-style: none;
 }
 
-.footer05 .wrap {
+.footer .wrap {
   width: 100%;
   padding: 20px 0 0 0;
 }
@@ -1341,7 +1378,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   text-align: center;
   color: gray;
 }
-
+.box a:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.3s ease;
+}
 
 /*レスポンシブ対応*/
 @media (max-width: 1200px) {
