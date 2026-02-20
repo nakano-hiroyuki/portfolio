@@ -6,11 +6,11 @@
   <!-- AOSのCSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- その他のCSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
 </head>
 <!-- barbaのJS -->
 <body data-barba="wrapper">
@@ -51,7 +51,7 @@
 <section id="app">
 <div class="video-background">
   <video autoplay muted loop>
-    <source src="PC画面ビデオ.mp4" type="video/mp4">
+    <source src="assets/videos/PC画面ビデオ.mp4" type="video/mp4">
   </video>
 </div>
 
@@ -68,16 +68,16 @@
             <div class="carousel" id="memo-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('memo-app-carousel')">&#10094;</button>
               <div class="carousel-images">
-                <img src="Python メモアプリ.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image active">
-                <img src="メモアプリ.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="メモアプリ3.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="Python メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/Python メモアプリ.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image active">
+                <img src="assets/images/メモアプリ.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/メモアプリ3.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/Python メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
               </div>
               <button class="carousel-btn next" onclick="nextSlide('memo-app-carousel')">&#10095;</button>
             </div>
             <video class="carousel-video" width="500" height="350" autoplay loop muted style="vertical-align: middle;">
-              <source src="メモAPP.mp4" type="video/mp4">
+              <source src="assets/videos/メモAPP.mp4" type="video/mp4">
             </video>
           </div>
           
@@ -86,16 +86,16 @@
             <div class="carousel" id="calc-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('calc-app-carousel')">&#10094;</button>
               <div class="carousel-images">
-                <img src="Python 電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image active">
-                <img src="Python 電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
-                <img src="電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
-                <img src="電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
-                <img src="電卓アプリ3.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/Python 電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image active">
+                <img src="assets/images/Python 電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/電卓アプリ3.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
               </div>
               <button class="carousel-btn next" onclick="nextSlide('calc-app-carousel')">&#10095;</button>
             </div>
             <video class="carousel-video" width="500" height="350" autoplay loop muted style="vertical-align: middle;">
-              <source src="電卓APP.mp4" type="video/mp4">
+              <source src="assets/videos/電卓APP.mp4" type="video/mp4">
             </video>
           </div>
           
@@ -104,17 +104,17 @@
             <div class="carousel" id="stopwatch-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('stopwatch-app-carousel')">&#10094;</button>
               <div class="carousel-images">
-                <img src="Python ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350"
+                <img src="assets/images/Python ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350"
                   class="carousel-image active">
-                <img src="Python ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ストップウォッチアプリ1.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/Python ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ストップウォッチアプリ1.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350" class="carousel-image">
               </div>
               <button class="carousel-btn next" onclick="nextSlide('stopwatch-app-carousel')">&#10095;</button>
             </div>
             <video class="carousel-video" width="500" height="350" autoplay loop muted style="vertical-align: middle;">
-              <source src="ストップウォッチAPP.mp4" type="video/mp4">
+              <source src="assets/videos/ストップウォッチAPP.mp4" type="video/mp4">
             </video>
           </div>
           
@@ -123,18 +123,18 @@
             <div class="carousel" id="todo-app-carousel">
               <button class="carousel-btn prev" onclick="prevSlide('todo-app-carousel')">&#10094;</button>
               <div class="carousel-images">
-                <img src="Python ToDoリストアプリ.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                <img src="assets/images/Python ToDoリストアプリ.png" alt="ToDoリストアプリ画像" width="500" height="350"
                   class="carousel-image active">
-                <img src="ToDoリストアプリ1.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ToDoリストアプリ2.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ToDoリストアプリ3.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ToDoリストアプリ4.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
-                <img src="ToDoリストアプリ5.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ1.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ2.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ3.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ4.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ5.png" alt="ToDoリストアプリ画像" width="500" height="350" class="carousel-image">
               </div>
               <button class="carousel-btn next" onclick="nextSlide('todo-app-carousel')">&#10095;</button>
             </div>
             <video class="carousel-video" width="500" height="350" autoplay loop muted style="vertical-align: middle;">
-              <source src="ToDoリストAPP.mp4" type="video/mp4">
+              <source src="assets/videos/ToDoリストAPP.mp4" type="video/mp4">
             </video>
           </div>
           
@@ -145,7 +145,7 @@
 <div class="app-about-bg">
   <h3 class="app-about-title">アプリの特徴</h3>
   <div class="explanation1">
-    <img src="プログラミング2.jpg" ait="プログラミング画像" width="650px" height="auto">
+    <img src="assets/images/プログラミング2.jpg" ait="プログラミング画像" width="650px" height="auto">
     <span class="explanation-text">
       <h3 class="explanation-title">私の考えるアプリ開発とは</h3>
       <p class="app-name">Concept</p>
@@ -154,7 +154,7 @@
   </div>
   
   <div class="explanation2">
-    <img src="アプリ開発.jpg" ait="プログラミング画像" width="650px" height="auto">
+    <img src="assets/images/アプリ開発.jpg" ait="プログラミング画像" width="650px" height="auto">
     <span class="explanation-text">
       <h3 class="explanation-title">開発の詳細</h3>
       <p class="app-name">Work</p>

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* styles.css */
 html,
 body {
@@ -114,7 +116,7 @@ header h1 {
 
 /*profileページ*/
 .bg-img {
-  background-image: url('PC2.jpg');
+  background-image: url('../images/PC2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -140,7 +142,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-image: url('背景3.jpg');
+  background-image: url('../images/背景3.jpg');
   background-size: cover;
   border-radius: 24px;
   box-shadow: 0 6px 32px 0 rgba(60, 60, 80, 0.13), 0 1.5px 6px 0 rgba(60, 60, 80, 0.10);
@@ -270,6 +272,9 @@ header h1 {
   position: fixed;
   top: 20px;
   right: 20px;
+  background-color: rgba(0, 0, 0, 0.503);
+  border-radius: 3px;
+  padding: 3px;
 }
 
 .hamburger span {
@@ -624,7 +629,7 @@ video {
   transition: color 0.3s ease;
 }
 #website .title-bg {
-  background-image: url('website.jpg');
+  background-image: url('../images/website.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
@@ -667,7 +672,7 @@ video {
   font-weight: normal;
 }
 .website-bg {
-  background-image: url('背景.jpg'); /* 画像のファイル名 */
+  background-image: url('../images/背景.jpg'); /* 画像のファイル名 */
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
@@ -841,7 +846,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 .design-title-bg {
   width: 100%;
   height: 100vh;
-  background-image: url('テクノロジー4.jpg'); /* 画像のパスを指定 */
+  background-image: url('../images/テクノロジー4.jpg'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -936,7 +941,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 .design-end-bg {
   width: 100%;
   height: 100%;
-  background-image: url('背景黒花.jpg');
+  background-image: url('../images/背景黒花.jpg');
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -976,7 +981,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 #learning-menu .title-bg {
   width: 100%;
   height: 100vh; /* 好きな高さに調整 */
-  background-image: url('PC9.jpg'); /* 画像のパスを指定 */
+  background-image: url('../images/PC9.jpg'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -992,7 +997,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 #learning-menu .step-bg {
   width: 100%;
   height: 300px;
-  background-image: url('勉強.jpg');
+  background-image: url('../images/勉強.jpg');
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -1017,7 +1022,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 #learning-about .about-bg {
   width: 100%;
   height: 300px;
-  background-image: url('本.jpg');
+  background-image: url('../images/本.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1032,7 +1037,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 #learning-ending .ending-bg {
   width: 100%;
   height: 300px;
-  background-image: url('時計.jpg'); /* 画像のパスを指定 */
+  background-image: url('../images/時計.jpg'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -1061,7 +1066,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 
 .learning-bg {
-  background-image: url("和紙3.jpg");
+  background-image: url("../images/和紙3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -1127,7 +1132,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .learning-bg2 {
-  background-image: url("和紙3.jpg");
+  background-image: url("../images/和紙3.jpg");
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
@@ -1144,7 +1149,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   color: rgb(106, 57, 8);
 }
 .learning-bg3 {
-  background-image: url("本1.jpg");
+  background-image: url("../images/本1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1172,7 +1177,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   transition: color 0.3s ease;
 }
 .contact-bg {
-  background-image: url('contact背景.jpg');
+  background-image: url('../images/contact背景.jpg');
   background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
@@ -1208,7 +1213,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 #contact-form {
-  background-image: url("contact背景2.jpg");
+  background-image: url("../images/contact背景2.jpg");
   backdrop-filter: blur(12px); /* 背景ぼかし */
   -webkit-backdrop-filter: blur(12px); /* Safari対応 */
   border-radius: 16px;
@@ -1221,7 +1226,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 5px;
   transition: box-shadow 0.3s;
   z-index: 1;
 }
@@ -1239,7 +1244,37 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   letter-spacing: 0.03em;
 }
 
-#contact-form input,
+#contact-form input {
+  width: 100%;
+  max-width: 340px;
+  padding: 10px 14px;
+  border: 1.5px solid #bfc9d9;
+  border-radius: 10px;
+  font-size: 1.05em;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  outline: none;
+  min-height: 30px;
+  resize: vertical;
+}
+
+#contact-form .gender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contact-form .input-style {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+
 #contact-form textarea {
   width: 100%;
   max-width: 340px;
@@ -1609,25 +1644,25 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   }
 
   /*フッター*/
-  .footer05 .wrap {
+  .footer .wrap {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
   }
 
-  .footer05 .wrap h3 {
+  .footer .wrap h3 {
     border: none;
   }
 
-  .footer05 .wrap .box {
+  .footer .wrap .box {
     width: 100%;
   }
 
-  .footer05 .wrap .box ul {
+  .footer .wrap .box ul {
     border-top: 1px #c4c4c4 solid;
   }
 
-  .footer05 .wrap .box ul li a {
+  .footer .wrap .box ul li a {
     display: block;
     padding: 5px 15px;
     border-bottom: 1px #c4c4c4 solid;
