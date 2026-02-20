@@ -1272,6 +1272,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   display: flex;
   align-items: center;
   justify-items: center;
+  outline: none;
 }
 
 
