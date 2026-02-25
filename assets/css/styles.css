@@ -500,9 +500,19 @@ header h1 {
   justify-content: center; /* 縦方向の中央揃え */
   flex-direction: column; /* 縦並びにする */
   font-size: 20px;
-  margin: 0 auto 200px;
-  border-bottom: 1px solid white;
-  width: 80%;
+  padding-bottom: 150px;
+}
+
+.python-apps {
+  color: gray;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.app-subtitle {
+  color: gray;
+  font-weight: normal;
+  padding-bottom: 50px;
 }
 
 .image-container {
@@ -658,6 +668,7 @@ video {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: normal;
   gap: 20px;
   padding-bottom: 100px;
 }
