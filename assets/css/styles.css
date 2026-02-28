@@ -140,7 +140,7 @@ header h1 {
   flex-direction: column;
   width: 100%;
   margin: 0;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
   min-height: 100vh;
 }
 /*自己紹介カードデザイン*/
@@ -148,7 +148,8 @@ header h1 {
   text-align: center;
   letter-spacing: 0.08em;
   padding-top: 120px;
-  color: #444343;
+  color: #6e6e6e;
+  margin-bottom: 100px;
 }
 
 .about-card {
@@ -156,12 +157,12 @@ header h1 {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-image: url('../images/背景3.jpg');
+  background: linear-gradient(to bottom, #f8fffe, #90fffd);
   background-size: cover;
-  border-radius: 24px;
+  border-radius: 40px;
   box-shadow: 0 6px 32px 0 rgba(60, 60, 80, 0.13), 0 1.5px 6px 0 rgba(60, 60, 80, 0.10);
   padding: 40px 40px;
-  margin: 0 auto 36px auto;
+  margin: 0 auto 150px auto;
   max-width: 950px;
   transition: box-shadow 0.3s;
 }
@@ -206,14 +207,19 @@ header h1 {
   font-size: 17px;
 }
 
+.skill-wrapper {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
 .skill-title {
   text-align: center;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: bold;
-  color: #565454;
+  color: #6e6e6e;
   font-size: 50px;
-  margin: 200px auto 0px;
-  border-bottom: 3px dashed #565454;
+  margin: 0px auto 0px;
+  border-bottom: 3px dashed #737373;
   width: 60%;
 }
 
@@ -227,9 +233,8 @@ header h1 {
   flex-direction: row;
   min-width: 0;
   white-space: nowrap; /* 改行を防ぐ */
-  color: #565454;
+  color: #6e6e6e;
   margin-top: 20px;
-  margin-bottom: 100px;
 }
 
 /* 説明文のスタイル */
@@ -287,33 +292,6 @@ header h1 {
 }
 #header-underline a:hover::after {
    width: 100%; 
-}
-
-/*SKILL詳細ページ遷移ボタン*/
-.button-wrapper {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.fancy-button {
-  background: linear-gradient(135deg, #3d3d3db7 0%, #bfc0c0a9 100%);
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  color: white;
-  text-decoration: none;
-  padding: 24px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: 60%;
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
-  align-items: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.fancy-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -476,6 +454,7 @@ header h1 {
   z-index: -2;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .video-background video {
@@ -512,7 +491,24 @@ header h1 {
 .app-subtitle {
   color: gray;
   font-weight: normal;
+  padding: 0;
+  margin: 0;
   padding-bottom: 50px;
+}
+
+.subtitle-ja {
+  text-align: center;
+  color: gray;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.app-image {
+ flex-direction: column;
 }
 
 .image-container {
@@ -656,8 +652,8 @@ video {
   z-index: -1;
 }
 .python-apps {
-  background-image: url("../images/背景4.jpg");
-  background-color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to bottom, #e0f7e9, #8ee2c5);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
 }
 .app-about-bg {
@@ -674,19 +670,11 @@ video {
   align-items: center;
   text-align: center;
   font-weight: normal;
-  gap: 20px;
+  padding-top: 0;
   padding-bottom: 100px;
+  margin: 0;
 }
 
-.app-about-title::before,
-.app-about-title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: #808080;
-  min-width: 10px;   /* 最小幅 */
-  max-width: 200px;  /* 最大幅 */
-}
 .explanation1 {
   display: flex;
   color: gray;
@@ -797,12 +785,15 @@ video {
   padding: 0;
   width: 100%;
   padding-bottom: 20px;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 #website .main-title {
-  color: rgb(128, 74, 38);
+  color: rgb(133, 133, 133);
   font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: 0;
 }
 
 .products {
@@ -817,8 +808,9 @@ video {
   padding: 0;
   z-index: 1;
   position: absolute;
-  background: rgba(41, 113, 84, 0.6);
+  background: rgba(255, 255, 255, 0.5);
 }
+
 #products2 .section-title {
   font-weight: normal;
   line-height: 1.6;
@@ -827,10 +819,10 @@ video {
   padding: 0;
   z-index: 1;
   position: absolute;
-  background: rgba(149, 42, 38, 0.6);
+  background: rgba(255, 255, 255, 0.5);
 }
 .products .section-title .ja {
-  color: rgb(255, 255, 255);
+  color: rgb(117, 117, 117);
   font-size: 2rem;
   letter-spacing: 0.1em;
   font-weight: normal;
@@ -840,7 +832,7 @@ video {
   padding: 20px 0;
 }
 .products .section-title .en {
-  color: rgb(255, 255, 255);
+  color: rgb(117, 117, 117);
   font-size: 1.2rem;
   font-weight: normal;
   display: flex;
@@ -977,7 +969,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 .design-title-bg {
   width: 100%;
   height: 100vh;
-  background-image: url('../images/テクノロジー4.jpg'); /* 画像のパスを指定 */
+  background-image: url('../images/PC9.jpg'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を要素いっぱいに表示 */
   background-position: center; /* 画像の位置を中央に */
   background-repeat: no-repeat; /* 繰り返しなし */
@@ -1007,14 +999,60 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 #design .subtitle {
   font-weight: normal;
+  color: white;
+}
+#design .step-bg {
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/PC.jpg');
+  background-size: cover; /* 画像を要素いっぱいに表示 */
+  background-position: center; /* 画像の位置を中央に */
+  background-repeat: no-repeat; /* 繰り返しなし */
+  justify-content: center; /* 横方向の中央揃え */
+  align-items: center; /* 縦方向の中央揃え */
+  background-attachment: fixed; /* 背景を固定 */
+  display: flex;
+  color: white;
+  font-weight: normal; 
 }
 .design-bg {
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(to bottom, #ffeedd, #fccabc);
   margin: 0;
   color: white;
   width: 100%;
-  padding-top: 40px;
-  margin-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+} 
+#design .subtitle-ja {
+  color: white;
+}
+.design-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.design-bg2 {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  color: white;
+  width: 100%;
+  padding-top: 80px;
+}
+#design .about-bg {
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/PC7.jpg');
+  background-size: cover; /* 画像を要素いっぱいに表示 */
+  background-position: center; /* 画像の位置を中央に */
+  background-repeat: no-repeat; /* 繰り返しなし */
+  justify-content: center; /* 横方向の中央揃え */
+  align-items: center; /* 縦方向の中央揃え */
+  background-attachment: fixed; /* 背景を固定 */
+  display: flex;
+  color: white;
+  font-weight: normal; 
 }
 /* モーダルのスタイル */
 .modal {
@@ -1067,24 +1105,6 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-.design-end-bg {
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/背景黒花.jpg');
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
-  background-attachment: fixed; /* 背景を固定 */
-  display: flex;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  flex-direction: column;
-}
 .last-text {
   margin-top: 100px;
   color: rgb(255, 255, 255);
@@ -1096,183 +1116,6 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   margin-bottom: 0;
 }
 
-
-/*learningページ*/
-#learning-menu .header-nav a {
-  display: flex;
-  text-align: center; /* テキストを中央揃え */
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  position: relative;
-}
-#learning-menu a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
-}
-#learning-menu .header-nav a:hover {
-  color: rgb(30, 245, 230);
-  transition: color 0.4s ease;
-}
-#learning-menu a:hover::after {
-   width: 100%; 
-}
-
-#learning-menu .title-bg {
-  width: 100%;
-  height: 100vh; /* 好きな高さに調整 */
-  background-image: url('../images/PC9.jpg'); /* 画像のパスを指定 */
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  display: flex;
-  color: white;
-  flex-direction: column;
-  font-weight: bold; /* 太字にする */
-}
-#learning-menu .main-title {
-  text-align: center;
-  margin-top: 350px;
-}
-#learning-menu .step-bg {
-  width: 100%;
-  height: 300px;
-  background-image: url('../images/勉強.jpg');
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
-  background-attachment: fixed; /* 背景を固定 */
-  display: flex;
-  color: white;
-  font-weight: bold; /* 太字にする */
-}
-
-#learning-menu .subtitle {
-  font-weight: normal;
-}
-#learning-about .subtitle {
-  font-weight: normal;
-}
-#learning-ending .subtitle {
-  font-weight: normal;
-}
-
-#learning-about .about-bg {
-  width: 100%;
-  height: 300px;
-  background-image: url('../images/本.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;  /* 横方向の中央揃え */
-  align-items: center;  /* 縦方向の中央揃え */
-  color: white;
-  font-weight: bold; /* 太字にする */
-}
-
-#learning-ending .ending-bg {
-  width: 100%;
-  height: 300px;
-  background-image: url('../images/時計.jpg'); /* 画像のパスを指定 */
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  background-attachment: fixed; /* 背景を固定 */
-  display: flex; /* Flexboxを有効化 */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
-  color: white;
-  font-weight: bold; /* 太字にする */
-}
-
-
-.ending-message {
-  font-weight: bold;
-  font-family: 'Yu Mincho', "Hiragino Mincho ProN", serif;
-  color: #ffffff;
-  line-height: 2.1;
-  margin: 0 auto;
-  max-width: 80%;
-  text-align: center;
-}
-
-.ending-br {
-  display: none;
-}
-
-
-.learning-bg {
-  background-image: url("../images/和紙3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-  width: 100%;
-  margin: 0;
-  color: white;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  min-height: 100vh;
-}
-
-.learning-bg-title {
-  color: rgb(175, 112, 23);
-  border-bottom: 5px double rgb(175, 112, 23);
-  width: 80%;
-  margin: 0 auto 100px; /* 左右の margin を auto にする */
-}
-
-.border-list {
-  border-top: 1px solid #7e4101;
-  border-bottom: 1px solid  #7e4101;
-  padding: 18px 24px 18px 24px;
-  margin-bottom: 80px;
-  font-size: 1.08em;
-  line-height: 1.7;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-
-.last-section {
-  border-bottom: 5px double rgb(145, 85, 1);
-  padding-bottom: 20px;
-  margin-bottom: 50px;
-}
-
-#learning-menu .title {
-  color: rgb(112, 69, 8);
-}
-#learning-about .title {
-  color: rgb(112, 69, 8);
-}
-.learning-bg3 {
-  background-image: url("../images/本1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  text-align: center;
-  color: white;
-  flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-#learning-ending .ending-title {
-  color: rgb(163, 68, 64);
-}
 
 /*contactページ*/
 #contact-text .header-nav a {
@@ -1337,7 +1180,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 #contact-form {
-  background-image: url("../images/contact背景2.jpg");
+  background: linear-gradient(to bottom, #ffffff, #e6e6e6);
   backdrop-filter: blur(12px); /* 背景ぼかし */
   -webkit-backdrop-filter: blur(12px); /* Safari対応 */
   border-radius: 16px;
@@ -1472,7 +1315,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .footer .wrap {
-  width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -1491,7 +1334,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .footer .wrap .box {
-  width: 22%;
+  width: 30%;
 }
 
 .footer .wrap .box ul {
