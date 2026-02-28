@@ -157,7 +157,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background: linear-gradient(to bottom, #f8fffe, #90fffd);
+  background: linear-gradient(to right, #f8fffe, #90fffd);
   background-size: cover;
   border-radius: 40px;
   box-shadow: 0 6px 32px 0 rgba(60, 60, 80, 0.13), 0 1.5px 6px 0 rgba(60, 60, 80, 0.10);
