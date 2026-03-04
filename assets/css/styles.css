@@ -657,7 +657,7 @@ video {
 .app-about-bg {
   background-image: url('../images/和紙2.jpg');
   padding-top: 100px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.75);
   background-blend-mode: lighten;
 }
 
@@ -773,7 +773,7 @@ video {
 }
 
 .website-bg {
-  background: linear-gradient(to top, #ffffff, hwb(0 76% 24%));
+  background: linear-gradient(to top, #ffffff, hwb(0 87% 13%));
   margin: 0;
   padding-top: 60px;
   padding-bottom: 100px;
@@ -910,7 +910,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.65);
   background-blend-mode: lighten;
   margin: 0;
   padding: 0;
@@ -1192,7 +1192,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 #contact-form {
-  background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
   backdrop-filter: blur(12px); /* 背景ぼかし */
   -webkit-backdrop-filter: blur(12px); /* Safari対応 */
   border-radius: 16px;
