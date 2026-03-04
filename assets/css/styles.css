@@ -307,7 +307,7 @@ header h1 {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: rgba(0, 0, 0, 0.503);
+  background-color: rgba(118, 118, 118, 0.503);
   border-radius: 3px;
   padding: 3px;
 }
@@ -481,8 +481,10 @@ header h1 {
   font-size: 20px;
   padding-bottom: 150px;
 }
-
 .python-apps {
+  background: linear-gradient(to top, #f5fff9, #8effd7);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
   color: gray;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -651,11 +653,7 @@ video {
   background-color: white;
   z-index: -1;
 }
-.python-apps {
-  background: linear-gradient(to bottom, #e0f7e9, #8ee2c5);
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
-}
+
 .app-about-bg {
   background-image: url('../images/和紙2.jpg');
   padding-top: 100px;
@@ -773,23 +771,18 @@ video {
 #website .subtitle {
   font-weight: normal;
 }
-.website-bg {
-  background-image: url('../images/背景.jpg'); /* 画像のファイル名 */
-  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
-  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
-  background-position: center; /* 中央に配置 */
-  background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  padding-bottom: 20px;
-  padding-top: 80px;
-}
 
+.website-bg {
+  background: linear-gradient(to top, #ffffff, hwb(0 88% 12%));
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+#website .subtitle-ja {
+  color: white;
+}
 #website .main-title {
-  color: rgb(133, 133, 133);
+  color: rgb(255, 255, 255);
   font-weight: normal;
   padding-top: 0;
   padding-bottom: 60px;
@@ -911,7 +904,26 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   text-orientation: mixed;
 }
 
-
+.gallery-bg {
+  background-image: url('../images/背景.jpg'); /* 画像のファイル名 */
+  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
+  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
+  background-position: center; /* 中央に配置 */
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+#works .subtitle-ja {
+  color: gray;
+}
+#works .main-title {
+  color: gray;
+}
 #works .title {
   color: rgb(144, 118, 89);
   font-weight: normal;
@@ -1374,7 +1386,25 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 /*レスポンシブ対応*/
+@media (max-width: 1300px) {
+  .explanation1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .explanation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 1200px) {
+  .display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .content-wrapper {
     flex-direction: column;
     align-items: center;
@@ -1502,7 +1532,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     font-weight: bold;
     color: #565454;
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 0;
   }
 
@@ -1529,7 +1559,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #app h2 {
     font-size: 45px;
   }
-
+  
   .image-container {
     display: flex;
     justify-content: center;
@@ -1625,6 +1655,21 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 700px) {
+  /*appページ*/
+  .explanation1 img {
+    width: 90%;
+  }
+  .explanation2 img {
+    width: 90%;
+  }
+
+  #website .subtitle {
+    font-size: 40px;
+  }
+  #website .text-content p {
+    font-size: 15px;
+  }
+
   #design .text-content h2 {
     font-size: 35px;
   }
@@ -1694,7 +1739,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #app .text-content {
     font-size: 14px;
   }
-  
+  .explanation-title {
+    font-size: 25px;
+  }
+
   .products .img {
   width: 100%;
   margin-top: 100px;
@@ -1745,6 +1793,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 400px) {
+  /*home*/
+  #home h1 {
+    font-size: 45px;
+  }
+
   .about-title {
     font-size: 55px;
   }
@@ -1758,12 +1811,18 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #about .about-desc {
     font-size: 15px;
   }
+  .skill-content {
+    font-size: 23px;
+  }
   
   #app h1 {
     font-size: 40px;
   }
   #app .text-content {
     font-size: 11px;
+  }
+  .app-subtitle {
+    font-size: 35px;
   }
   .carousel-images {
     display: flex;
@@ -1778,8 +1837,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     width: 220px;
     height: 180px;
   }
+  .app-about-title {
+    font-size: 35px;
+  }
   .explanation-title {
-    font-size: 20px;
+    font-size: 23px;
   }
 
   #website h1 {
@@ -1819,8 +1881,8 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #design .title {
     font-size: 35px;
   }
-  #design .design-end-bg h4 {
-    font-size: 13px;
+  #design .design-text {
+    font-size: 15px;
   }
   #design .last-text {
     font-size: 15px;
