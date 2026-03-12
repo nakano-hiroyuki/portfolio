@@ -1598,6 +1598,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   width: 100%;
   }
   #works ul {
+    padding-left: 0;
     flex-direction: column;
   }
   #works li {

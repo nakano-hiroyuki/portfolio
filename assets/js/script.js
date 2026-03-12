@@ -8,6 +8,7 @@ function startClock() {
     timeElement.textContent = now.toLocaleTimeString();
   }, 1000);
 }
+startClock();
 
 
 //ホームスライドショー
