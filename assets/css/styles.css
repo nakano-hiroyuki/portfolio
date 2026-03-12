@@ -452,11 +452,11 @@ header h1 {
   padding-bottom: 500px;
 }
 #app-header h1 {
-  padding-top: 300px;
+  padding-top: 350px;
 }
 #app-header .text-content {
   display: flex;
-  padding-top: 200px;
+  padding-top: 250px;
   color: white;
   text-align: center;
   justify-content: center; /* 縦方向の中央揃え */
@@ -717,6 +717,7 @@ video {
   background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
   background-position: center; /* 中央に配置 */
   background-attachment: fixed;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -1710,22 +1711,22 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 500px) {
-  #app .study-reason-desc {
-    font-size: 12px;
-  }
-  #app h1 {
+  #app-header h1 {
     font-size: 50px;
   }
-  #app h2 {
+  #app-header h2 {
     font-size: 30px;
   }
-  #app .text-content {
+  #app-header .text-content {
     font-size: 14px;
   }
   .explanation-title {
     font-size: 25px;
   }
 
+  #website .subtitle {
+    font-size: 30px;
+  }
   .products .img {
   width: 100%;
   margin-top: 100px;
@@ -1798,10 +1799,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     font-size: 23px;
   }
   
-  #app h1 {
+  #app-header h1 {
     font-size: 40px;
   }
-  #app .text-content {
+  #app-header .text-content {
     font-size: 11px;
   }
   .app-subtitle {
@@ -1836,7 +1837,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   .products .section-title .en {
     font-size: 0.7rem;
   }
-  #website .text-content {
+  #website .text-content p {
     font-size: 11px;
   }
   #website .main-title {
