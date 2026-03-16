@@ -39,28 +39,40 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0; /* スライドショーを後ろに移動 */
-  width: 100vw; /* ビューポート幅全体 */
-  height: 100vh; /* ビューポート高さ全体 */
+  z-index: 0;
+  /* スライドショーを後ろに移動 */
+  width: 100vw;
+  /* ビューポート幅全体 */
+  height: 100vh;
+  /* ビューポート高さ全体 */
   overflow: hidden;
 }
 
 #time {
-  position: fixed;/* ページ内で固定表示 */
-  top: 0; /* 上端に配置 */
-  left: 0; /* 左端に配置 */
-  margin: 10px; /* 不要な余白を削除 */
-  padding: 10px; /* 少し余白を加えて見やすく */
-  border: 1px solid #ccc; /* 見やすいように枠線を追加 */
-  font-size: 20px; /* フォントサイズ調整 */
+  position: fixed;
+  /* ページ内で固定表示 */
+  top: 0;
+  /* 上端に配置 */
+  left: 0;
+  /* 左端に配置 */
+  margin: 10px;
+  /* 不要な余白を削除 */
+  padding: 10px;
+  /* 少し余白を加えて見やすく */
+  border: 1px solid #ccc;
+  /* 見やすいように枠線を追加 */
+  font-size: 20px;
+  /* フォントサイズ調整 */
   color: #fff;
   z-index: 999;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; /* 最前面に配置 */
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  /* 最前面に配置 */
 }
 
 #slideshow img {
   position: absolute;
-  object-fit: cover; /* 画像を全体に収める */
+  object-fit: cover;
+  /* 画像を全体に収める */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -78,19 +90,25 @@ header {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: bold;
   flex-direction: column;
-  justify-content: center; /* 高さ方向の中央揃え */
-  align-items: center; /* 横方向の中央揃え */
+  justify-content: center;
+  /* 高さ方向の中央揃え */
+  align-items: center;
+  /* 横方向の中央揃え */
   height: 100vh;
   background-size: cover;
-  position: relative; /* ヘッダー内の要素をスライドショーの上に配置 */
-  z-index: 1; /* スライドショーの上に表示する */
+  position: relative;
+  /* ヘッダー内の要素をスライドショーの上に配置 */
+  z-index: 1;
+  /* スライドショーの上に表示する */
 }
 
 h1,
 nav,
 a {
-  position: relative; /* 必要に応じて適用 */
-  color: #fff; /* スライドショー背景での視認性向上 */
+  position: relative;
+  /* 必要に応じて適用 */
+  color: #fff;
+  /* スライドショー背景での視認性向上 */
   text-decoration: none;
 }
 
@@ -108,23 +126,30 @@ header h1 {
   color: #fff;
   text-decoration: none;
   gap: 5px;
-  position: relative; 
+  position: relative;
 }
-#home a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
+
+#home a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
-#home .header-nav a:hover {
+
+#home .header-nav a:hover,
+#home .header-nav a:active,
+#home .header-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
+
 #home a:hover::after {
-   width: 100%; 
+  width: 100%;
 }
 
 
@@ -143,6 +168,7 @@ header h1 {
   padding-bottom: 150px;
   min-height: 100vh;
 }
+
 /*自己紹介カードデザイン*/
 .about-title {
   text-align: center;
@@ -157,7 +183,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background: linear-gradient(to right, #f8fffe, #90fffd);
+  background: linear-gradient(to right, #ffc5fc, #cafffd);
   background-size: cover;
   border-radius: 40px;
   box-shadow: 0 6px 32px 0 rgba(60, 60, 80, 0.13), 0 1.5px 6px 0 rgba(60, 60, 80, 0.10);
@@ -232,7 +258,8 @@ header h1 {
   gap: 50px;
   flex-direction: row;
   min-width: 0;
-  white-space: nowrap; /* 改行を防ぐ */
+  white-space: nowrap;
+  /* 改行を防ぐ */
   color: #6e6e6e;
   margin-top: 20px;
 }
@@ -253,7 +280,8 @@ header h1 {
 .main-header {
   display: flex;
   justify-content: center;
-  align-items: center; /* 縦方向の中央揃え（任意） */
+  align-items: center;
+  /* 縦方向の中央揃え（任意） */
   color: #858585;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.527);
@@ -268,30 +296,39 @@ header h1 {
   display: flex;
   gap: 30px;
 }
+
 #header-underline .header-nav a {
   display: flex;
-  text-align: center; /* テキストを中央揃え */
+  text-align: center;
+  /* テキストを中央揃え */
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   text-decoration: none;
   position: relative;
 }
-#header-underline a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
+
+#header-underline a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
-#header-underline .header-nav a:hover {
+
+#header-underline .header-nav a:hover,
+#header-underline .header-nav a:active,
+#header-underline .header-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
+
 #header-underline a:hover::after {
-   width: 100%; 
+  width: 100%;
 }
 
 
@@ -319,7 +356,8 @@ header h1 {
   background: #ffffff;
   border-radius: 2px;
   transition: 0.4s;
-  transform-origin: center; /* 回転の基準を中央に */
+  transform-origin: center;
+  /* 回転の基準を中央に */
 }
 
 /* ハンバーガー開閉アニメーション */
@@ -372,7 +410,10 @@ header h1 {
   animation: fadeInUp 0.6s forwards;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
-.overlay-nav a:hover {
+
+.overlay-nav a:hover,
+.overlay-nav a:active,
+.overlay-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -415,55 +456,72 @@ header h1 {
 /*appページ*/
 #app-header .header-nav a {
   display: flex;
-  text-align: center; /* テキストを中央揃え */
+  text-align: center;
+  /* テキストを中央揃え */
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
-#app-header a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
+#app-header a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
-#app-header .header-nav a:hover {
+
+#app-header .header-nav a:hover,
+#app-header .header-nav a:active,
+#app-header .header-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
+
 #app-header a:hover::after {
-   width: 100%; 
+  width: 100%;
 }
 
 .app-bg {
   width: 100%;
   height: 100vh;
-  background-image: url('../images/ビル.jpg'); /* 画像のパスを指定 */
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  background-attachment: fixed; /* 背景を固定 */
+  background-image: url('../images/ビル.jpg');
+  /* 画像のパスを指定 */
+  background-size: cover;
+  /* 画像を要素いっぱいに表示 */
+  background-position: center;
+  /* 画像の位置を中央に */
+  background-repeat: no-repeat;
+  /* 繰り返しなし */
+  background-attachment: fixed;
+  /* 背景を固定 */
   display: flex;
   flex-direction: column;
   color: white;
   padding-bottom: 500px;
 }
+
 #app-header h1 {
   padding-top: 350px;
 }
+
 #app-header .text-content {
   display: flex;
   padding-top: 250px;
   color: white;
   text-align: center;
-  justify-content: center; /* 縦方向の中央揃え */
-  flex-direction: column; /* 縦並びにする */
+  justify-content: center;
+  /* 縦方向の中央揃え */
+  flex-direction: column;
+  /* 縦並びにする */
   font-size: 20px;
   padding-bottom: 150px;
 }
+
 .python-apps {
   background: linear-gradient(to top, #f5fff9, #8effd7);
   background-color: rgba(255, 255, 255, 0.7);
@@ -493,7 +551,7 @@ header h1 {
 }
 
 .app-image {
- flex-direction: column;
+  flex-direction: column;
 }
 
 .image-container {
@@ -525,7 +583,8 @@ video {
   list-style-type: none;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px; /* 説明文と画像の間隔を調整 */
+  margin-bottom: 10px;
+  /* 説明文と画像の間隔を調整 */
 }
 
 .project img {
@@ -632,6 +691,7 @@ video {
 .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
 .bg-white {
   background-color: white;
   z-index: -1;
@@ -664,6 +724,7 @@ video {
   padding-bottom: 80px;
   gap: 50px;
 }
+
 .explanation2 {
   display: flex;
   color: gray;
@@ -671,11 +732,13 @@ video {
   padding-bottom: 80px;
   gap: 50px;
 }
+
 .explanation-text {
   font-family: 'Yu Mincho', "Hiragino Mincho ProN", serif;
   display: flex;
   flex-direction: column;
 }
+
 .app-name {
   margin: 4px 0;
   line-height: 1.1;
@@ -684,38 +747,45 @@ video {
 /*websiteページ*/
 #website .header-nav a {
   display: flex;
-  text-align: center; /* テキストを中央揃え */
+  text-align: center;
+  /* テキストを中央揃え */
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  position: relative; 
-}
-#website a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
-}
-#website .header-nav a:hover {
-  color: rgb(30, 245, 230);
-  transition: color 0.4s ease;
-}
-#website a:hover::after {
-   width: 100%; 
+  position: relative;
 }
 
-#website .header-nav a:hover {
+#website a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+#website .header-nav a:hover,
+#website .header-nav a:active,
+#website .header-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
+
+#website a:hover::after {
+  width: 100%;
+}
+
 #website .title-bg {
   background-image: url('../images/PC1.jpg');
-  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
-  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
-  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+  /* 背景画像を繰り返さない設定 */
+  background-size: cover;
+  /* 画像をコンテンツに合わせて拡大・縮小 */
+  background-position: center;
+  /* 中央に配置 */
   background-attachment: fixed;
   object-fit: cover;
   display: flex;
@@ -727,31 +797,39 @@ video {
   gap: 200px;
   color: white;
 }
+
 #website .title {
   text-align: center;
   margin-top: 200px;
-  color: white ;
+  color: white;
 }
+
 .content-wrapper {
   font-size: 23px;
   display: flex;
-  justify-content: center; /* 縦方向の中央揃え */
+  justify-content: center;
+  /* 縦方向の中央揃え */
   white-space: nowrap;
   gap: 100px;
   width: 100%;
   margin-bottom: 200px;
 }
+
 #website .text-content {
   display: flex;
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-align: center;
-  justify-content: center; /* 縦方向の中央揃え */
-  flex-direction: column; /* 縦並びにする */
-  gap: 0; /* pタグとulの間隔なし*/
+  justify-content: center;
+  /* 縦方向の中央揃え */
+  flex-direction: column;
+  /* 縦並びにする */
+  gap: 0;
+  /* pタグとulの間隔なし*/
   margin: 0;
   padding-bottom: 60px;
 }
+
 #website .subtitle {
   font-weight: normal;
 }
@@ -762,9 +840,11 @@ video {
   padding-top: 60px;
   padding-bottom: 100px;
 }
+
 #website .subtitle-ja {
   color: white;
 }
+
 #website .main-title {
   color: rgb(255, 255, 255);
   font-weight: normal;
@@ -777,6 +857,7 @@ video {
   display: flex;
   margin-bottom: 180px;
 }
+
 #products1 .section-title {
   font-weight: normal;
   line-height: 1.6;
@@ -798,6 +879,7 @@ video {
   position: absolute;
   background: rgba(255, 255, 255, 0.5);
 }
+
 .products .section-title .ja {
   color: rgb(117, 117, 117);
   font-size: 2rem;
@@ -808,6 +890,7 @@ video {
   padding: 0;
   padding: 20px 0;
 }
+
 .products .section-title .en {
   color: rgb(117, 117, 117);
   font-size: 1.2rem;
@@ -816,11 +899,13 @@ video {
   margin: 0;
   padding: 20px 0;
 }
+
 .products .img {
   width: 65%;
   margin-top: 100px;
   display: flex;
-  position: relative; /*画像の上にテキストを重ねるためのpositionを設定*/
+  position: relative;
+  /*画像の上にテキストを重ねるためのpositionを設定*/
 }
 
 /*
@@ -838,6 +923,7 @@ video {
   margin: 0px;
   gap: 0px;
 }
+
 #products1 .title {
   color: #7a7a7a;
   text-align: center;
@@ -847,6 +933,7 @@ video {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 #products2 .text {
   color: #7a7a7a;
   align-items: center;
@@ -858,6 +945,7 @@ video {
   margin: 0px;
   gap: 0px;
 }
+
 #products2 .title {
   color: #7a7a7a;
   text-align: center;
@@ -867,12 +955,15 @@ video {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 /*
 productsの共通定義以外は、idを指定（#products1、#products2）して個別に設定
 */
 #products1 {
-  flex-direction: row-reverse; /*タイトルと画像の位置を入れ替える*/
+  flex-direction: row-reverse;
+  /*タイトルと画像の位置を入れ替える*/
 }
+
 #products1 .section-title {
   margin-left: 20px;
   writing-mode: vertical-lr;
@@ -889,10 +980,14 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .gallery-bg {
-  background-image: url('../images/背景.jpg'); /* 画像のファイル名 */
-  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
-  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
-  background-position: center; /* 中央に配置 */
+  background-image: url('../images/背景.jpg');
+  /* 画像のファイル名 */
+  background-repeat: no-repeat;
+  /* 背景画像を繰り返さない設定 */
+  background-size: cover;
+  /* 画像をコンテンツに合わせて拡大・縮小 */
+  background-position: center;
+  /* 中央に配置 */
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.65);
   background-blend-mode: lighten;
@@ -902,17 +997,27 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   padding-bottom: 20px;
   padding-top: 80px;
 }
+
 #works .subtitle-ja {
   color: gray;
 }
+
 #works .main-title {
   color: gray;
 }
+
 #works .title {
   color: rgb(144, 118, 89);
   font-weight: normal;
 }
+
 .wrapper {
+  max-width: 1200px;
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+}
+
+.gallery {
   max-width: 1200px;
   margin: 0 auto 130px auto;
   padding: 0 4%;
@@ -924,11 +1029,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
+
 #works li {
   width: 31%;
   list-style: none;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
+
 .URL {
   color: gray;
 }
@@ -936,81 +1043,106 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 /*designページ*/
 #design .header-nav a {
   display: flex;
-  text-align: center; /* テキストを中央揃え */
+  text-align: center;
+  /* テキストを中央揃え */
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   position: relative;
-} 
-#design a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
 }
-#design .header-nav a:hover {
+
+#design a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+#design .header-nav a:hover,
+#design .header-nav a:active,
+#design .header-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
+
 #design a:hover::after {
-   width: 100%; 
+  width: 100%;
 }
-#design .header-nav a:hover {
-  color: rgb(30, 245, 230);
-  transition: color 0.4s ease;
-}
+
 .design-title-bg {
   width: 100%;
   height: 100vh;
-  background-image: url('../images/PC9.jpg'); /* 画像のパスを指定 */
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  background-attachment: fixed; /* 背景を固定 */
+  background-image: url('../images/PC9.jpg');
+  /* 画像のパスを指定 */
+  background-size: cover;
+  /* 画像を要素いっぱいに表示 */
+  background-position: center;
+  /* 画像の位置を中央に */
+  background-repeat: no-repeat;
+  /* 繰り返しなし */
+  background-attachment: fixed;
+  /* 背景を固定 */
   display: flex;
   flex-direction: column;
   color: white;
   padding-bottom: 700px;
 }
+
 #design .main-title {
   text-align: center;
   margin-top: 400px;
   color: white;
-  font-weight: bold; /* 太字にする */
+  font-weight: bold;
+  /* 太字にする */
 }
+
 #design .text-content {
   display: flex;
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-align: center;
-  justify-content: center; /* 縦方向の中央揃え */
-  flex-direction: column; /* 縦並びにする */
-  gap: 0; /* pタグとulの間隔なし*/
+  justify-content: center;
+  /* 縦方向の中央揃え */
+  flex-direction: column;
+  /* 縦並びにする */
+  gap: 0;
+  /* pタグとulの間隔なし*/
   font-weight: normal;
   margin-top: 300px;
   padding-bottom: 60px;
 }
+
 #design .subtitle {
   font-weight: normal;
   color: white;
 }
+
 #design .step-bg {
   width: 100%;
   height: 300px;
-  background-image: url('../images/PC.jpg');
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
-  background-attachment: fixed; /* 背景を固定 */
+  background-image: url('../images/PC3.jpg');
+  background-size: cover;
+  /* 画像を要素いっぱいに表示 */
+  background-position: center;
+  /* 画像の位置を中央に */
+  background-repeat: no-repeat;
+  /* 繰り返しなし */
+  justify-content: center;
+  /* 横方向の中央揃え */
+  align-items: center;
+  /* 縦方向の中央揃え */
+  background-attachment: fixed;
+  /* 背景を固定 */
   display: flex;
   color: white;
-  font-weight: normal; 
+  font-weight: normal;
 }
+
 .design-bg {
   background: linear-gradient(to bottom, #ffeedd, #fccabc);
   margin: 0;
@@ -1018,10 +1150,12 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
-} 
+}
+
 #design .subtitle-ja {
   color: white;
 }
+
 .design-text {
   color: white;
   font-size: 20px;
@@ -1029,6 +1163,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .design-bg2 {
   background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
   margin: 0;
@@ -1036,20 +1171,28 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   width: 100%;
   padding-top: 80px;
 }
+
 #design .about-bg {
   width: 100%;
   height: 300px;
-  background-image: url('../images/PC7.jpg');
-  background-size: cover; /* 画像を要素いっぱいに表示 */
-  background-position: center; /* 画像の位置を中央に */
-  background-repeat: no-repeat; /* 繰り返しなし */
-  justify-content: center; /* 横方向の中央揃え */
-  align-items: center; /* 縦方向の中央揃え */
-  background-attachment: fixed; /* 背景を固定 */
+  background-image: url('../images/PC.jpg');
+  background-size: cover;
+  /* 画像を要素いっぱいに表示 */
+  background-position: center;
+  /* 画像の位置を中央に */
+  background-repeat: no-repeat;
+  /* 繰り返しなし */
+  justify-content: center;
+  /* 横方向の中央揃え */
+  align-items: center;
+  /* 縦方向の中央揃え */
+  background-attachment: fixed;
+  /* 背景を固定 */
   display: flex;
   color: white;
-  font-weight: normal; 
+  font-weight: normal;
 }
+
 /* モーダルのスタイル */
 .modal {
   display: none;
@@ -1062,16 +1205,19 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  padding: 10px; /* 少し余白を追加してモバイルに優しい設計に */
+  padding: 10px;
+  /* 少し余白を追加してモバイルに優しい設計に */
 }
 
 .modal-content {
   background-color: #fff;
   padding: 20px;
-  border-radius: 20px; /* 丸みを強調しておしゃれに */
+  border-radius: 20px;
+  /* 丸みを強調しておしゃれに */
   max-width: 90vw;
   max-height: 90vh;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* シャドウ追加で高級感アップ */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* シャドウ追加で高級感アップ */
 }
 
 .close {
@@ -1108,6 +1254,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   padding-right: 20px;
   padding-bottom: 30px;
 }
+
 #design h4 {
   margin-bottom: 0;
 }
@@ -1116,46 +1263,61 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 /*contactページ*/
 #contact-text .header-nav a {
   display: flex;
-  text-align: center; /* テキストを中央揃え */
+  text-align: center;
+  /* テキストを中央揃え */
   color: rgb(92, 92, 92);
   font-weight: bold;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   position: relative;
 }
-#contact-text a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
+
+#contact-text a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
-#contact-text .header-nav a:hover {
+
+#contact-text .header-nav a:hover,
+#contact-text .header-nav a:active,
+#contact-text .header-nav a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
+
 #contact-text a:hover::after {
-   width: 100%; 
+  width: 100%;
 }
 
 .contact-bg {
   background-image: url('../images/contact背景.jpg');
-  background-repeat: no-repeat; /* 背景画像を繰り返さない設定 */
-  background-size: cover; /* 画像をコンテンツに合わせて拡大・縮小 */
-  background-position: center; /* 中央に配置 */
+  background-repeat: no-repeat;
+  /* 背景画像を繰り返さない設定 */
+  background-size: cover;
+  /* 画像をコンテンツに合わせて拡大・縮小 */
+  background-position: center;
+  /* 中央に配置 */
   background-attachment: fixed;
-  overflow-wrap: break-word; /* 文字を必要に応じて改行 */
+  overflow-wrap: break-word;
+  /* 文字を必要に応じて改行 */
   padding-bottom: 400px;
 }
+
 #contact-text .main-title {
   padding-top: 300px;
 }
+
 .contact-bg p {
   font-size: 30px;
   text-align: center;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
+
 /* --- お問い合わせフォームをさらにオシャレに --- */
 #contact {
   display: flex;
@@ -1177,10 +1339,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 #contact-form {
   background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-  backdrop-filter: blur(12px); /* 背景ぼかし */
-  -webkit-backdrop-filter: blur(12px); /* Safari対応 */
+  backdrop-filter: blur(12px);
+  /* 背景ぼかし */
+  -webkit-backdrop-filter: blur(12px);
+  /* Safari対応 */
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.9); /* 輪郭を柔らかく */
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  /* 輪郭を柔らかく */
   box-shadow: 0 8px 32px rgba(50, 50, 59, 0.4);
   padding: 32px 24px;
   max-width: 420px;
@@ -1343,30 +1508,39 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   width: 100%;
   padding: 20px 0 0 0;
 }
+
 .reserved {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   text-align: center;
   color: gray;
 }
+
 .box a {
-  position: relative; 
+  position: relative;
 }
-.box a::after { 
-  content: ""; 
-  position: absolute; 
-  left: 50%; bottom: 0; 
-  width: 0%; height: 2px; 
-  background-color: currentColor; 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
+
+.box a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
-.box a:hover {
+
+.box a:hover,
+.box a:active,
+.box a:focus {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
   text-decoration: none;
 }
+
 .box a:hover::after {
-   width: 100%; 
+  width: 100%;
 }
 
 /*レスポンシブ対応*/
@@ -1376,6 +1550,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     flex-direction: column;
     align-items: center;
   }
+
   .explanation2 {
     display: flex;
     flex-direction: column;
@@ -1389,6 +1564,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     flex-direction: column;
     align-items: center;
   }
+
   .content-wrapper {
     flex-direction: column;
     align-items: center;
@@ -1396,9 +1572,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     gap: 30px;
     margin-bottom: 80px;
     flex-wrap: wrap;
-    justify-content: center; /* 水平方向に中央揃え */
+    justify-content: center;
+    /* 水平方向に中央揃え */
     margin-bottom: 20px;
-    white-space: nowrap; /* 改行を防ぐ */
+    white-space: nowrap;
+    /* 改行を防ぐ */
     padding: 0px;
   }
 
@@ -1430,32 +1608,39 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     margin-left: 5%;
     margin-right: 5%;
   }
+
   /*website*/
-  #products1, #products2 {
+  #products1,
+  #products2 {
     flex-direction: column;
     align-items: center;
   }
+
   #products1 .section-title {
-  align-self: flex-end;
-  margin-right: 5%;
+    align-self: flex-end;
+    margin-right: 5%;
   }
+
   #products2 .section-title {
-  align-self: flex-start;
-  margin-left: 5%;
+    align-self: flex-start;
+    margin-left: 5%;
   }
+
   .products {
     margin-bottom: 100px;
   }
+
   .products .img {
     width: 90%;
     margin-top: 70px;
   }
+
   .products .text {
     width: 64%;
     font-size: 0.875rem;
     padding: 30px 0;
   }
-  
+
   #design .text-content h2 {
     font-size: 40px;
   }
@@ -1463,9 +1648,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #learning-menu .border-list {
     max-width: 90%;
   }
+
   #learning-about .border-list-second {
     max-width: 90%;
   }
+
   .contact-bg p {
     font-size: 25px;
   }
@@ -1473,13 +1660,15 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 
 @media (max-width: 800px) {
-  .hamburger { /*800px以下でハンバーガーメニュー表示*/
+  .hamburger {
+    /*800px以下でハンバーガーメニュー表示*/
     display: flex;
-    
+
   }
 
   .header-nav {
-    display: none; /*800px以下で通常のナビゲーションを非表示*/
+    display: none;
+    /*800px以下で通常のナビゲーションを非表示*/
   }
 
   .about-img {
@@ -1502,7 +1691,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     padding-left: 24px;
     padding-right: 24px;
   }
-  
+
   /*profile*/
   .skill-wrapper {
     display: flex;
@@ -1523,12 +1712,14 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   .skill-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 中身は左揃え */
+    align-items: flex-start;
+    /* 中身は左揃え */
     font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
     font-weight: bold;
     font-size: 26px;
     min-width: 0;
-    white-space: nowrap; /* 改行を防ぐ */
+    white-space: nowrap;
+    /* 改行を防ぐ */
     color: #565454;
     gap: 0;
     margin-top: 20px;
@@ -1538,12 +1729,12 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     margin: 0;
     padding: 0;
   }
-  
+
   /*app*/
   #app h2 {
     font-size: 45px;
   }
-  
+
   .image-container {
     display: flex;
     justify-content: center;
@@ -1559,6 +1750,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #app .study-reason-desc {
     font-size: 20px;
   }
+
   .carousel-images {
     display: flex;
     align-items: center;
@@ -1568,19 +1760,24 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     height: 300px;
     overflow: hidden;
   }
+
   .carousel-video {
     width: 450px;
     height: 300px;
   }
+
   .ending-message {
     font-size: 0.98em;
     padding: 10px 8px;
   }
+
   .image-container {
     flex-direction: column;
     align-items: center;
   }
-  .explanation1, .explanation2 {
+
+  .explanation1,
+  .explanation2 {
     flex-direction: column;
     align-items: center;
   }
@@ -1588,19 +1785,24 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   .products .section-title .ja {
     font-size: 1.5rem;
   }
+
   .products .section-title .en {
     font-size: 0.9rem;
   }
+
   #products1 .text {
-  width: 100%;
+    width: 100%;
   }
+
   #products2 .text {
-  width: 100%;
+    width: 100%;
   }
+
   #works ul {
     padding-left: 0;
     flex-direction: column;
   }
+
   #works li {
     width: 100%;
   }
@@ -1608,7 +1810,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #website .URL {
     font-size: 25px;
   }
-  
+
   .contact-bg p {
     font-size: 20px;
   }
@@ -1640,10 +1842,12 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 700px) {
+
   /*appページ*/
   .explanation1 img {
     width: 90%;
   }
+
   .explanation2 img {
     width: 90%;
   }
@@ -1651,6 +1855,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #website .subtitle {
     font-size: 40px;
   }
+
   #website .text-content p {
     font-size: 15px;
   }
@@ -1665,10 +1870,12 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     font-size: 15px;
   }
 }
+
 @media (max-width: 600px) {
   #app .study-reason-desc {
     font-size: 15px;
   }
+
   .carousel-images {
     display: flex;
     align-items: center;
@@ -1678,18 +1885,22 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     height: 200px;
     overflow: hidden;
   }
+
   .carousel-video {
     width: 300px;
     height: 200px;
     display: block;
     vertical-align: middle;
   }
+
   .image-content {
     width: 100%;
   }
+
   #app .text-content {
     font-size: 15px;
   }
+
   .explanation-text {
     max-width: 90%;
   }
@@ -1697,15 +1908,19 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #website .main-title {
     font-size: 45px;
   }
+
   #design .text-content h2 {
     font-size: 30px;
   }
+
   #design .design-end-bg h4 {
     font-size: 20px;
   }
+
   #learning-menu li {
     font-size: 16px;
   }
+
   #learning-about li {
     font-size: 16px;
   }
@@ -1715,12 +1930,15 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #app-header h1 {
     font-size: 50px;
   }
+
   #app-header h2 {
     font-size: 30px;
   }
+
   #app-header .text-content {
     font-size: 14px;
   }
+
   .explanation-title {
     font-size: 25px;
   }
@@ -1728,48 +1946,62 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #website .subtitle {
     font-size: 30px;
   }
+
   .products .img {
-  width: 100%;
-  margin-top: 100px;
+    width: 100%;
+    margin-top: 100px;
   }
+
   #products1 .section-title {
-  align-self: flex-end;
-  margin-right: 0;
+    align-self: flex-end;
+    margin-right: 0;
   }
+
   #products2 .section-title {
-  align-self: flex-start;
-  margin-left: 0;
+    align-self: flex-start;
+    margin-left: 0;
   }
+
   #website .text-content {
     font-size: 15px;
   }
+
   #design .text-content h2 {
     font-size: 25px;
   }
+
   #design .text-content p {
     font-size: 15px;
   }
+
   #design .title {
     font-size: 40px;
   }
+
   #design .design-end-bg h4 {
     font-size: 15px;
   }
+
   #design .last-text {
     font-size: 17px;
   }
+
   .learning-bg-title h3 {
     font-size: 23px;
   }
+
   .learning-bg-title2 h3 {
     font-size: 23px;
   }
+
   #learning-menu li {
     font-size: 15px;
   }
+
   #learning-about li {
     font-size: 15px;
   }
+
   #contact-form {
     width: 340px;
     margin-left: 5%;
@@ -1778,6 +2010,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 400px) {
+
   /*home*/
   #home h1 {
     font-size: 45px;
@@ -1786,6 +2019,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   .about-title {
     font-size: 55px;
   }
+
   .about-card {
     flex-direction: column;
     gap: 24px;
@@ -1793,22 +2027,27 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     margin-left: 5%;
     margin-right: 5%;
   }
+
   #about .about-desc {
     font-size: 15px;
   }
+
   .skill-content {
     font-size: 23px;
   }
-  
+
   #app-header h1 {
     font-size: 40px;
   }
+
   #app-header .text-content {
     font-size: 11px;
   }
+
   .app-subtitle {
     font-size: 35px;
   }
+
   .carousel-images {
     display: flex;
     align-items: center;
@@ -1818,13 +2057,16 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
     height: 180px;
     overflow: hidden;
   }
+
   .carousel-video {
     width: 220px;
     height: 180px;
   }
+
   .app-about-title {
     font-size: 35px;
   }
+
   .explanation-title {
     font-size: 23px;
   }
@@ -1832,24 +2074,31 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #website h1 {
     font-size: 55px;
   }
+
   .products .section-title .ja {
     font-size: 1.2rem;
   }
+
   .products .section-title .en {
     font-size: 0.7rem;
   }
+
   #website .text-content p {
     font-size: 11px;
   }
+
   #website .main-title {
     font-size: 35px;
   }
+
   #products1 h4 {
     font-size: 20px;
   }
+
   #products2 h4 {
     font-size: 20px;
   }
+
   #website .URL {
     font-size: 22px;
   }
@@ -1857,46 +2106,59 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #design h1 {
     font-size: 55px;
   }
+
   #design .text-content h2 {
     font-size: 18px;
   }
+
   #design .text-content p {
     font-size: 12px;
   }
+
   #design .title {
     font-size: 35px;
   }
+
   #design .design-text {
     font-size: 15px;
   }
+
   #design .last-text {
     font-size: 15px;
   }
-  
+
   #learning-menu h1 {
     font-size: 53px;
   }
+
   #learning-menu .subtitle {
     font-size: 50px;
   }
+
   #learning-adout .subtitle {
     font-size: 50px;
   }
+
   #learning-end .subtitle {
     font-size: 50px;
   }
+
   .learning-bg-title h3 {
     font-size: 19px;
   }
+
   .learning-bg-title2 h3 {
     font-size: 19px;
   }
+
   #learning-menu .title h4 {
     font-size: 20px;
   }
+
   #learning-about .card-section-title {
     font-size: 20px;
   }
+
   .contact-bg h2 {
     font-size: 55px;
   }

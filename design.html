@@ -12,15 +12,27 @@
 </head>
 
 <!-- ハンバーガーボタン -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
 <!-- オーバーレイナビ -->
-    <div class="overlay" id="overlay">
-      <nav class="overlay-nav">
+<div class="overlay" id="overlay">
+  <nav class="overlay-nav">
+    <a href="index.html">HOME</a>
+    <a href="profile.html">PROFILE</a>
+    <a href="app.html">APPLICATION</a>
+    <a href="website.html">WEBSITE</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+</div>
+
+<section id="design">
+  <div class="design-title-bg">
+    <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+      <nav class="header-nav">
         <a href="index.html">HOME</a>
         <a href="profile.html">PROFILE</a>
         <a href="app.html">APPLICATION</a>
@@ -29,152 +41,150 @@
       </nav>
     </div>
 
-<section id="design">
-<div class="design-title-bg">
-  <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-  <nav class="header-nav">
-    <a href="index.html">HOME</a>
-    <a href="profile.html">PROFILE</a>
-    <a href="app.html">APPLICATION</a>
-    <a href="website.html">WEBSITE</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
+    <h1 class="main-title" data-aos="zoom-in" data-aos-duration="1000">GRAPHIC DESIGN</h1>
+    <div class="text-content" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
+      <ul>
+        <h2 class="subtitle">Illustrator/Photoshop/Inkscape</h2>
+        <p>自分のカラーとユーザー目線を大切にしています。<br>世界観や色を出しつつバランスをとることで<br>視覚的に楽しく、読み手の目を引く設計です。</p>
+      </ul>
+    </div>
   </div>
 
-  <h1 class="main-title" data-aos="zoom-in" data-aos-duration="1000">GRAPHIC DESIGN</h1>
-  <div class="text-content" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
-    <ul>
-      <h2 class="subtitle">Illustrator/Photoshop/Inkscape</h2>
-      <p>自分のカラーとユーザー目線を大切にしています。<br>世界観や色を出しつつバランスをとることで<br>視覚的に楽しく、読み手の目を引く設計です。</p>
-    </ul>
+  <div class="step-bg">
+    <h2 class="subtitle">WEB WORKS</h2>
   </div>
-</div>
+  <div class="design-bg">
+    <p class="subtitle-ja" data-aos="fade-up">Lineスタンプ</p>
+    <h2 class="title" data-aos="fade-up" style="font-weight: normal;">LINE stickers</h2>
+    <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+      <div class="project">
+        <li>秋田柴犬雑種Lineスタンプ</li>
+        <img src="assets/images/ダイチ Lineスタンプ.png" alt="ダイチLineスタンプ画像" class="thumbnail"
+          onclick="openModal('ダイチ Lineスタンプ.png')">
+      </div>
+      <div class="project">
+        <li>ポメラニアンLineスタンプ</li>
+        <img src="assets/images/ベル Lineスタンプ.png" alt="ベルLineスタンプ画像" class="thumbnail"
+          onclick="openModal('ベル Lineスタンプ.png')">
+      </div>
+      <div class="project">
+        <li>ダックスフンドLineスタンプ</li>
+        <img src="assets/images/マロン Lineスタンプ.png" alt="マロンLineスタンプ画像" class="thumbnail"
+          onclick="openModal('マロン Lineスタンプ.png')">
+      </div>
+      <div class="project">
+        <li>ポメラニアンLineスタンプ</li>
+        <img src="assets/images/ヒマワリ Lineスタンプ.png" alt="ヒマワリLineスタンプ画像" class="thumbnail"
+          onclick="openModal('ヒマワリ Lineスタンプ.png')">
+      </div>
+      <div class="project">
+        <li>ピンシャーLineスタンプ</li>
+        <img src="assets/images/クウコ Lineスタンプ.png" alt="クウコLineスタンプ画像" class="thumbnail"
+          onclick="openModal('クウコ Lineスタンプ.png')">
+      </div>
+    </div>
+    <p class="design-text" data-aos="fade-up">日常に、ちょっとしたユーモアを。<br>可愛らしいLINEスタンプ制作。</p>
+  </div>
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImage" class="modal-content">
+  </div>
 
-<div class="step-bg">
-  <h2 class="subtitle">WEB WORKS</h2>
-</div>
-<div class="design-bg">
-  <p class="subtitle-ja" data-aos="fade-up">Lineスタンプ</p>
-      <h2 class="title" data-aos="fade-up" style="font-weight: normal;">LINE stickers</h2>
-      <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
-        <div class="project" >
-          <li >秋田柴犬雑種Lineスタンプ</li>
-          <img src="assets/images/ダイチ Lineスタンプ.png" alt="ダイチLineスタンプ画像" class="thumbnail" onclick="openModal('ダイチ Lineスタンプ.png')" >
-        </div>
-        <div class="project">
-          <li>ポメラニアンLineスタンプ</li>
-          <img src="assets/images/ベル Lineスタンプ.png" alt="ベルLineスタンプ画像" class="thumbnail" onclick="openModal('ベル Lineスタンプ.png')">
-        </div>
-        <div class="project">
-          <li>ダックスフンドLineスタンプ</li>
-          <img src="assets/images/マロン Lineスタンプ.png" alt="マロンLineスタンプ画像" class="thumbnail" onclick="openModal('マロン Lineスタンプ.png')">
-        </div>
-        <div class="project">
-          <li>ポメラニアンLineスタンプ</li>
-          <img src="assets/images/ヒマワリ Lineスタンプ.png" alt="ヒマワリLineスタンプ画像" class="thumbnail" onclick="openModal('ヒマワリ Lineスタンプ.png')">
-        </div>
-        <div class="project">
-          <li>ピンシャーLineスタンプ</li>
-          <img src="assets/images/クウコ Lineスタンプ.png" alt="クウコLineスタンプ画像" class="thumbnail" onclick="openModal('クウコ Lineスタンプ.png')">
-        </div>
+  <div class="about-bg">
+    <h2 class="subtitle">CMYK WORKS</h2>
+  </div>
+  <div class="design-bg2">
+    <p class="subtitle-ja" data-aos="fade-up">パンフレット/フライヤー</p>
+    <h2 class="title" data-aos="fade-up" style="font-weight: normal;">Pamphlet/Flyer</h2>
+    <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+      <div class="project">
+        <li>研修医交流会チラシ</li>
+        <img src="assets/images/医学生交流会チラシ表.png" alt="医学生チラシ画像" class="thumbnail" onclick="openModal('医学生交流会チラシ表.png')">
       </div>
-  <p class="design-text" data-aos="fade-up">日常に、ちょっとしたユーモアを。<br>可愛らしいLINEスタンプ制作。</p>
-</div>
-      <div id="modal" class="modal">
-        <span class="close" onclick="closeModal()">×</span>
-        <img id="modalImage" class="modal-content">
+      <div class="project">
+        <li>研修医交流会チラシ裏面</li>
+        <img src="assets/images/医学生交流会チラシ.png" alt="医学生チラシ画像" class="thumbnail" onclick="openModal('医学生交流会チラシ.png')">
       </div>
-      
-<div class="about-bg">
-  <h2 class="subtitle">CMYK WORKS</h2>
-</div>
-<div class="design-bg2">
-      <p class="subtitle-ja" data-aos="fade-up">パンフレット/フライヤー</p>
-      <h2 class="title" data-aos="fade-up" style="font-weight: normal;">Pamphlet/Flyer</h2>
-      <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
-        <div class="project">
-          <li>研修医交流会チラシ</li>
-          <img src="assets/images/医学生交流会チラシ表.png" alt="医学生チラシ画像" class="thumbnail" onclick="openModal('医学生交流会チラシ表.png')">
-        </div>
-        <div class="project">
-          <li>研修医交流会チラシ裏面</li>
-          <img src="assets/images/医学生交流会チラシ.png" alt="医学生チラシ画像" class="thumbnail" onclick="openModal('医学生交流会チラシ.png')">
-        </div>
-        <div class="project">
-          <li>給湯機チラシ</li>
-          <img src="assets/images/給湯機チラシ.png" alt="給湯機チラシ画像" class="thumbnail" onclick="openModal('給湯機チラシ.png')">
-        </div>
-        <div class="project">
-          <li>ジムチラシ</li>
-          <img src="assets/images/ジムチラシ表面.png" alt="ジムチラシ画像" class="thumbnail" onclick="openModal('ジムチラシ表面.png')">
-        </div>
-        <div class="project">
-          <li>ジムチラシ裏面</li>
-          <img src="assets/images/ジムチラシ裏面.png" alt="ジムチラシ画像" class="thumbnail" onclick="openModal('ジムチラシ裏面.png')">
-        </div>
+      <div class="project">
+        <li>給湯機チラシ</li>
+        <img src="assets/images/給湯機チラシ.png" alt="給湯機チラシ画像" class="thumbnail" onclick="openModal('給湯機チラシ.png')">
       </div>
-      <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
-        <div class="project">
-          <li>サンキューレター</li>
-          <img src="assets/images/サンキューレター.png" alt="サンキューレター画像" class="thumbnail" onclick="openModal('サンキューレター.png')">
-        </div>
-        <div class="project">
-          <li>グローバルヘルスチラシ</li>
-          <img src="assets/images/グローバルヘルスチラシ.png" alt="グローバルヘルスチラシ画像" class="thumbnail" onclick="openModal('グローバルヘルスチラシ.png')">
-        </div>
-        <div class="project">
-          <li>ピアノ教室チラシ</li>
-          <img src="assets/images/音楽教室パンフレット.png" alt="音楽教室パンフレット画像" class="thumbnail" onclick="openModal('音楽教室パンフレット.png')">
-        </div>
-        <div class="project">
-          <li>人工芝チラシ</li>
-          <img src="assets/images/人工芝チラシ.png" alt="人工芝チラシ画像" class="thumbnail" onclick="openModal('人工芝チラシ.png')">
-        </div>
-        <div class="project">
-          <li>医院クリニック建築チラシ</li>
-          <img src="assets/images/医院クリニック建築チラシ.png" alt="医院クリニックチラシ画像" class="thumbnail" onclick="openModal('医院クリニック建築チラシ.png')">
-        </div>
-      </div>  
-  <p class="design-text" data-aos="fade-up">伝えたいことを、カタチに。<br>魅力を引き出すパンフレットデザイン。</p>
-  <h4 class="last-text" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">A futuer society that technology will create.</h4>
-</div>
+      <div class="project">
+        <li>ジムチラシ</li>
+        <img src="assets/images/ジムチラシ表面.png" alt="ジムチラシ画像" class="thumbnail" onclick="openModal('ジムチラシ表面.png')">
+      </div>
+      <div class="project">
+        <li>ジムチラシ裏面</li>
+        <img src="assets/images/ジムチラシ裏面.png" alt="ジムチラシ画像" class="thumbnail" onclick="openModal('ジムチラシ裏面.png')">
+      </div>
+    </div>
+    <div class="image-container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+      <div class="project">
+        <li>サンキューレター</li>
+        <img src="assets/images/サンキューレター.png" alt="サンキューレター画像" class="thumbnail" onclick="openModal('サンキューレター.png')">
+      </div>
+      <div class="project">
+        <li>グローバルヘルスチラシ</li>
+        <img src="assets/images/グローバルヘルスチラシ.png" alt="グローバルヘルスチラシ画像" class="thumbnail"
+          onclick="openModal('グローバルヘルスチラシ.png')">
+      </div>
+      <div class="project">
+        <li>ピアノ教室チラシ</li>
+        <img src="assets/images/音楽教室パンフレット.png" alt="音楽教室パンフレット画像" class="thumbnail"
+          onclick="openModal('音楽教室パンフレット.png')">
+      </div>
+      <div class="project">
+        <li>人工芝チラシ</li>
+        <img src="assets/images/人工芝チラシ.png" alt="人工芝チラシ画像" class="thumbnail" onclick="openModal('人工芝チラシ.png')">
+      </div>
+      <div class="project">
+        <li>医院クリニック建築チラシ</li>
+        <img src="assets/images/医院クリニック建築チラシ.png" alt="医院クリニックチラシ画像" class="thumbnail"
+          onclick="openModal('医院クリニック建築チラシ.png')">
+      </div>
+    </div>
+    <p class="design-text" data-aos="fade-up">伝えたいことを、カタチに。<br>魅力を引き出すパンフレットデザイン。</p>
+    <h4 class="last-text" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">A futuer society that
+      technology will create.</h4>
+  </div>
 </section>
 
 <div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
   <div class="wrap">
-  <div class="box">
-    <h3>ACCOUNT</h3>
-    <ul>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">X(Twitter)</a></li>
-    <li><a href="#">GitHub</a></li>
-    </ul>
+    <div class="box">
+      <h3>ACCOUNT</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X(Twitter)</a></li>
+        <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>PROJECT</h3>
+      <ul>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="app.html">APPLICATION</a></li>
+        <li><a href="website.html">WEBSITE</a></li>
+        <li><a href="design.html">GRAPHIC DESIGN</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>その他</h3>
+      <ul>
+        <li><a href="design.html">PAGE TOP</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="box">
-    <h3>PROJECT</h3>
-    <ul>
-      <li><a href="profile.html">PROFILE</a></li>
-      <li><a href="app.html">APPLICATION</a></li>
-      <li><a href="website.html">WEBSITE</a></li>
-      <li><a href="design.html">GRAPHIC DESIGN</a></li>
-    </ul>
-  </div>
-  <div class="box">
-    <h3>その他</h3>
-    <ul>
-    <li><a href="design.html">PAGE TOP</a></li>
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </div>
-  </div>
-    <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
-  </div>       
-   
-  <!-- AOSのJSと初期化 -->    
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
+</div>
+
+<!-- AOSのJSと初期化 -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
-</html>   
+
+</html>
