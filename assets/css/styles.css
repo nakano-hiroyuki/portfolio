@@ -141,9 +141,7 @@ header h1 {
   transform: translateX(-50%);
 }
 
-#home .header-nav a:hover,
-#home .header-nav a:active,
-#home .header-nav a:focus {
+#home .header-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -320,9 +318,7 @@ header h1 {
   transform: translateX(-50%);
 }
 
-#header-underline .header-nav a:hover,
-#header-underline .header-nav a:active,
-#header-underline .header-nav a:focus {
+#header-underline .header-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -411,9 +407,7 @@ header h1 {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
-.overlay-nav a:hover,
-.overlay-nav a:active,
-.overlay-nav a:focus {
+.overlay-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -475,9 +469,7 @@ header h1 {
   transform: translateX(-50%);
 }
 
-#app-header .header-nav a:hover,
-#app-header .header-nav a:active,
-#app-header .header-nav a:focus {
+#app-header .header-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -767,9 +759,7 @@ video {
   transform: translateX(-50%);
 }
 
-#website .header-nav a:hover,
-#website .header-nav a:active,
-#website .header-nav a:focus {
+#website .header-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -1063,9 +1053,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   transform: translateX(-50%);
 }
 
-#design .header-nav a:hover,
-#design .header-nav a:active,
-#design .header-nav a:focus {
+#design .header-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -1283,9 +1271,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   transform: translateX(-50%);
 }
 
-#contact-text .header-nav a:hover,
-#contact-text .header-nav a:active,
-#contact-text .header-nav a:focus {
+#contact-text .header-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
@@ -1531,9 +1517,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   transform: translateX(-50%);
 }
 
-.box a:hover,
-.box a:active,
-.box a:focus {
+.box a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
   text-decoration: none;
