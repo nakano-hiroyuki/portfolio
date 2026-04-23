@@ -31,24 +31,12 @@ function fadeToNextImage() {
   images[currentIndex].classList.add('active');
   images[currentIndex].style.opacity = '1';
 }
-
+                
 // 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
 setTimeout(() => {
   fadeToNextImage();
   setInterval(fadeToNextImage, 4000);
 }, 4000);
-
-function openModal(imageSrc) {
-  const modal = document.getElementById('modal');
-  const modalImage = document.getElementById('modalImage');
-  modal.style.display = 'flex';
-  modalImage.src = imageSrc;
-}
-
-function closeModal() {
-  const modal = document.getElementById('modal');
-  modal.style.display = 'none';
-}
 
 
 // カルーセル機能
@@ -110,6 +98,18 @@ function closeModal(modalId) {
   document.getElementById(modalId).style.display = 'none';
 }
 
+function openModal(imageSrc) {
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modalImage');
+  modal.style.display = 'flex';
+  modalImage.src = imageSrc;
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+
 // お問合せ
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
@@ -124,3 +124,5 @@ if (contactForm) {
     }
   });
 }
+
+
