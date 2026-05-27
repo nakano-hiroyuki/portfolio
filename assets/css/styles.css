@@ -718,12 +718,20 @@ video {
   gap: 50px;
 }
 
+.explanation1 p {
+  color: gray;
+}
+
 .explanation2 {
   display: flex;
   color: gray;
   justify-content: center;
   padding-bottom: 80px;
   gap: 50px;
+}
+
+.explanation2 p {
+  color: gray;
 }
 
 .explanation-text {
@@ -860,6 +868,11 @@ video {
   background: rgba(255, 255, 255, 0.5);
 }
 
+#products1 p {
+  color: gray;
+}
+
+
 #products2 .section-title {
   font-weight: normal;
   line-height: 1.6;
@@ -869,6 +882,10 @@ video {
   z-index: 1;
   position: absolute;
   background: rgba(255, 255, 255, 0.5);
+}
+
+#products2 p {
+  color: gray;
 }
 
 .products .section-title .ja {
@@ -1297,6 +1314,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 #contact-text .main-title {
   padding-top: 300px;
+}
+
+#contact-text p {
+  color: black;
 }
 
 .contact-bg p {
