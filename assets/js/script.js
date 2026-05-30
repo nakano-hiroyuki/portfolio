@@ -90,14 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // モーダル表示
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = 'flex';
-}
-
-function closeModal(modalId) {
-  document.getElementById(modalId).style.display = 'none';
-}
-
 function openModal(imageSrc) {
   const modal = document.getElementById('modal');
   const modalImage = document.getElementById('modalImage');
