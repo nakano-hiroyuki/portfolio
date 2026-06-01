@@ -412,11 +412,26 @@ header h1 {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
-.overlay-nav a:hover {
+.overlay.active .overlay-nav a:hover {
   color: rgb(30, 245, 230);
   transition: color 0.4s ease;
 }
 
+ .overlay-nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.overlay.active .overlay-nav a:hover::after {
+  width: 100%;
+}
 
 .overlay.active .overlay-nav a:nth-child(1) {
   animation-delay: 0.2s;
