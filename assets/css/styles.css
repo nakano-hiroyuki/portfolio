@@ -651,25 +651,6 @@ video {
   }
 }
 
-.carousel-image.active {
-  display: block;
-  opacity: 1;
-  z-index: 1;
-  animation: carousel-zoom-in 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes carousel-zoom-in {
-  0% {
-    transform: translate(-50%, -50%) scale(0.92);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-}
-
 .carousel-btn {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
