@@ -1,6 +1,8 @@
 @charset "utf-8";
 
+/* ============================= */
 /* styles.css */
+/* ============================= */
 html,
 body {
   font-family: Arial, sans-serif;
@@ -33,8 +35,9 @@ h4 {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 
-
+/* ============================= */
 /* homeページ*/
+/* ============================= */
 #slideshow {
   position: absolute;
   top: 0;
@@ -151,8 +154,9 @@ header h1 {
   width: 100%;
 }
 
-
+/* ============================= */
 /*profileページ*/
+/* ============================= */
 .bg-img {
   background-image: url('../images/PC2.jpg');
   background-repeat: no-repeat;
@@ -447,8 +451,9 @@ header h1 {
 
 
 
-
+/* ============================= */
 /*appページ*/
+/* ============================= */
 #app-header .header-nav a {
   display: flex;
   text-align: center;
@@ -726,7 +731,9 @@ video {
   line-height: 1.1;
 }
 
+/* ============================= */
 /*websiteページ*/
+/* ============================= */
 #website .header-nav a {
   display: flex;
   text-align: center;
@@ -1029,7 +1036,9 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   color: gray;
 }
 
+/* ============================= */
 /*designページ*/
+/* ============================= */
 #design .header-nav a {
   display: flex;
   text-align: center;
@@ -1246,8 +1255,9 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   margin-bottom: 0;
 }
 
-
+/* ============================= */
 /*contactページ*/
+/* ============================= */
 #contact-text .header-nav a {
   display: flex;
   text-align: center;
@@ -1451,8 +1461,9 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 
-
+/* ============================= */
 /*フッター*/
+/* ============================= */
 .footer {
   color: #808080;
   background: #fcfbfb;
@@ -1530,7 +1541,9 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   width: 100%;
 }
 
+/* ============================= */
 /*レスポンシブ対応*/
+/* ============================= */
 @media (max-width: 1300px) {
   .explanation1 {
     display: flex;
