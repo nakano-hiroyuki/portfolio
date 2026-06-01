@@ -1,4 +1,6 @@
+// =============================
 // 時間表示
+// =============================
 function startClock() {
   const timeElement = document.getElementById("time");
   if (!timeElement) return;
@@ -10,8 +12,9 @@ function startClock() {
 }
 startClock();
 
-
+// =============================
 //ホームスライドショー
+// =============================
 const images = document.querySelectorAll('#slideshow img');
 let currentIndex = 0;
 
@@ -38,8 +41,9 @@ setTimeout(() => {
   setInterval(fadeToNextImage, 4000);
 }, 4000);
 
-
+// =============================
 // カルーセル機能
+// =============================
 function showSlide(carouselId, n) {
   const carousel = document.getElementById(carouselId);
   if (!carousel) return;
@@ -69,7 +73,9 @@ function nextSlide(carouselId) {
   showSlide(carouselId, 1);
 }
 
+// =============================
 // ハンバーガーメニュー
+// =============================
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const overlay = document.getElementById("overlay");
@@ -88,8 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+// =============================
 // モーダル表示
+// =============================
 function openModal(modalId) {
   document.getElementById(modalId).style.display = 'flex';
 }
@@ -110,7 +117,9 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
+// =============================
 // お問合せ
+// =============================
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', function (event) {
