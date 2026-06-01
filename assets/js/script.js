@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // =============================
 // モーダル表示
+// =============================
 function openModal(imageSrc) {
   const modal = document.getElementById('modal');
   const modalImage = document.getElementById('modalImage');
