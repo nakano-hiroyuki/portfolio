@@ -419,14 +419,23 @@ header h1 {
 
  .overlay-nav a::after {
   content: "";
+  /* 空の装飾要素を追加 */
   position: absolute;
+  /* 絶対位置で配置 */
   left: 50%;
+  /* 中央から */
   bottom: 0;
+  /* リンクの真下に */
   width: 0%;
+  /* 最初は見えない */
   height: 2px;
+  /* 線の太さ */
   background-color: currentColor;
+  /* 文字色と同じ色 */
   transition: all 0.4s ease;
+  /* なめらかに変化 */
   transform: translateX(-50%);
+  /* 中央揃え */
 }
 
 .overlay.active .overlay-nav a:hover::after {
