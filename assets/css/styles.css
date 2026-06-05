@@ -893,6 +893,17 @@ video {
   color: gray;
 }
 
+#products1 .explanation {
+  font-size: 24px;
+  font-family:  "Yu Mincho", "Noto Serif JP", serif;
+  text-align: center;
+}
+
+#products2 .explanation {
+  font-size: 24px;
+  font-family:  "Yu Mincho", "Noto Serif JP", serif;
+  text-align: center;
+}
 
 #products2 .section-title {
   font-weight: normal;
@@ -914,6 +925,7 @@ video {
   font-size: 2rem;
   letter-spacing: 0.1em;
   font-weight: normal;
+  font-family: "Yu Mincho", "Noto Serif JP", serif;
   display: flex;
   margin: 0;
   padding: 0;
@@ -924,6 +936,7 @@ video {
   color: rgb(117, 117, 117);
   font-size: 1.2rem;
   font-weight: normal;
+  font-family: "Yu Mincho", "Noto Serif JP", serif;
   display: flex;
   margin: 0;
   padding: 20px 0;
@@ -2123,13 +2136,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #website .main-title {
     font-size: 35px;
   }
-
-  #products1 h4 {
-    font-size: 20px;
+  
+  #products1 .explanation {
+  font-size: 20px;
   }
-
-  #products2 h4 {
-    font-size: 20px;
+  
+  #products2 .explanation {
+  font-size: 20px;
   }
 
   #website .URL {
