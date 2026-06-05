@@ -540,6 +540,10 @@ header h1 {
   padding-top: 350px;
 }
 
+#app-header .title {
+  font-weight: normal;
+}
+
 #app-header .text-content {
   display: flex;
   padding-top: 250px;
@@ -2140,7 +2144,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #products1 .explanation {
   font-size: 20px;
   }
-  
+
   #products2 .explanation {
   font-size: 20px;
   }
