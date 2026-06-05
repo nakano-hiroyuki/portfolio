@@ -417,7 +417,7 @@ header h1 {
   transition: color 0.4s ease;
 }
 
- .overlay-nav a::after {
+.overlay-nav a::after {
   content: "";
   /* 空の装飾要素を追加 */
   position: absolute;
@@ -473,6 +473,7 @@ header h1 {
     transform: translateY(20px);
     /* 少し下から */
   }
+
   to {
     opacity: 1;
     /* 完全に表示 */
