@@ -79,7 +79,6 @@ function nextSlide(carouselId) {
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const overlay = document.getElementById("overlay");
-
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("open");
     overlay.classList.toggle("active");
