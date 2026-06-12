@@ -123,7 +123,7 @@ if (contactForm) {
       alert(`こんにちは ${name} さん！メッセージをありがとうございます: ${message}`);
       contactForm.reset();
     } else {
-      alert('名前とメッセージを入力してください！');
+      alert('名前、メールアドレス、性別、メッセージを入力してください！');
     }
   });
 }
