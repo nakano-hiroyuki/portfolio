@@ -18,29 +18,30 @@ startClock();
 const images = document.querySelectorAll('#slideshow img');
 let currentIndex = 0;
 
-// 初期状態で最初の画像を表示
-images.forEach((img, i) => {
-  img.style.opacity = (i === 0) ? '1' : '0';
-  img.classList.toggle('active', i === 0);
-});
+if (images.length > 0) {
+  // 初期状態で最初の画像を表示
+  images.forEach((img, i) => {
+    img.style.opacity = (i === 0) ? '1' : '0';
+    img.classList.toggle('active', i === 0);
+  });
 
-function fadeToNextImage() {
-  // 現在の画像をフェードアウト
-  images[currentIndex].classList.remove('active');
-  images[currentIndex].style.opacity = '0';
+  function fadeToNextImage() {
+    // 現在の画像をフェードアウト
+    images[currentIndex].classList.remove('active');
+    images[currentIndex].style.opacity = '0';
 
-  // 次の画像をフェードイン
-  currentIndex = (currentIndex + 1) % images.length;
-  images[currentIndex].classList.add('active');
-  images[currentIndex].style.opacity = '1';
+    // 次の画像をフェードイン
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+    images[currentIndex].style.opacity = '1';
+  }
+
+  // 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
+  setTimeout(() => {
+    fadeToNextImage();
+    setInterval(fadeToNextImage, 4000);
+  }, 4000);
 }
-                
-// 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
-setTimeout(() => {
-  fadeToNextImage();
-  setInterval(fadeToNextImage, 4000);
-}, 4000);
-
 // =============================
 // カルーセル機能
 // =============================
@@ -79,6 +80,7 @@ function nextSlide(carouselId) {
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const overlay = document.getElementById("overlay");
+
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("open");
     overlay.classList.toggle("active");
