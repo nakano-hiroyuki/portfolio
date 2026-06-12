@@ -121,6 +121,7 @@ if (contactForm) {
     const message = document.getElementById('message').value;
     if (name && message) {
       alert(`こんにちは ${name} さん！メッセージをありがとうございます: ${message}`);
+      contactForm.reset();
     } else {
       alert('名前とメッセージを入力してください！');
     }
