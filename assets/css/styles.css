@@ -504,6 +504,11 @@ header h1 {
   transition: opacity 0.3s ease; /* フェードイン・アウト */
 }
 
+.scroll-icon {
+  font-size: 20px;
+  display: inline-block;
+  transform: scaleX(2.5); /* 横に広げる */
+}
 
 /* ============================= */
 /*appページ*/
@@ -1547,7 +1552,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .footer .wrap {
-  max-width: 1400px;
+  max-width: 90%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
