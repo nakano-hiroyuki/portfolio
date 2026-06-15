@@ -1293,11 +1293,21 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   left: 0;
   width: 100vw;
   height: 100vh;
+  animation: fadeIn 0.5s ease;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   padding: 10px;
   /* 少し余白を追加してモバイルに優しい設計に */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-content {
@@ -1324,6 +1334,19 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   cursor: pointer;
   color: red;
   float: right;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#modal.fade-out {
+  animation: fadeOut 0.5s ease forwards;
 }
 
 .thumbnail {

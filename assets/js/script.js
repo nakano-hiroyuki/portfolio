@@ -128,7 +128,11 @@ function openModal(imageSrc) {
 
 function closeModal() {
   const modal = document.getElementById('modal');
-  modal.style.display = 'none';
+  modal.classList.add('fade-out');
+  setTimeout(() => {
+    modal.style.display = 'none';
+    modal.classList.remove('fade-out');
+  }, 500);
 }
 
 // =============================
