@@ -482,6 +482,27 @@ header h1 {
   }
 }
 
+/* スクロールトップボタン */
+#scroll-top {
+  position: fixed;      /* 画面に固定 */
+  bottom: 30px;         /* 下から30px */
+  right: 30px;          /* 右から30px */
+  width: 60px;          /* ボタンの幅 */
+  height: 60px;         /* ボタンの高さ */
+  border-radius: 50%;   /* 丸いボタン */
+  background-color: rgba(156, 156, 156, 0.5); /* 背景色 */
+  color: #fff;          /* 矢印の色 */
+  border: none;         /* 枠線なし */
+  font-size: 14px;      /* 文字のサイズ */
+  font-family: "Yu Mincho", "Noto Serif JP", serif;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;      /* マウスをポインターに */
+  line-height: 1.2;  /* 行間狭め */
+  outline: none; /* 枠線を消す */
+  opacity: 0;           /* 最初は非表示 */
+  transition: opacity 0.3s ease; /* フェードイン・アウト */
+}
 
 
 /* ============================= */

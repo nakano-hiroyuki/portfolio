@@ -42,6 +42,27 @@ if (images.length > 0) {
     setInterval(fadeToNextImage, 4000);
   }, 4000);
 }
+
+// =============================
+// スクロールトップボタン
+// =============================
+const scrollTopBtn = document.getElementById('scroll-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.style.opacity = '1';
+  } else {
+    scrollTopBtn.style.opacity = '0';
+  }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 // =============================
 // カルーセル機能
 // =============================
