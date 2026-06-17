@@ -1361,6 +1361,8 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 .thumbnail {
+  -webkit-user-drag: none;
+  user-select: none;
   width: 200px;
   height: auto;
   border-radius: 10px;
