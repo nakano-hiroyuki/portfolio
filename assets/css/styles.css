@@ -493,6 +493,57 @@ body {
   }
 }
 
+/* ============================= */
+/* アコーディオン */
+/* ============================= */
+.accordion-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.accordion-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #646363;
+}
+
+.accordion-icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 10px;
+}
+
+.accordion-content p {
+  padding: 10px 0;
+  color: #646363;
+}
+
+.accordion-item.open .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 500px;
+}
+
 /* スクロールトップボタン */
 #scroll-top {
   position: fixed;
@@ -1973,7 +2024,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 700px) {
-
+  /*profile*/
+  .accordion-wrapper {
+  max-width: 80%;
+  margin: 50px auto;
+  }
   /*appページ*/
   .explanation1 img {
     width: 90%;

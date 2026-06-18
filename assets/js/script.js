@@ -133,6 +133,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =============================
+// アコーディオン
+// =============================
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    item.classList.toggle('open');
+  });
+});
+
+// =============================
 // モーダル表示
 // =============================
 function openModal(imageSrc) {
