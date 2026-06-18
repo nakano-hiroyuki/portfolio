@@ -589,11 +589,11 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  padding-bottom: 800px;
+  padding-bottom: 700px;
 }
 
 #app-header h1 {
-  padding-top: 350px;
+  padding-top: 400px;
 }
 
 #app-header .title {
@@ -602,7 +602,7 @@ body {
 
 #app-header .text-content {
   display: flex;
-  padding-top: 500px;
+  padding-top: 300px;
   color: white;
   text-align: center;
   justify-content: center;
