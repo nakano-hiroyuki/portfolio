@@ -36,11 +36,11 @@ if (images.length > 0) {
     images[currentIndex].style.opacity = '1';
   }
 
-  // 3秒待ってからフェードアウト開始、その後4秒ごとに切り替え
+  // 3.5秒待ってからフェードアウト開始、その後3.5秒ごとに切り替え
   setTimeout(() => {
     fadeToNextImage();
-    setInterval(fadeToNextImage, 4000);
-  }, 4000);
+    setInterval(fadeToNextImage, 3500);
+  }, 3500);
 }
 
 // =============================
