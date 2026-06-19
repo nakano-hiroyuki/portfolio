@@ -519,9 +519,19 @@ body {
   color: #646363;
 }
 
+.accordion-btn:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.4s ease;
+}
+
 .accordion-icon {
   font-size: 24px;
   transition: transform 0.3s ease;
+}
+
+.accordion-icon:hover {
+  color: rgb(30, 245, 230);
+  transition: color 0.4s ease;
 }
 
 .accordion-content {
@@ -1367,6 +1377,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1402,6 +1413,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -2024,11 +2036,13 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 }
 
 @media (max-width: 700px) {
+
   /*profile*/
   .accordion-wrapper {
-  max-width: 80%;
-  margin: 50px auto;
+    max-width: 80%;
+    margin: 50px auto;
   }
+
   /*appページ*/
   .explanation1 img {
     width: 90%;
