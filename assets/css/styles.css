@@ -544,6 +544,7 @@ body {
 .accordion-content p {
   padding: 10px 0;
   color: #646363;
+  text-align: justify;
 }
 
 .accordion-item.open .accordion-icon {
@@ -878,6 +879,8 @@ video {
   font-family: 'Yu Mincho', "Noto Serif JP", serif;
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  text-align: justify;
 }
 
 .app-name {
