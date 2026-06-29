@@ -197,7 +197,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background: linear-gradient(to right, #ffc5fcc5, #cafffdc9);
+  background-image: url('../images/プロフィール背景.jpg');
   background-size: cover;
   border-radius: 40px;
   box-shadow: 0 6px 32px 0 rgba(60, 60, 80, 0.13), 0 1.5px 6px 0 rgba(60, 60, 80, 0.10);
