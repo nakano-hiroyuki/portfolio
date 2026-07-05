@@ -252,6 +252,10 @@ body {
   margin-bottom: 30px;
 }
 
+#about .subtitle-ja {
+  color: gray;
+}
+
 .skill-title {
   text-align: center;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
