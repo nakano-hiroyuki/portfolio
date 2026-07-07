@@ -814,7 +814,7 @@ video {
 }
 
 .carousel-btn {
-  background: rgba(132, 131, 131, 0.5);
+  background: none;
   color: #fff;
   border: none;
   font-size: 2em;
@@ -825,7 +825,8 @@ video {
 }
 
 .carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
+  color: rgb(30, 245, 230);
+  transition: color 0.4s ease;
 }
 
 .bg-white {
