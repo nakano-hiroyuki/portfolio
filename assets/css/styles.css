@@ -1509,11 +1509,11 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   background-attachment: fixed;
   overflow-wrap: break-word;
   /* 文字を必要に応じて改行 */
-  padding-bottom: 500px;
+  padding-bottom: 200px;
 }
 
 #contact-text .main-title {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 #contact-text p {
@@ -1533,6 +1533,7 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   align-items: center;
   justify-content: center;
   min-height: 60vh;
+  margin-top: 400px;
   padding-top: 80px;
   padding-bottom: 80px;
   z-index: 1;
@@ -1656,13 +1657,6 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 #contact-form button:hover {
   background: linear-gradient(90deg, #222f3e 60%, #30475e 100%);
   box-shadow: 0 4px 16px 0 rgba(60, 60, 80, 0.13);
-}
-
-.carousel-video {
-  width: 500px;
-  height: 350px;
-  display: block;
-  vertical-align: middle;
 }
 
 .contact-content {
