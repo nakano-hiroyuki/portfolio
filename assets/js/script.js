@@ -166,15 +166,26 @@ function closeModal() {
 // =============================
 // お問合せ
 // =============================
+emailjs.init('staAup2QElAgqxDcS');
+
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', function (event) {
+  contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
+
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
+
     if (name && message) {
-      alert(`こんにちは ${name} さん！メッセージをありがとうございます: ${message}`);
-      contactForm.reset();
+      emailjs.sendForm('service_t8kalz5', 'template_vt1ubtq', this)
+        .then(() => {
+          alert(`${name} さん！メッセージを送信しました。ありがとうございます！`);
+          contactForm.reset();
+        })
+        .catch((error) => {
+          alert('送信に失敗しました。もう一度お試しください。');
+          console.log(error);
+        });
     } else {
       alert('名前、メールアドレス、性別、メッセージを入力してください！');
     }
