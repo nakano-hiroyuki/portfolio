@@ -18,69 +18,77 @@
   <script src="assets/js/script.js" defer></script>
 </head>
 
-<!-- ============================= -->
-<!-- ヘッダー -->
-<!-- ============================= -->
-<section id="home">
-  <header>
-    <p id="time">現在の時刻が表示されます。</p>
-    <div id="slideshow">
-      <img src="assets/images/テクノロジー3.jpg" alt="デジタル画像">
-      <img src="assets/images/PC10.jpg" alt="PC画像">
-      <img src="assets/images/テクノロジー.jpg" alt="テクノロジー画像">
-      <img src="assets/images/VR.jpg" alt="VR画像">
-      <img src="assets/images/都心1.jpg" alt="都心画像">
-      <img src="assets/images/プログラミング1.jpg" alt="プログラミング画像">
-      <img src="assets/images/モダン.jpg" alt="モダン画像">
-      <img src="assets/images/ビジネス.jpg" alt="ビジネス道具画像">
-      <img src="assets/images/テクノロジー1.jpg" alt="テクノロジー画像">
-      <img src="assets/images/アンドロイド.jpg" alt="アンドロイド画像">
-      <img src="assets/images/テクノロジー7.jpg" alt="テクノロジー画像">
-      <img src="assets/images/デジタルネットワーク.jpg" alt="デジタルネットワーク画像">
-    </div>
+<body>
+  <!--=============================-->
+  <!-- ローディング画面 -->
+  <!-- ============================= -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
 
-    <p>OFFICIAL WEBSITE</p>
-    <h1>HIROYUKI NAKANO</h1>
-    
-    <!-- ============================= -->
-    <!-- ハンバーガーメニュー -->
-    <!-- ============================= -->
-    <!-- ハンバーガーボタン -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+  <!-- ============================= -->
+  <!-- ヘッダー -->
+  <!-- ============================= -->
+  <section id="home">
+    <header>
+      <p id="time">現在の時刻が表示されます。</p>
+      <div id="slideshow">
+        <img src="assets/images/テクノロジー3.jpg" alt="デジタル画像">
+        <img src="assets/images/PC10.jpg" alt="PC画像">
+        <img src="assets/images/テクノロジー.jpg" alt="テクノロジー画像">
+        <img src="assets/images/VR.jpg" alt="VR画像">
+        <img src="assets/images/都心1.jpg" alt="都心画像">
+        <img src="assets/images/プログラミング1.jpg" alt="プログラミング画像">
+        <img src="assets/images/モダン.jpg" alt="モダン画像">
+        <img src="assets/images/ビジネス.jpg" alt="ビジネス道具画像">
+        <img src="assets/images/テクノロジー1.jpg" alt="テクノロジー画像">
+        <img src="assets/images/アンドロイド.jpg" alt="アンドロイド画像">
+        <img src="assets/images/テクノロジー7.jpg" alt="テクノロジー画像">
+        <img src="assets/images/デジタルネットワーク.jpg" alt="デジタルネットワーク画像">
+      </div>
 
-    <!-- オーバーレイナビ -->
-    <div class="overlay" id="overlay">
-      <nav class="overlay-nav">
+      <p>OFFICIAL WEBSITE</p>
+      <h1>HIROYUKI NAKANO</h1>
+
+      <!-- ============================= -->
+      <!-- ハンバーガーメニュー -->
+      <!-- ============================= -->
+      <!-- ハンバーガーボタン -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- オーバーレイナビ -->
+      <div class="overlay" id="overlay">
+        <nav class="overlay-nav">
+          <a href="profile.html">PROFILE</a>
+          <a href="app.html">APPLICATION</a>
+          <a href="website.html">WEBSITE</a>
+          <a href="design.html">GRAPHIC DESIGN</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+
+      <!-- ============================= -->
+      <!-- ページ遷移リンクナビ -->
+      <!-- ============================= -->
+      <nav class="header-nav" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
         <a href="profile.html">PROFILE</a>
         <a href="app.html">APPLICATION</a>
         <a href="website.html">WEBSITE</a>
         <a href="design.html">GRAPHIC DESIGN</a>
         <a href="contact.html">CONTACT</a>
       </nav>
-    </div>
-    
-    <!-- ============================= -->
-    <!-- ページ遷移リンクナビ -->
-    <!-- ============================= -->
-    <nav class="header-nav" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="300">
-      <a href="profile.html">PROFILE</a>
-      <a href="app.html">APPLICATION</a>
-      <a href="website.html">WEBSITE</a>
-      <a href="design.html">GRAPHIC DESIGN</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </header>
-</section>
+    </header>
+  </section>
 
-<!-- AOSのJSと初期化 -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- AOSのJSと初期化 -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -11,218 +11,231 @@
   <script src="assets/js/script.js" defer></script>
 </head>
 
-<!-- ============================= -->
-<!-- ハンバーガーメニュー -->
-<!-- ============================= -->
-<!-- ハンバーガーボタン -->
-<div class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<!-- オーバーレイナビ -->
-<div class="overlay" id="overlay">
-  <nav class="overlay-nav">
-    <a href="index.html">HOME</a>
-    <a href="profile.html">PROFILE</a>
-    <a href="website.html">WEBSITE</a>
-    <a href="design.html">GRAPHIC DESIGN</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
-</div>
-
-<!-- ============================= -->
-<!-- ヘッダー -->
-<!-- ============================= -->
-<section id="app-header">
-  <div class="app-bg">
-    <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-      <nav class="header-nav">
-        <a href="index.html">HOME</a>
-        <a href="profile.html">PROFILE</a>
-        <a href="website.html">WEBSITE</a>
-        <a href="design.html">GRAPHIC DESIGN</a>
-        <a href="contact.html">CONTACT</a>
-      </nav>
-    </div>
-
-    <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">APPLICATION</h1>
-    <div class="text-content">
-      <h2 class="title"  data-aos="fade-in" data-aos-duration="1500">Python/tkinter</h2>
-      <p  data-aos="fade-in" data-aos-duration="1500">当初AI開発に興味があり学習しました。<br>tkinterのアプリ開発から行い、<br>今後はFlaskなどのバックエンドを追求します。</p>
-    </div>
+<body>
+  <!--=============================-->
+  <!-- ローディング画面 -->
+  <!-- ============================= -->
+  <div id="loading">
+    <div class="spinner"></div>
   </div>
-</section>
 
-<!-- ============================= -->
-<!-- カルーセル -->
-<!-- ============================= -->
-<div class="bg-white" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
-  <div class="python-apps" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400">
-    <p class="subtitle-ja" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">アプリ開発</p>
-    <h2 class="app-subtitle" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">App Development</h2>
-    <div class="display">
-      <div class="app-image" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
-        <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">メモアプリ</h4>
-        <div class="image-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-          <div class="carousel" id="memo-app-carousel">
-            <button class="carousel-btn prev" onclick="prevSlide('memo-app-carousel')">&#10094;</button>
-            <div class="carousel-images">
-              <img src="assets/images/Python メモアプリ.png" alt="メモアプリ画像" width="500" height="350"
-                class="carousel-image active">
-              <img src="assets/images/メモアプリ.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
-              <img src="assets/images/メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
-              <img src="assets/images/メモアプリ3.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
-              <img src="assets/images/Python メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+  <!-- ============================= -->
+  <!-- ハンバーガーメニュー -->
+  <!-- ============================= -->
+  <!-- ハンバーガーボタン -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- オーバーレイナビ -->
+  <div class="overlay" id="overlay">
+    <nav class="overlay-nav">
+      <a href="index.html">HOME</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="website.html">WEBSITE</a>
+      <a href="design.html">GRAPHIC DESIGN</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+
+  <!-- ============================= -->
+  <!-- ヘッダー -->
+  <!-- ============================= -->
+  <section id="app-header">
+    <div class="app-bg">
+      <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+        <nav class="header-nav">
+          <a href="index.html">HOME</a>
+          <a href="profile.html">PROFILE</a>
+          <a href="website.html">WEBSITE</a>
+          <a href="design.html">GRAPHIC DESIGN</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+
+      <h1 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">APPLICATION</h1>
+      <div class="text-content">
+        <h2 class="title" data-aos="fade-in" data-aos-duration="1500">Python/tkinter</h2>
+        <p data-aos="fade-in" data-aos-duration="1500">
+          当初AI開発に興味があり学習しました。<br>tkinterのアプリ開発から行い、<br>今後はFlaskなどのバックエンドを追求します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- カルーセル -->
+  <!-- ============================= -->
+  <div class="bg-white" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+    <div class="python-apps" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400">
+      <p class="subtitle-ja" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">アプリ開発</p>
+      <h2 class="app-subtitle" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">App Development</h2>
+      <div class="display">
+        <div class="app-image" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+          <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">メモアプリ</h4>
+          <div class="image-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="carousel" id="memo-app-carousel">
+              <button class="carousel-btn prev" onclick="prevSlide('memo-app-carousel')">&#10094;</button>
+              <div class="carousel-images">
+                <img src="assets/images/Python メモアプリ.png" alt="メモアプリ画像" width="500" height="350"
+                  class="carousel-image active">
+                <img src="assets/images/メモアプリ.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/メモアプリ2.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/メモアプリ3.png" alt="メモアプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/Python メモアプリ2.png" alt="メモアプリ画像" width="500" height="350"
+                  class="carousel-image">
+              </div>
+              <button class="carousel-btn next" onclick="nextSlide('memo-app-carousel')">&#10095;</button>
             </div>
-            <button class="carousel-btn next" onclick="nextSlide('memo-app-carousel')">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="app-image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">電卓アプリ</h4>
+          <div class="image-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="carousel" id="calc-app-carousel">
+              <button class="carousel-btn prev" onclick="prevSlide('calc-app-carousel')">&#10094;</button>
+              <div class="carousel-images">
+                <img src="assets/images/Python 電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350"
+                  class="carousel-image active">
+                <img src="assets/images/Python 電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+                <img src="assets/images/電卓アプリ3.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+              </div>
+              <button class="carousel-btn next" onclick="nextSlide('calc-app-carousel')">&#10095;</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="app-image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-        <h4 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">電卓アプリ</h4>
-        <div class="image-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-          <div class="carousel" id="calc-app-carousel">
-            <button class="carousel-btn prev" onclick="prevSlide('calc-app-carousel')">&#10094;</button>
-            <div class="carousel-images">
-              <img src="assets/images/Python 電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350"
-                class="carousel-image active">
-              <img src="assets/images/Python 電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
-              <img src="assets/images/電卓アプリ.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
-              <img src="assets/images/電卓アプリ2.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
-              <img src="assets/images/電卓アプリ3.png" alt="電卓アプリ画像" width="500" height="350" class="carousel-image">
+      <div class="display">
+        <div class="app-image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          <h4>ストップウォッチアプリ</h4>
+          <div class="image-container">
+            <div class="carousel" id="stopwatch-app-carousel">
+              <button class="carousel-btn prev" onclick="prevSlide('stopwatch-app-carousel')">&#10094;</button>
+              <div class="carousel-images">
+                <img src="assets/images/Python ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350"
+                  class="carousel-image active">
+                <img src="assets/images/Python ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ストップウォッチアプリ1.png" alt="ストップウォッチアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350"
+                  class="carousel-image">
+              </div>
+              <button class="carousel-btn next" onclick="nextSlide('stopwatch-app-carousel')">&#10095;</button>
             </div>
-            <button class="carousel-btn next" onclick="nextSlide('calc-app-carousel')">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="app-image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          <h4>ToDoリストアプリ</h4>
+          <div class="image-container">
+            <div class="carousel" id="todo-app-carousel">
+              <button class="carousel-btn prev" onclick="prevSlide('todo-app-carousel')">&#10094;</button>
+              <div class="carousel-images">
+                <img src="assets/images/Python ToDoリストアプリ.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                  class="carousel-image active">
+                <img src="assets/images/ToDoリストアプリ1.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ2.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ3.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ4.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                  class="carousel-image">
+                <img src="assets/images/ToDoリストアプリ5.png" alt="ToDoリストアプリ画像" width="500" height="350"
+                  class="carousel-image">
+              </div>
+              <button class="carousel-btn next" onclick="nextSlide('todo-app-carousel')">&#10095;</button>
+            </div>
           </div>
         </div>
       </div>
+      <p class="app-description" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+        アイデアを、動くものへ。<br>シンプルな設計のアプリケーション。</p>
     </div>
 
-    <div class="display">
-      <div class="app-image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-        <h4>ストップウォッチアプリ</h4>
-        <div class="image-container">
-          <div class="carousel" id="stopwatch-app-carousel">
-            <button class="carousel-btn prev" onclick="prevSlide('stopwatch-app-carousel')">&#10094;</button>
-            <div class="carousel-images">
-              <img src="assets/images/Python ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350"
-                class="carousel-image active">
-              <img src="assets/images/Python ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ストップウォッチアプリ.png" alt="ストップウォッチアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ストップウォッチアプリ1.png" alt="ストップウォッチアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ストップウォッチアプリ2.png" alt="ストップウォッチアプリ画像" width="500" height="350"
-                class="carousel-image">
-            </div>
-            <button class="carousel-btn next" onclick="nextSlide('stopwatch-app-carousel')">&#10095;</button>
-          </div>
+    <!-- ============================= -->
+    <!-- アプリ説明 -->
+    <!-- ============================= -->
+    <div class="app-about-bg" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+      <p class="subtitle-ja" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">アプリの特徴</p>
+      <h2 class="app-about-title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">App Features</h2>
+      <div class="explanation1">
+        <img src="assets/images/プログラミング2.jpg" ait="プログラミング画像" width="650px" height="auto" data-aos="fade-in"
+          data-aos-duration="1500" data-aos-delay="300">
+        <span class="explanation-text">
+          <h3 class="explanation-title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">私の考えるアプリ開発とは
+          </h3>
+          <p class="app-name" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">Concept</p>
+          <p data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+            ユーザー目線で考え、見た目や操作が直感的で使いやすいこと。<br>目的をはっきりさせて何のためか明確にし、必要な機能だけにすること。<br>テストと改善を繰り返し、より良いアプリ開発を目指します。</p>
+        </span>
+      </div>
+
+      <div class="explanation2">
+        <img src="assets/images/アプリ開発.jpg" ait="プログラミング画像" width="650px" height="auto" data-aos="fade-in"
+          data-aos-duration="1500" data-aos-delay="300">
+        <span class="explanation-text">
+          <h3 class="explanation-title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">開発の詳細</h3>
+          <p class="app-name" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">Work</p>
+          <p data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+            Tkinterライブラリを使用してUI（ユーザーインターフェース）を作成。<br>各アプリには、データの保存と読み込み、現在時刻を基準とした計測、タスクの追加・削除・一覧表示・編集や削除機能、演算処理入力された数値と演算子に基づいた計算など様々な機能があります。
+          </p>
+        </span>
+      </div>
+    </div>
+
+    <!-- ============================= -->
+    <!-- フッター -->
+    <!-- ============================= -->
+    <div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+      <div class="wrap">
+        <div class="box">
+          <h3>ACCOUNT</h3>
+          <ul>
+            <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
+            <li><a href="https://www.instagram.com/Hiroyuki_nakano.it/">Instagram</a></li>
+            <li><a href="https://x.com/YYJhgtMwkd10072">X(Twitter)</a></li>
+            <li><a href="https://www.youtube.com/channel/UCSYLQUQXH09fm1Q1K0Yz6AA">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>PROJECT</h3>
+          <ul>
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="app.html">APPLICATION</a></li>
+            <li><a href="website.html">WEBSITE</a></li>
+            <li><a href="design.html">GRAPHIC DESIGN</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>その他</h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
         </div>
       </div>
-
-      <div class="app-image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-        <h4>ToDoリストアプリ</h4>
-        <div class="image-container">
-          <div class="carousel" id="todo-app-carousel">
-            <button class="carousel-btn prev" onclick="prevSlide('todo-app-carousel')">&#10094;</button>
-            <div class="carousel-images">
-              <img src="assets/images/Python ToDoリストアプリ.png" alt="ToDoリストアプリ画像" width="500" height="350"
-                class="carousel-image active">
-              <img src="assets/images/ToDoリストアプリ1.png" alt="ToDoリストアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ToDoリストアプリ2.png" alt="ToDoリストアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ToDoリストアプリ3.png" alt="ToDoリストアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ToDoリストアプリ4.png" alt="ToDoリストアプリ画像" width="500" height="350"
-                class="carousel-image">
-              <img src="assets/images/ToDoリストアプリ5.png" alt="ToDoリストアプリ画像" width="500" height="350"
-                class="carousel-image">
-            </div>
-            <button class="carousel-btn next" onclick="nextSlide('todo-app-carousel')">&#10095;</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="app-description" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">アイデアを、動くものへ。<br>シンプルな設計のアプリケーション。</p>
-  </div>
-  
-  <!-- ============================= -->
-  <!-- アプリ説明 -->
-  <!-- ============================= -->
-  <div class="app-about-bg" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-    <p class="subtitle-ja" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">アプリの特徴</p>
-    <h2 class="app-about-title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">App Features</h2>
-    <div class="explanation1">
-      <img src="assets/images/プログラミング2.jpg" ait="プログラミング画像" width="650px" height="auto" data-aos="fade-in"
-        data-aos-duration="1500" data-aos-delay="300">
-      <span class="explanation-text">
-        <h3 class="explanation-title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">私の考えるアプリ開発とは</h3>
-        <p class="app-name" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">Concept</p>
-        <p data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
-          ユーザー目線で考え、見た目や操作が直感的で使いやすいこと。<br>目的をはっきりさせて何のためか明確にし、必要な機能だけにすること。<br>テストと改善を繰り返し、より良いアプリ開発を目指します。</p>
-      </span>
-    </div>
-
-    <div class="explanation2">
-      <img src="assets/images/アプリ開発.jpg" ait="プログラミング画像" width="650px" height="auto" data-aos="fade-in"
-        data-aos-duration="1500" data-aos-delay="300">
-      <span class="explanation-text">
-        <h3 class="explanation-title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">開発の詳細</h3>
-        <p class="app-name" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">Work</p>
-        <p data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
-          Tkinterライブラリを使用してUI（ユーザーインターフェース）を作成。<br>各アプリには、データの保存と読み込み、現在時刻を基準とした計測、タスクの追加・削除・一覧表示・編集や削除機能、演算処理入力された数値と演算子に基づいた計算など様々な機能があります。
-        </p>
-      </span>
+      <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
     </div>
   </div>
-  
-  <!-- ============================= -->
-  <!-- フッター -->
-  <!-- ============================= -->
-  <div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-    <div class="wrap">
-      <div class="box">
-        <h3>ACCOUNT</h3>
-        <ul>
-          <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
-          <li><a href="https://www.instagram.com/Hiroyuki_nakano.it/">Instagram</a></li>
-          <li><a href="https://x.com/YYJhgtMwkd10072">X(Twitter)</a></li>
-          <li><a href="https://www.youtube.com/channel/UCSYLQUQXH09fm1Q1K0Yz6AA">YouTube</a></li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>PROJECT</h3>
-        <ul>
-          <li><a href="profile.html">PROFILE</a></li>
-          <li><a href="app.html">APPLICATION</a></li>
-          <li><a href="website.html">WEBSITE</a></li>
-          <li><a href="design.html">GRAPHIC DESIGN</a></li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>その他</h3>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
-  </div>
-</div>
 
-<!-- スクロールトップボタン -->
-<button id="scroll-top"><span class="scroll-icon">∧</span><br>TOP</button>
+  <!-- スクロールトップボタン -->
+  <button id="scroll-top"><span class="scroll-icon">∧</span><br>TOP</button>
 
-<!-- AOSのJSと初期化 -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- AOSのJSと初期化 -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -12,122 +12,130 @@
   <script src="assets/js/script.js" defer></script>
 </head>
 
-<!-- ============================= -->
-<!-- ハンバーガーメニュー -->
-<!-- ============================= -->
-<!-- ハンバーガーボタン -->
-<div class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<!-- オーバーレイナビ -->
-<div class="overlay" id="overlay">
-  <nav class="overlay-nav">
-    <a href="index.html">HOME</a>
-    <a href="profile.html">PROFILE</a>
-    <a href="app.html">APPLICATION</a>
-    <a href="website.html">WEBSITE</a>
-    <a href="design.html">GRAPHIC DESIGN</a>
-  </nav>
-</div>
-
-<!-- ============================= -->
-<!-- ヘッダー -->
-<!-- ============================= -->
-<section id="contact-text">
-  <div class="contact-bg">
-    <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-      <nav class="header-nav">
-        <a href="index.html">HOME</a>
-        <a href="profile.html">PROFILE</a>
-        <a href="app.html">APPLICATION</a>
-        <a href="website.html">WEBSITE</a>
-        <a href="design.html">GRAPHIC DESIGN</a>
-      </nav>
-    </div>
-    <div class="text">
-      <h2 class="main-title" data-aos="zoom-in" data-aos-duration="1000">CONTACT</h2>
-      <p data-aos="fade-in" data-aos-duration="2500" data-aos-delay="500">
-        ご覧いただき誠にありがとうございました。<br>ご意見、ご相談等ございましたら</br>お気軽にお問合せください。</p>
-    </div>
-
-
-    <!-- ============================= -->
-    <!-- お問い合わせフォーム -->
-    <!-- ============================= -->
-    <div class="contact-content">
-      <section id="contact" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
-        <h3>お問い合わせ</h3>
-        <form id="contact-form">
-          <label for="name">NAME:</label>
-          <input type="text" id="name" name="name" placeholder="お名前">
-          <label for="email">E-MAIL:</label>
-          <input type="email" id="email" name="email" placeholder="example@email.com">
-          <label for="gender">GENDER:</label>
-          <div class="gender">
-            <label>
-              <input class="input-style" type="radio" name="gender" value="man" placeholder="男性"> Man
-            </label>
-            <label>
-              <input class="input-style" type="radio" name="gender" value="woman" placeholder="女性"> Woman
-            </label>
-            <label>
-              <input class="input-style" type="radio" name="gender" value="other" placeholder="その他"> Other
-            </label>
-          </div>
-          <label for="message">MESSAGE:</label>
-          <textarea id="message" name="message" placeholder="お問い合わせ内容を入力してください"></textarea>
-          <button type="submit">送信</button>
-        </form>
-      </section>
-    </div>
+<body>
+  <!--=============================-->
+  <!-- ローディング画面 -->
+  <!-- ============================= -->
+  <div id="loading">
+    <div class="spinner"></div>
   </div>
-</section>
 
-<!-- ============================= -->
-<!-- フッター -->
-<!-- ============================= -->
-<div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-  <div class="wrap">
-    <div class="box">
-      <h3>ACCOUNT</h3>
-      <ul>
-        <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
-        <li><a href="https://www.instagram.com/Hiroyuki_nakano.it/">Instagram</a></li>
-        <li><a href="https://x.com/YYJhgtMwkd10072">X(Twitter)</a></li>
-        <li><a href="https://www.youtube.com/channel/UCSYLQUQXH09fm1Q1K0Yz6AA">YouTube</a></li>
-      </ul>
-    </div>
-    <div class="box">
-      <h3>PROJECT</h3>
-      <ul>
-        <li><a href="profile.html">PROFILE</a></li>
-        <li><a href="app.html">APPLICATION</a></li>
-        <li><a href="website.html">WEBSITE</a></li>
-        <li><a href="design.html">GRAPHIC DESIGN</a></li>
-      </ul>
-    </div>
-    <div class="box">
-      <h3>その他</h3>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
+  <!-- ============================= -->
+  <!-- ハンバーガーメニュー -->
+  <!-- ============================= -->
+  <!-- ハンバーガーボタン -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-  <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
-</div>
 
-<!-- スクロールトップボタン -->
-<button id="scroll-top"><span class="scroll-icon">∧</span><br>TOP</button>
+  <!-- オーバーレイナビ -->
+  <div class="overlay" id="overlay">
+    <nav class="overlay-nav">
+      <a href="index.html">HOME</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="app.html">APPLICATION</a>
+      <a href="website.html">WEBSITE</a>
+      <a href="design.html">GRAPHIC DESIGN</a>
+    </nav>
+  </div>
 
-<!-- AOSのJSと初期化 -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- ============================= -->
+  <!-- ヘッダー -->
+  <!-- ============================= -->
+  <section id="contact-text">
+    <div class="contact-bg">
+      <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+        <nav class="header-nav">
+          <a href="index.html">HOME</a>
+          <a href="profile.html">PROFILE</a>
+          <a href="app.html">APPLICATION</a>
+          <a href="website.html">WEBSITE</a>
+          <a href="design.html">GRAPHIC DESIGN</a>
+        </nav>
+      </div>
+      <div class="text">
+        <h2 class="main-title" data-aos="zoom-in" data-aos-duration="1000">CONTACT</h2>
+        <p data-aos="fade-in" data-aos-duration="2500" data-aos-delay="500">
+          ご覧いただき誠にありがとうございました。<br>ご意見、ご相談等ございましたら</br>お気軽にお問合せください。</p>
+      </div>
+
+
+      <!-- ============================= -->
+      <!-- お問い合わせフォーム -->
+      <!-- ============================= -->
+      <div class="contact-content">
+        <section id="contact" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400">
+          <h3>お問い合わせ</h3>
+          <form id="contact-form">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" placeholder="お名前">
+            <label for="email">E-MAIL:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+            <label for="gender">GENDER:</label>
+            <div class="gender">
+              <label>
+                <input class="input-style" type="radio" name="gender" value="man" placeholder="男性"> Man
+              </label>
+              <label>
+                <input class="input-style" type="radio" name="gender" value="woman" placeholder="女性"> Woman
+              </label>
+              <label>
+                <input class="input-style" type="radio" name="gender" value="other" placeholder="その他"> Other
+              </label>
+            </div>
+            <label for="message">MESSAGE:</label>
+            <textarea id="message" name="message" placeholder="お問い合わせ内容を入力してください"></textarea>
+            <button type="submit">送信</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- フッター -->
+  <!-- ============================= -->
+  <div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+    <div class="wrap">
+      <div class="box">
+        <h3>ACCOUNT</h3>
+        <ul>
+          <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
+          <li><a href="https://www.instagram.com/Hiroyuki_nakano.it/">Instagram</a></li>
+          <li><a href="https://x.com/YYJhgtMwkd10072">X(Twitter)</a></li>
+          <li><a href="https://www.youtube.com/channel/UCSYLQUQXH09fm1Q1K0Yz6AA">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>PROJECT</h3>
+        <ul>
+          <li><a href="profile.html">PROFILE</a></li>
+          <li><a href="app.html">APPLICATION</a></li>
+          <li><a href="website.html">WEBSITE</a></li>
+          <li><a href="design.html">GRAPHIC DESIGN</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>その他</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
+  </div>
+
+  <!-- スクロールトップボタン -->
+  <button id="scroll-top"><span class="scroll-icon">∧</span><br>TOP</button>
+
+  <!-- AOSのJSと初期化 -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

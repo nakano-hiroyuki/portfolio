@@ -10,151 +10,164 @@
   <script src="assets/js/script.js" defer></script>
 </head>
 
-<!-- ============================= -->
-<!-- ハンバーガーメニュー -->
-<!-- ============================= -->
-<!-- ハンバーガーボタン -->
-<div class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+<body>
+  <!--=============================-->
+  <!-- ローディング画面 -->
+  <!-- ============================= -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
 
-<!-- オーバーレイナビ -->
-<div class="overlay" id="overlay">
-  <nav class="overlay-nav">
-    <a href="index.html">HOME</a>
-    <a href="app.html">APPLICATION</a>
-    <a href="website.html">WEBSITE</a>
-    <a href="design.html">GRAPHIC DESIGN</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
-</div>
+  <!-- ============================= -->
+  <!-- ハンバーガーメニュー -->
+  <!-- ============================= -->
+  <!-- ハンバーガーボタン -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-<!-- ============================= -->
-<!-- ヘッダー -->
-<!-- ============================= -->
-<div class="bg-img">
-  <section id="about">
-    <div id="header-underline">
-      <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-        <nav class="header-nav">
-          <a href="index.html">HOME</a>
-          <a href="app.html">APPLICATION</a>
-          <a href="website.html">WEBSITE</a>
-          <a href="design.html">GRAPHIC DESIGN</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-      </div>
-      <h1 class="about-title" data-aos="zoom-in" data-aos-duration="1000">PROFILE</h1>
-      <div class="about-card" data-aos="slide-up" data-aos-duration="2000" data-aos-delay="300">
-        <div class="about-img-wrapper">
-          <img src="assets/images/サッカーイラスト.jpg" alt="サッカーイラスト画像" class="about-img">
+  <!-- オーバーレイナビ -->
+  <div class="overlay" id="overlay">
+    <nav class="overlay-nav">
+      <a href="index.html">HOME</a>
+      <a href="app.html">APPLICATION</a>
+      <a href="website.html">WEBSITE</a>
+      <a href="design.html">GRAPHIC DESIGN</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </div>
+
+  <!-- ============================= -->
+  <!-- ヘッダー -->
+  <!-- ============================= -->
+  <div class="bg-img">
+    <section id="about">
+      <div id="header-underline">
+        <div class="main-header" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+          <nav class="header-nav">
+            <a href="index.html">HOME</a>
+            <a href="app.html">APPLICATION</a>
+            <a href="website.html">WEBSITE</a>
+            <a href="design.html">GRAPHIC DESIGN</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
         </div>
-        <div class="about-profile">
-          <h3 class="about-name">中野裕之<br>Nakano Hiroyuki</h3>
-          <p class="about-desc">
-            美容師専門学校を卒業。<br>筋トレ、サッカー、散歩、KingGnuが好きな37歳。WEBデザイナーとして活動中。
+        <h1 class="about-title" data-aos="zoom-in" data-aos-duration="1000">PROFILE</h1>
+        <div class="about-card" data-aos="slide-up" data-aos-duration="2000" data-aos-delay="300">
+          <div class="about-img-wrapper">
+            <img src="assets/images/サッカーイラスト.jpg" alt="サッカーイラスト画像" class="about-img">
+          </div>
+          <div class="about-profile">
+            <h3 class="about-name">中野裕之<br>Nakano Hiroyuki</h3>
+            <p class="about-desc">
+              美容師専門学校を卒業。<br>筋トレ、サッカー、散歩、KingGnuが好きな37歳。WEBデザイナーとして活動中。
+            </p>
+          </div>
+        </div>
+        <div class="skill-wrapper" data-aos="slide-up" data-aos-duration="1500" data-aos-delay="100">
+          <p class="subtitle-ja">スキル</p>
+          <p Class="skill-title">SKILL</p>
+          <div class="skill-content">
+            <ul>
+              <li>Python/アプリ開発</li>
+              <li>HTML/ホームページ作成</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>SQL</li>
+              <li>Illustrator/デザイン作成</li>
+            </ul>
+            <ul>
+              <li>Photoshop</li>
+              <li>Inkscape</li>
+              <li>Figma</li>
+              <li>Word/社内外資料作成</li>
+              <li>Excel</li>
+              <li>PowerPoint</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- アコーディオン -->
+    <!-- ============================= -->
+    <div class="accordion-wrapper" data-aos="slide-up" data-aos-duration="1500">
+
+      <div class="accordion-item">
+        <button class="accordion-btn">職歴・経歴 <span class="accordion-icon">+</span></button>
+        <div class="accordion-content">
+          <p>
+            デザイン制作企業に3年間携わりチラシ、パンフレット、Lineスタンプ、ロゴマーク、名刺などのデザインを手掛ける。<br>現職はシステム開発部にて開発、運用をしています。技術指導員として数十人規模の後進の育成にも携わっています。</br>
           </p>
         </div>
       </div>
-      <div class="skill-wrapper" data-aos="slide-up" data-aos-duration="1500" data-aos-delay="100">
-        <p class="subtitle-ja">スキル</p>
-        <p Class="skill-title">SKILL</p>
-        <div class="skill-content">
-          <ul>
-            <li>Python/アプリ開発</li>
-            <li>HTML/ホームページ作成</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>SQL</li>
-            <li>Illustrator/デザイン作成</li>
-          </ul>
-          <ul>
-            <li>Photoshop</li>
-            <li>Inkscape</li>
-            <li>Figma</li>
-            <li>Word/社内外資料作成</li>
-            <li>Excel</li>
-            <li>PowerPoint</li>
-          </ul>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">スキル詳細 <span class="accordion-icon">+</span></button>
+        <div class="accordion-content">
+          <p>
+            飲食・医療・スポーツ・不動産などさまざまな業種のクライアントに向けて数十件以上のデザイン制作を担当。静岡のローカルフード「さわやか」のチラシ制作では喜んでもらえたことが特に印象に残っています。Illustratorはさまざまな制作に対応できる水準で、PhotoshopとFigmaは現在も学習しながらスキルを高めています。<br>WEBサイト制作は独学で身に着け、基本的なフロントエンドの実装が可能です。特にjavascriptでReactやnode.jsなどの学習を進めています。ProgateのLv.236。</br>
+          </p>
         </div>
       </div>
-    </div>
-  </section>
 
-<!-- ============================= -->
-<!-- アコーディオン -->
-<!-- ============================= -->
-<div class="accordion-wrapper" data-aos="slide-up" data-aos-duration="1500">
+      <div class="accordion-item">
+        <button class="accordion-btn">目標・キャリアプラン<span class="accordion-icon">+</span></button>
+        <div class="accordion-content">
+          <p>
+            現在はデザインとエンジニアリングの両立を目指し、JavaScript・React・バックエンドを中心に日々学習を続けています。デザイナーとして培った3年間の経験を活かしながら、フロントエンドの実装力を身につけることで、デザインから開発まで一貫して対応できる人材を目指しています。<br>数か月後の転職を目標に、WEB制作会社やSaaS企業でWEBデザイナーとして活躍できるよう、着実にスキルを磨いています。</br>デザインの視点を持ったエンジニアとして、見た目の美しさと技術の両方で価値を提供できる存在になることが目標です。
+          </p>
+        </div>
+      </div>
 
-  <div class="accordion-item">
-    <button class="accordion-btn">職歴・経歴 <span class="accordion-icon">+</span></button>
-    <div class="accordion-content">
-      <p>デザイン制作企業に3年間携わりチラシ、パンフレット、Lineスタンプ、ロゴマーク、名刺などのデザインを手掛ける。<br>現職はシステム開発部にて開発、運用をしています。技術指導員として数十人規模の後進の育成にも携わっています。</br></p>
     </div>
   </div>
 
-  <div class="accordion-item">
-    <button class="accordion-btn">スキル詳細 <span class="accordion-icon">+</span></button>
-    <div class="accordion-content">
-      <p>飲食・医療・スポーツ・不動産などさまざまな業種のクライアントに向けて数十件以上のデザイン制作を担当。静岡のローカルフード「さわやか」のチラシ制作では喜んでもらえたことが特に印象に残っています。Illustratorはさまざまな制作に対応できる水準で、PhotoshopとFigmaは現在も学習しながらスキルを高めています。<br>WEBサイト制作は独学で身に着け、基本的なフロントエンドの実装が可能です。特にjavascriptでReactやnode.jsなどの学習を進めています。ProgateのLv.236。</br></p>
+  <!-- ============================= -->
+  <!-- フッター -->
+  <!-- ============================= -->
+  <div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
+    <div class="wrap">
+      <div class="box">
+        <h3>ACCOUNT</h3>
+        <ul>
+          <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
+          <li><a href="https://www.instagram.com/Hiroyuki_nakano.it/">Instagram</a></li>
+          <li><a href="https://x.com/YYJhgtMwkd10072">X(Twitter)</a></li>
+          <li><a href="https://www.youtube.com/channel/UCSYLQUQXH09fm1Q1K0Yz6AA">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>PROJECT</h3>
+        <ul>
+          <li><a href="profile.html">PROFILE</a></li>
+          <li><a href="app.html">APPLICATION</a></li>
+          <li><a href="website.html">WEBSITE</a></li>
+          <li><a href="design.html">GRAPHIC DESIGN</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>その他</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
+    <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
   </div>
 
-  <div class="accordion-item">
-    <button class="accordion-btn">目標・キャリアプラン<span class="accordion-icon">+</span></button>
-    <div class="accordion-content">
-      <p>現在はデザインとエンジニアリングの両立を目指し、JavaScript・React・バックエンドを中心に日々学習を続けています。デザイナーとして培った3年間の経験を活かしながら、フロントエンドの実装力を身につけることで、デザインから開発まで一貫して対応できる人材を目指しています。<br>数か月後の転職を目標に、WEB制作会社やSaaS企業でWEBデザイナーとして活躍できるよう、着実にスキルを磨いています。</br>デザインの視点を持ったエンジニアとして、見た目の美しさと技術の両方で価値を提供できる存在になることが目標です。</p>
-    </div>
-  </div>
+  <!-- スクロールトップボタン -->
+  <button id="scroll-top"><span class="scroll-icon">∧</span><br>TOP</button>
 
-</div>
-</div>
-
-<!-- ============================= -->
-<!-- フッター -->
-<!-- ============================= -->
-<div class="footer" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200">
-  <div class="wrap">
-    <div class="box">
-      <h3>ACCOUNT</h3>
-      <ul>
-        <li><a href="https://github.com/nakano-hiroyuki/portfolio">GitHub</a></li>
-        <li><a href="https://www.instagram.com/Hiroyuki_nakano.it/">Instagram</a></li>
-        <li><a href="https://x.com/YYJhgtMwkd10072">X(Twitter)</a></li>
-        <li><a href="https://www.youtube.com/channel/UCSYLQUQXH09fm1Q1K0Yz6AA">YouTube</a></li>
-      </ul>
-    </div>
-    <div class="box">
-      <h3>PROJECT</h3>
-      <ul>
-        <li><a href="profile.html">PROFILE</a></li>
-        <li><a href="app.html">APPLICATION</a></li>
-        <li><a href="website.html">WEBSITE</a></li>
-        <li><a href="design.html">GRAPHIC DESIGN</a></li>
-      </ul>
-    </div>
-    <div class="box">
-      <h3>その他</h3>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="reserved">© 2025 Hiroyuki Nakano All rights reserved.</p>
-</div>
-</main>
-
-<!-- スクロールトップボタン -->
-<button id="scroll-top"><span class="scroll-icon">∧</span><br>TOP</button>
-
-<!-- AOSのJSと初期化 -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- AOSのJSと初期化 -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

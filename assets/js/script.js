@@ -1,4 +1,25 @@
 // =============================
+// ローディング画面
+// =============================
+const loading = document.getElementById('loading');
+let isLoaded = false;
+
+// 一定時間（500ms）経過してもまだ読み込み中なら表示
+setTimeout(() => {
+  if (!isLoaded) {
+    loading.style.display = 'flex';
+  }
+}, 500);
+
+window.addEventListener('load', () => {
+  isLoaded = true;
+  loading.style.opacity = '0';
+  setTimeout(() => {
+    loading.style.display = 'none';
+  }, 500);
+});
+
+// =============================
 // 時間表示
 // =============================
 function startClock() {
