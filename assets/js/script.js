@@ -166,6 +166,27 @@ document.querySelectorAll('.accordion-btn').forEach(btn => {
 });
 
 // =============================
+// Figmaプロトタイプ
+// =============================
+const btn = document.getElementById("prototypeBtn");
+const prototype = document.getElementById("prototype");
+
+btn.addEventListener("click", async () => {
+  // 表示
+  prototype.style.display = "block";
+
+  // 全画面表示
+  await prototype.requestFullscreen();
+});
+
+// 全画面が終了したら自動で非表示
+document.addEventListener("fullscreenchange", () => {
+  if (!document.fullscreenElement) {
+    prototype.style.display = "none";
+  }
+});
+
+// =============================
 // モーダル表示
 // =============================
 function openModal(imageSrc) {
