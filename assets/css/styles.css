@@ -600,15 +600,12 @@ body {
   right: 30px;
   /* 右から30px */
   width: 60px;
-  /* ボタンの幅 */
   height: 60px;
-  /* ボタンの高さ */
   border-radius: 50%;
   /* 丸いボタン */
   background-color: rgba(156, 156, 156, 0.5);
   color: #fff;
   border: none;
-  /* 枠線なし */
   font-size: 14px;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   text-align: center;
@@ -621,14 +618,18 @@ body {
   /* 枠線を消す */
   opacity: 0;
   /* 最初は非表示 */
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease,
   /* フェードイン・アウト */
+              background-color 0.5s ease, 
+              color 0.5s ease, 
+              transform 0.5s ease;
+              /* 0.5秒で滑らかに浮き上がる */
 }
 
 #scroll-top:hover {
   background-color: rgba(128, 128, 128, 0.5);
   color: rgb(30, 245, 230);
-  transition: color 0.5s ease;
+  transform: translateY(-4px);
 }
 
 .scroll-icon {
@@ -1254,19 +1255,21 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
 
 .prototype-btn {
   padding: 14px 32px;
-  border: 1px solid #cecece;
+  border: 1px solid #b6b6b6;
   border-radius: 5px;
-  background: #eae9e9;
-  color: #ffffff;
+  background: #ffffff79;
+  color: #bbbbbb;
   font-size: 1rem;
   cursor: pointer;
-  transition: .3s;
+  transition: background-color 0.5s ease, 
+              color 0.5s ease, 
+              transform 0.5s ease;
 }
 
 .prototype-btn:hover {
-  background: #d3d3d3;
+  background: #e0e0e077;
   color: rgb(30, 245, 230);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .prototype {
