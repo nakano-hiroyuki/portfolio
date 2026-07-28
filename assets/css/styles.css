@@ -894,6 +894,11 @@ video {
   margin: 0;
 }
 
+.app-subtitle-ja {
+  color: gray;
+  text-align: center;
+}
+
 .explanation1 {
   display: flex;
   color: gray;
