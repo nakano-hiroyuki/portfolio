@@ -173,12 +173,14 @@ const prototype = document.getElementById("prototype");
 const closeBtn = document.getElementById("closeBtn");
 
 btn.addEventListener("click", async () => {
-  // 表示してからフェードイン
   prototype.style.display = "block";
-  setTimeout(() => {
-    prototype.style.opacity = "1";
-  }, 10);
-
+  
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      prototype.style.opacity = "1";
+    });
+  });
+  
   // 全画面表示
   await prototype.requestFullscreen();
 });
@@ -226,30 +228,31 @@ function closeModal() {
 // =============================
 // お問合せ
 // =============================
-emailjs.init('staAup2QElAgqxDcS');
+if (typeof emailjs !== 'undefined') {
+  emailjs.init('staAup2QElAgqxDcS');
 
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
 
-    if (name && message) {
-      emailjs.sendForm('service_t8kalz5', 'template_vt1ubtq', this)
-        .then(() => {
-          alert(`${name} さん！メッセージを送信しました。ありがとうございます！`);
-          contactForm.reset();
-        })
-        .catch((error) => {
-          alert('送信に失敗しました。もう一度お試しください。');
-          console.log(error);
-        });
-    } else {
-      alert('名前、メールアドレス、性別、メッセージを入力してください！');
-    }
-  });
+      if (name && message) {
+        emailjs.sendForm('service_t8kalz5', 'template_vt1ubtq', this)
+          .then(() => {
+            alert(`${name} さん！メッセージを送信しました。ありがとうございます！`);
+            contactForm.reset();
+          })
+          .catch((error) => {
+            alert('送信に失敗しました。もう一度お試しください。');
+            console.log(error);
+          });
+      } else {
+        alert('名前、メールアドレス、性別、メッセージを入力してください！');
+      }
+    });
+  }
 }
-
 

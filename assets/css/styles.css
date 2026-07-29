@@ -529,9 +529,7 @@ body {
   }
 }
 
-/* ============================= */
 /* アコーディオン */
-/* ============================= */
 .accordion-wrapper {
   max-width: 600px;
   margin: 50px auto;
@@ -621,7 +619,7 @@ body {
   /* 枠線を消す */
   opacity: 0;
   /* 最初は非表示 */
-  transition: opacity 0.3s ease,
+  transition: opacity 0.5s ease,
   /* フェードイン・アウト */
               background-color 0.5s ease, 
               color 0.5s ease, 
