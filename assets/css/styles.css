@@ -2287,6 +2287,10 @@ productsの共通定義以外は、idを指定（#products1、#products2）し�
   #design .title {
     font-size: 40px;
   }
+  
+  #design .subtitle {
+    font-size: 35px;
+  }
 
   #design .design-end-bg h4 {
     font-size: 15px;
